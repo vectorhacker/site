@@ -8,6 +8,7 @@ theme = "hugo-cactus-theme"
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
 disqusShortname = "vams"
+publishDir = "docs"
 
 [params]
 	name = "Victor A. Martinez"
@@ -51,4 +52,3 @@ disqusShortname = "vams"
     twitter  = "https://www.twitter.com/vectorhacker"
     github   = "https://www.github.com/vectorhacker"
 
-publishDir = "docs"
