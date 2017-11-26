@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Victor A. Martinez</title>
-    <link>https://victoramartinez.com/</link>
+    <link>http://victoramartinez.com/</link>
     <description>Recent content on Victor A. Martinez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

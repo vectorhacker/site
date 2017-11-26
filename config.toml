@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://victoramartinez.com/"
+baseurl = "http://victoramartinez.com/"
 themesDir = "./themes"
 languageCode = "en-us"
 title = "Victor A. Martinez"

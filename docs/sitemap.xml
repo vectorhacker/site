@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://victoramartinez.com/categories/</loc>
+    <loc>http://victoramartinez.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://victoramartinez.com/tags/</loc>
+    <loc>http://victoramartinez.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://victoramartinez.com/</loc>
+    <loc>http://victoramartinez.com/</loc>
     <priority>0</priority>
   </url>
   
