@@ -1,6 +1,7 @@
 ---
 title: "Net Neutrality Opinion"
 date: 2017-11-26T00:44:22-04:00
+description: In this post, I talk about my opinions on Net Neutrality and why we should keep it. I also talk about other ways ISPs screw you over.
 draft: false
 ---
 
