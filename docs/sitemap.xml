@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://victoramartinez.com/about/</loc>
+    <lastmod>2017-11-25T23:49:38-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://victoramartinez.com/categories/</loc>
     <priority>0</priority>
   </url>
