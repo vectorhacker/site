@@ -6,9 +6,19 @@
     <description>Recent content on Victor A. Martinez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 26 Nov 2017 00:44:22 -0400</lastBuildDate>
     
 	<atom:link href="http://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Net Neutrality Opinion</title>
+      <link>http://victoramartinez.com/posts/net-neutrality-opinion/</link>
+      <pubDate>Sun, 26 Nov 2017 00:44:22 -0400</pubDate>
+      
+      <guid>http://victoramartinez.com/posts/net-neutrality-opinion/</guid>
+      <description>Background This December, the FCC will vote on wether to keep or reverse Title II of the Communications Act of 1934 in regards to ISPs. This decision will affect the way the internet works in the United States and if reversed, would give ISPs incentive to give preferential treatment of some data packets over others, among many other things that they could do. These rules are with the intent of creating a level playing field within the internet and keeping the internet free and open.</description>
+    </item>
     
   </channel>
 </rss>

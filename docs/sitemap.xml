@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://victoramartinez.com/posts/net-neutrality-opinion/</loc>
+    <lastmod>2017-11-26T00:44:22-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://victoramartinez.com/about/</loc>
     <lastmod>2017-11-25T23:49:38-04:00</lastmod>
   </url>
@@ -13,12 +18,19 @@
   </url>
   
   <url>
+    <loc>http://victoramartinez.com/posts/</loc>
+    <lastmod>2017-11-26T00:44:22-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://victoramartinez.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://victoramartinez.com/</loc>
+    <lastmod>2017-11-26T00:44:22-04:00</lastmod>
     <priority>0</priority>
   </url>
   
