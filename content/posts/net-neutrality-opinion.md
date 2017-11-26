@@ -11,19 +11,19 @@ This December, the FCC will vote on wether to keep or reverse [Title II of the C
 
 In a nutshell, Net neutrality simply states that all internet traffic ought to be treated equally and delivered equally. In essence, ISPs  can’t block, throttle, nor speed up content for companies that pay.
 
-## Tittle II
-Tittle II has to do with what are called “common carriers”. These include utilities like water, electricity, and land-line phones. In 2015 the Open n Internet Order made it so that ISPs fall under Tittle II, before that they were classified under Tittle I. 
+## Title II
+Title II has to do with what are called “common carriers”. These include utilities like water, electricity, and land-line phones. In 2015 the Open n Internet Order made it so that ISPs fall under Title II, before that they were classified under Title I. 
 
 Why is this important? Without this classification, the FCC would have no authority to enforce net neutrality rules and would be essentially powerless if an ISP decides to [throttle your connection to Netflix](https://consumerist.com/2014/02/23/netflix-agrees-to-pay-comcast-to-end-slowdown/).
 
-### Argument against Tittle II and why they’re probably wrong
-The main argument against Tittle II is that the regulation hurts ISPs ability to innovate and curbs investment. Wether or not that is true, it’s really up for debate. The current FCC Chairman Ajit Pai, who voted against the 2015 Open Internet Order said: 
+### Argument against Title II and why they’re probably wrong
+The main argument against Title II is that the regulation hurts ISPs ability to innovate and curbs investment. Wether or not that is true, it’s really up for debate. The current FCC Chairman Ajit Pai, who voted against the 2015 Open Internet Order said: 
 
 > *“This burdensome regulation has failed consumers and businesses alike. In the two years after the FCC’s decision, broadband network investment dropped more than 5.6 percent—the first time a decline has happened outside of a recession. If the current rules are left in place, millions of Americans who are on the wrong side of the digital divide would have to wait years to get more broadband.”*
 
-There is reason to believe, however, that the net neutrality rules will not hurt ISPs investment. “We found that not a single publicly traded US ISP ever told its investors (or the SEC) that Title II negatively impacted its own investments specifically” as said in a [report issued by the Free Press](https://www.freepress.net/sites/default/files/resources/internet-access-and-online-video-markets-are-thriving-in-title-II-era.pdf). Many ISPs have told their investors that [Tittle II won’t hurt them in the slightest](http://www.dslreports.com/shownews/ISPs-Tell-Investors-Title-II-Wont-Hurt-Them-In-The-Slightest-131865).  More over, there have been many disputes over the claims made by Pai, and some analysis shows that ISP investment has [actually](https://arstechnica.com/information-technology/2017/05/title-ii-hasnt-hurt-network-investment-according-to-the-isps-themselves/) [increased](http://www.cmcsa.com/releasedetail.cfm?ReleaseID=1023210) and that it continues. You can read the full report, [here](https://www.freepress.net/sites/default/files/resources/internet-access-and-online-video-markets-are-thriving-in-title-II-era.pdf).
+There is reason to believe, however, that the net neutrality rules will not hurt ISPs investment. “We found that not a single publicly traded US ISP ever told its investors (or the SEC) that Title II negatively impacted its own investments specifically” as said in a [report issued by the Free Press](https://www.freepress.net/sites/default/files/resources/internet-access-and-online-video-markets-are-thriving-in-title-II-era.pdf). Many ISPs have told their investors that [Title II won’t hurt them in the slightest](http://www.dslreports.com/shownews/ISPs-Tell-Investors-Title-II-Wont-Hurt-Them-In-The-Slightest-131865).  More over, there have been many disputes over the claims made by Pai, and some analysis shows that ISP investment has [actually](https://arstechnica.com/information-technology/2017/05/title-ii-hasnt-hurt-network-investment-according-to-the-isps-themselves/) [increased](http://www.cmcsa.com/releasedetail.cfm?ReleaseID=1023210) and that it continues. You can read the full report, [here](https://www.freepress.net/sites/default/files/resources/internet-access-and-online-video-markets-are-thriving-in-title-II-era.pdf).
 
-So really it seams that the internet is thriving under Tittle II.
+So really it seams that the internet is thriving under Title II.
 
 ### Data caps
 
@@ -40,7 +40,7 @@ It is more likely that data caps are in place to maximize ISP profit and because
 But there’s hope, some internet companies in the United States are either raising data caps or removing them entirely. And Netflix is [asking](https://www.bloomberg.com/news/articles/2012-06-27/netflix-wants-help-from-u-s-against-cable-data-caps) lawmakers to prevent ISPs from putting these caps in place. But it is still an uphill battle, as Comcast and many others keep [putting these in place](https://www.consumerreports.org/telecom-services/how-easy-to-burn-through-1TB-data-cap/).
 
 ### What’s ahead
-If Net Neutrality is reversed, specifically the classification of ISPs under Tittle II, ISPs would not have much incentive in keeping data service fair. And we’ve already seen that they limit your data usage just to please their needs of profit and/or to protect their other services like paid television. On December the FCC will vote and they can determine the future of the internet for America. Voice your opinion [here](www.gofccyourself.com) GoFccYourself.com and make sure to tell them that you want ISPs to stay under Tittle II.
+If Net Neutrality is reversed, specifically the classification of ISPs under Title II, ISPs would not have much incentive in keeping data service fair. And we’ve already seen that they limit your data usage just to please their needs of profit and/or to protect their other services like paid television. On December the FCC will vote and they can determine the future of the internet for America. Voice your opinion [here](www.gofccyourself.com) GoFccYourself.com and make sure to tell them that you want ISPs to stay under Title II.
 
 
 ### Sources
