@@ -52,5 +52,7 @@ publishDir = "docs"
     twitter  = "https://www.twitter.com/vectorhacker"
     github   = "https://www.github.com/vectorhacker"
 		linkedin = "https://www.linkedin.com/in/vectorhacker"
-		
-
+		envelope = "mailto:hello@victoramartinez.com"
+		stack-overflow = "https://stackoverflow.com/users/2422918/victor-martinez"
+		telegram  = "https://t.me/vectorhacker"
+		skype ="https://hatscripts.com/addskype?vicor%40plazsa.com"
