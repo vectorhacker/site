@@ -4,6 +4,8 @@ date: 2017-11-26T00:44:22-04:00
 draft: false
 ---
 
+![Fight For Net Neutrality!](/images/fight-net.jpg)
+
 ### Background
 This December, the FCC will vote on wether to keep or reverse [Title II of the Communications Act](http://transition.fcc.gov/Reports/1934new.pdf) of 1934 in regards to ISPs. This decision will affect the way the internet works in the United States and if reversed, would give ISPs incentive to give preferential treatment of some data packets over others, among many other things that they could do. These rules are with the intent of creating a level playing field within the internet and keeping the internet free and open. 
 
