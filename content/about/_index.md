@@ -25,4 +25,4 @@ I mainly blog because I often have opinions and want a way to voice them. This b
 # How can I contact you?
 
 [hello@victoramartinez.com](mailto:hello@victoramartinez.com)<br/>
-[@vectorhacker](https://twitter.com/vectorhaker)
+[@vectorhacker](https://twitter.com/vectorhacker)
