@@ -4,7 +4,7 @@ date: 2017-11-25T23:49:38-04:00
 draft: false
 ---
 
-I'm Victor Martinez and I live in Bayamon, PR. I work as a software engineer at [ALQMY](http://alqmy.io) and collaborate with [Engine 4](http://engine-4.com). I started work as a software developer when I started college in 2013. I'm now finishing my degree in Computer Science at the Politechnic University of Puerto Rico in San Juan, PR. My first programming language was PHP and C. I then moved on to programming in mainly in JavaScript. Now a days I work in a mix of Python and Go.
+I'm Victor Martinez and I live in Bayamon, PR. I work as a software engineer at [ALQMY](http://alqmy.io) and collaborate with [Engine 4](http://engine-4.com). I started work as a software developer when I started college in 2013. I'm now finishing my degree in Computer Science at the Politechnic University of Puerto Rico in San Juan, PR. My first programming language was PHP and C. I then moved on to programming in mainly in JavaScript. Now a days I work in a mix of Python, JavaScript and Go.
 
 I consider myself a decent software developer, mainly focused in systems architecture and business logic. 
 
