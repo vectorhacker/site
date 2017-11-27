@@ -5,7 +5,7 @@ languageCode = "en-us"
 title = "Victor A. Martinez"
 theme = "hugo-cactus-theme"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-110221350-1"
+googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
 disqusShortname = "vams"
 publishDir = "docs"
