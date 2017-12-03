@@ -12,7 +12,7 @@ This December, the FCC will vote on wether to keep or reverse [Title II of the C
 
 In a nutshell, Net neutrality simply states that all internet traffic ought to be treated equally and delivered equally. In essence, ISPs  can’t block, throttle, nor speed up content for companies that pay.
 
-## Title II
+### Title II
 Title II has to do with what are called “common carriers”. These include utilities like water, electricity, and land-line phones. In 2015 the Open n Internet Order made it so that ISPs fall under Title II, before that they were classified under Title I. 
 
 Why is this important? Without this classification, the FCC would have no authority to enforce net neutrality rules and would be essentially powerless if an ISP decides to [throttle your connection to Netflix](https://consumerist.com/2014/02/23/netflix-agrees-to-pay-comcast-to-end-slowdown/).

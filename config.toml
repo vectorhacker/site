@@ -57,3 +57,12 @@ publishDir = "docs"
 		telegram  = "https://t.me/vectorhacker"
 		skype = "https://hatscripts.com/addskype?vicor%40plazsa.com"
 		reddit = "https://www.reddit.com/user/vectorhacker/"
+
+[[menu.main]]
+	name = "About Me"
+	url = "/about/"
+
+# [[menu.main]]
+# 	name = "There Ought To Be A Law..."
+# 	url = "/totbal"
+# 	weight = 1
