@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://victoramartinez.com/posts/work-in-progress/</loc>
+    <lastmod>2018-03-13T16:52:45-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://victoramartinez.com/posts/amazon-key/</loc>
     <lastmod>2017-11-26T23:20:47-04:00</lastmod>
   </url>
@@ -29,7 +34,7 @@
   
   <url>
     <loc>http://victoramartinez.com/posts/</loc>
-    <lastmod>2017-11-26T23:20:47-04:00</lastmod>
+    <lastmod>2018-03-13T16:52:45-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -40,7 +45,7 @@
   
   <url>
     <loc>http://victoramartinez.com/</loc>
-    <lastmod>2017-11-26T23:20:47-04:00</lastmod>
+    <lastmod>2018-03-13T16:52:45-04:00</lastmod>
     <priority>0</priority>
   </url>
   

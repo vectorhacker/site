@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Victor A. Martinez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Nov 2017 23:20:47 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 13 Mar 2018 16:52:45 -0400</lastBuildDate>
     
 	<atom:link href="http://victoramartinez.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Work in Progress</title>
+      <link>http://victoramartinez.com/posts/work-in-progress/</link>
+      <pubDate>Tue, 13 Mar 2018 16:52:45 -0400</pubDate>
+      
+      <guid>http://victoramartinez.com/posts/work-in-progress/</guid>
+      <description>Hi guys, I&amp;rsquo;ve been silent mostly because of work. New things are happening and the company is growing. I&amp;rsquo;m working with new things related to Blockchain and I&amp;rsquo;m working on consulting more.</description>
+    </item>
     
     <item>
       <title>Amazon Key</title>
