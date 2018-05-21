@@ -13,8 +13,8 @@ So I think I should show you how the library actually works. First things first 
 
 ```go
 client := goro.Connect(
-    "http://localhost:2113", 
-    goro.WithBasicAuth("admin", "changeit"),
+        "http://localhost:2113", 
+        goro.WithBasicAuth("admin", "changeit"),
     )
 ```
 
@@ -27,10 +27,10 @@ type ClientOption func(*Client)
 This enables me to add options to it arbitrarily. This is very similar to how the [gRPC-Go](https://github.com/grpc/grpc-go) libraries add options to connections. In contrast Go.GetEventStore does this for authentication for example:
 
 ```go
- client, err := goes.NewClient(nil, "http://youreventstore:2113")
-	if err != nil {
-		log.Fatal(err)
-    }
+client, err := goes.NewClient(nil, "http://youreventstore:2113")
+if err != nil {
+    log.Fatal(err)
+}
 
 client.SetBasicAuth("admin", "changeit")
 ```
@@ -75,7 +75,7 @@ Each stream message has a few things inside it that help you manage the stream. 
 Streaming style subscriptions isn't the only way to read events, you can also read arbitrarily using a reader:
 ```go
 reader := client.FowardsReader("messages")
- events, err := reader.Read(ctx, 0, 1)
+events, err := reader.Read(ctx, 0, 1)
 if err != nil {
     panic(err)
 }

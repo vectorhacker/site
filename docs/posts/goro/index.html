@@ -103,8 +103,8 @@
 <p>So I think I should show you how the library actually works. First things first connecting to EventStore is as simple as:</p>
 
 <pre><code class="language-go">client := goro.Connect(
-    &quot;http://localhost:2113&quot;, 
-    goro.WithBasicAuth(&quot;admin&quot;, &quot;changeit&quot;),
+        &quot;http://localhost:2113&quot;, 
+        goro.WithBasicAuth(&quot;admin&quot;, &quot;changeit&quot;),
     )
 </code></pre>
 
@@ -115,10 +115,10 @@
 
 <p>This enables me to add options to it arbitrarily. This is very similar to how the <a href="https://github.com/grpc/grpc-go">gRPC-Go</a> libraries add options to connections. In contrast Go.GetEventStore does this for authentication for example:</p>
 
-<pre><code class="language-go"> client, err := goes.NewClient(nil, &quot;http://youreventstore:2113&quot;)
-	if err != nil {
-		log.Fatal(err)
-    }
+<pre><code class="language-go">client, err := goes.NewClient(nil, &quot;http://youreventstore:2113&quot;)
+if err != nil {
+    log.Fatal(err)
+}
 
 client.SetBasicAuth(&quot;admin&quot;, &quot;changeit&quot;)
 </code></pre>
@@ -159,7 +159,7 @@ for event := range events {
 <p>Streaming style subscriptions isn&rsquo;t the only way to read events, you can also read arbitrarily using a reader:</p>
 
 <pre><code class="language-go">reader := client.FowardsReader(&quot;messages&quot;)
- events, err := reader.Read(ctx, 0, 1)
+events, err := reader.Read(ctx, 0, 1)
 if err != nil {
     panic(err)
 }
