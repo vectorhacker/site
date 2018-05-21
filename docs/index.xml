@@ -6,10 +6,20 @@
     <description>Recent content on Victor A. Martinez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Mar 2018 16:52:45 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 21 May 2018 13:36:22 -0400</lastBuildDate>
     
 	<atom:link href="http://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Goro</title>
+      <link>http://victoramartinez.com/posts/goro/</link>
+      <pubDate>Mon, 21 May 2018 13:36:22 -0400</pubDate>
+      
+      <guid>http://victoramartinez.com/posts/goro/</guid>
+      <description>I know I haven&amp;rsquo;t posted in a long time, but I finally felt I needed an update in my blog. I&amp;rsquo;ve recently updated some work on my own Go library for EventStore called goro. I made this for my own personal work and my job at ALQMY.
+I used to use Go.GetEventStore as my prefered library for working with EventStore. It was nice, but I felt it was lacking in many features and was ultimitely very cumbersome to work with, especially when it comes to reading events in a streaming fashion.</description>
+    </item>
     
     <item>
       <title>Work in Progress</title>
