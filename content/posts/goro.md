@@ -1,8 +1,8 @@
 ---
 title: "Goro"
 date: 2018-05-21T13:36:22-04:00
-draft: false
 description: I created a Go library for the EventStore database and I wanted to share it with the world
+draft: false
 ---
 
 I know I haven't posted in a long time, but I finally felt I needed an update in my blog. I've recently updated some work on my own Go library for [EventStore](https://eventstore.org) called [goro](https://github.com/vectorhacker/goro). I made this for my own personal work and my job at [ALQMY](http://alqmy.io). 
