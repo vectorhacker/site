@@ -49,6 +49,16 @@ I used to use Go.GetEventStore as my prefered library for working with EventStor
     </item>
     
     <item>
+      <title>WTF is Blockchain?</title>
+      <link>http://victoramartinez.com/posts/wtf-is-blockchain/</link>
+      <pubDate>Sat, 27 Jan 2018 19:44:17 -0400</pubDate>
+      
+      <guid>http://victoramartinez.com/posts/wtf-is-blockchain/</guid>
+      <description>This post was inspired by a talk given by Jared Haight from Microsoft at BSidesPR. Jared talked about giving back to the InfoSec community at a large, and he mentioned things to write about, including Blockchain. Specifically, he asked &amp;ldquo;WTF is Blockchain?&amp;rdquo; and said it that if you actually title it like that, he&amp;rsquo;d read it. So, this is my attempt at writing that description.
+TLDR: Blockchain is an unchangeable series of blocks that each reference the previous&amp;rsquo; block&amp;rsquo;s contents via a hash of that content.</description>
+    </item>
+    
+    <item>
       <title>Amazon Key</title>
       <link>http://victoramartinez.com/posts/amazon-key/</link>
       <pubDate>Sun, 26 Nov 2017 23:20:47 -0400</pubDate>
