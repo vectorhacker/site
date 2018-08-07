@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>There Ought To Be A Law on Victor A. Martinez</title>
+    <link>http://victoramartinez.com/totbal/</link>
+    <description>Recent content in There Ought To Be A Law on Victor A. Martinez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Dec 2017 23:52:14 -0400</lastBuildDate>
+    
+	<atom:link href="http://victoramartinez.com/totbal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Answer Questions</title>
+      <link>http://victoramartinez.com/totbal/answer-questions/</link>
+      <pubDate>Thu, 07 Jun 2018 14:19:22 -0400</pubDate>
+      
+      <guid>http://victoramartinez.com/totbal/answer-questions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

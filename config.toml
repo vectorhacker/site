@@ -62,7 +62,7 @@ publishDir = "docs"
 	name = "About Me"
 	url = "/about/"
 
-# [[menu.main]]
-# 	name = "There Ought To Be A Law..."
-# 	url = "/totbal"
-# 	weight = 1
+[[menu.main]]
+	name = "There Ought To Be A Law..."
+	url = "/totbal/"
+	weight = 1
