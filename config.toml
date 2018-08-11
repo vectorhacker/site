@@ -13,7 +13,7 @@ publishDir = "docs"
 [params]
 	name = "Victor A. Martinez"
 	description = "Personal site where I post my thoughts and ideas and showcase my work."
-	bio = "Software Guru"
+	bio = "Software Engineer"
 	# Enter optionally your twitter account
 	twitter = "vectorhacker"
 	enableRSS = true
