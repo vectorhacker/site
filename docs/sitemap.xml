@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://victoramartinez.com/posts/wtf-is-blockchain/</loc>
+    <lastmod>2018-08-07T19:44:17-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://victoramartinez.com/posts/goro/</loc>
     <lastmod>2018-05-21T13:36:22-04:00</lastmod>
   </url>
@@ -10,11 +15,6 @@
   <url>
     <loc>http://victoramartinez.com/posts/work-in-progress/</loc>
     <lastmod>2018-03-13T16:52:45-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://victoramartinez.com/posts/wtf-is-blockchain/</loc>
-    <lastmod>2018-01-27T19:44:17-04:00</lastmod>
   </url>
   
   <url>
@@ -44,7 +44,7 @@
   
   <url>
     <loc>http://victoramartinez.com/posts/</loc>
-    <lastmod>2018-05-21T13:36:22-04:00</lastmod>
+    <lastmod>2018-08-07T19:44:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -55,7 +55,7 @@
   
   <url>
     <loc>http://victoramartinez.com/</loc>
-    <lastmod>2018-05-21T13:36:22-04:00</lastmod>
+    <lastmod>2018-08-07T19:44:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   

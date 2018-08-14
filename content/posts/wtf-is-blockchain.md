@@ -1,6 +1,6 @@
 ---
 title: "WTF is Blockchain?"
-date: 2018-01-27T19:44:17-04:00
+date: 2018-08-07T19:44:17-04:00
 draft: false
 ---
 

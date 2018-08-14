@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Victor A. Martinez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 May 2018 13:36:22 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 19:44:17 -0400</lastBuildDate>
     
 	<atom:link href="http://victoramartinez.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WTF is Blockchain?</title>
+      <link>http://victoramartinez.com/posts/wtf-is-blockchain/</link>
+      <pubDate>Tue, 07 Aug 2018 19:44:17 -0400</pubDate>
+      
+      <guid>http://victoramartinez.com/posts/wtf-is-blockchain/</guid>
+      <description>This post was inspired by a talk given by Jared Haight from Microsoft at BSidesPR. Jared talked about giving back to the InfoSec community at a large, and he mentioned things to write about, including Blockchain. Specifically, he asked &amp;ldquo;WTF is Blockchain?&amp;rdquo; and said it that if you actually title it like that, he&amp;rsquo;d read it. So, this is my attempt at writing that description.
+TLDR: Blockchain is an unchangeable series of blocks that each reference the previous&amp;rsquo; block&amp;rsquo;s contents via a hash of that content.</description>
+    </item>
     
     <item>
       <title>Goro</title>
@@ -28,16 +38,6 @@ I used to use Go.GetEventStore as my prefered library for working with EventStor
       
       <guid>http://victoramartinez.com/posts/work-in-progress/</guid>
       <description>Hi guys, I&amp;rsquo;ve been silent mostly because of work. New things are happening and the company is growing. I&amp;rsquo;m working with new things related to Blockchain and I&amp;rsquo;m working on consulting more.</description>
-    </item>
-    
-    <item>
-      <title>WTF is Blockchain?</title>
-      <link>http://victoramartinez.com/posts/wtf-is-blockchain/</link>
-      <pubDate>Sat, 27 Jan 2018 19:44:17 -0400</pubDate>
-      
-      <guid>http://victoramartinez.com/posts/wtf-is-blockchain/</guid>
-      <description>This post was inspired by a talk given by Jared Haight from Microsoft at BSidesPR. Jared talked about giving back to the InfoSec community at a large, and he mentioned things to write about, including Blockchain. Specifically, he asked &amp;ldquo;WTF is Blockchain?&amp;rdquo; and said it that if you actually title it like that, he&amp;rsquo;d read it. So, this is my attempt at writing that description.
-TLDR: Blockchain is an unchangeable series of blocks that each reference the previous&amp;rsquo; block&amp;rsquo;s contents via a hash of that content.</description>
     </item>
     
     <item>
