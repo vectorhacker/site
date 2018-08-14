@@ -1,7 +1,7 @@
 ---
 title: "You're Just a Programmer..."
 date: 2018-05-22T13:22:13-04:00
-draft: false
+draft: true
 description: A rant, out of anger...
 ---
 

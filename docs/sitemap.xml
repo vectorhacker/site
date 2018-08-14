@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://victoramartinez.com/posts/just-a-programmer/</loc>
-    <lastmod>2018-05-22T13:22:13-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://victoramartinez.com/posts/goro/</loc>
     <lastmod>2018-05-21T13:36:22-04:00</lastmod>
   </url>
@@ -49,7 +44,7 @@
   
   <url>
     <loc>http://victoramartinez.com/posts/</loc>
-    <lastmod>2018-05-22T13:22:13-04:00</lastmod>
+    <lastmod>2018-05-21T13:36:22-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -60,7 +55,7 @@
   
   <url>
     <loc>http://victoramartinez.com/</loc>
-    <lastmod>2018-05-22T13:22:13-04:00</lastmod>
+    <lastmod>2018-05-21T13:36:22-04:00</lastmod>
     <priority>0</priority>
   </url>
   
