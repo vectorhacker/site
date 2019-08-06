@@ -13,7 +13,7 @@ publishDir = "docs"
 [params]
 	name = "Victor A. Martinez"
 	description = "A personal bliki"
-	bio = "Software Developer With Some Opionnions On Things"
+	bio = "Software Developer With Some Opinions On Things"
 	# Enter optionally your twitter account
 	twitter = "vectorhacker"
 	enableRSS = false 
