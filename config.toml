@@ -51,11 +51,11 @@ publishDir = "docs"
 [social]
     twitter  = "https://www.twitter.com/vectorhacker"
     github   = "https://www.github.com/vectorhacker"
-		linkedin = "https://www.linkedin.com/in/vectorhacker"
+		linkedin = ""
 		envelope = "mailto:hello@victoramartinez.com"
 		stack-overflow = "https://stackoverflow.com/users/2422918/victor-martinez"
 		telegram  = "https://t.me/vectorhacker"
-		skype = "https://join.skype.com/invite/I1vfVu1WrCr2"
+		skype = ""
 		reddit = "https://www.reddit.com/user/vectorhacker/"
 
 [[menu.main]]
