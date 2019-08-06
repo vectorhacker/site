@@ -12,8 +12,8 @@ publishDir = "docs"
 
 [params]
 	name = "Victor A. Martinez"
-	description = "Personal site where I post my thoughts and ideas and showcase my work."
-	bio = "Software Engineer"
+	description = "A personal bliki"
+	bio = "Software Developer With Some Opionnions On Things"
 	# Enter optionally your twitter account
 	twitter = "vectorhacker"
 	enableRSS = false 
@@ -35,7 +35,7 @@ publishDir = "docs"
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = "I'm a software engineer and computer scientist."
+	aboutAuthor = "I'm a software develoer with opinions"
 	tweet = ""
 	share = ""
 	# 404 page
@@ -51,11 +51,9 @@ publishDir = "docs"
 [social]
     twitter  = "https://www.twitter.com/vectorhacker"
     github   = "https://www.github.com/vectorhacker"
-		linkedin = ""
 		envelope = "mailto:hello@victoramartinez.com"
 		stack-overflow = "https://stackoverflow.com/users/2422918/victor-martinez"
 		telegram  = "https://t.me/vectorhacker"
-		skype = ""
 		reddit = "https://www.reddit.com/user/vectorhacker/"
 
 [[menu.main]]
