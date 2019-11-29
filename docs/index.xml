@@ -6,10 +6,19 @@
     <description>Recent content on Victor A. Martinez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Aug 2018 19:44:17 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2019 20:46:11 -0400</lastBuildDate>
     
 	<atom:link href="https://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What I&#39;ve Learned Working in a Large Software Project</title>
+      <link>https://victoramartinez.com/posts/learnings-working-large-software-project/</link>
+      <pubDate>Thu, 28 Nov 2019 20:46:11 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/learnings-working-large-software-project/</guid>
+      <description>I&#39;ve been working at my first large software project for almost a year now (one year anniversary coming up in December.) And I&#39;d like to share my learnings from this project. The things I&#39;ve learned, discovered, and realized during this time might be interesting to some, might be old news to others, and might even shed some light on how certain things are done in certain types of projects, but all in all I hope this proves to be an interesting read.</description>
+    </item>
     
     <item>
       <title>WTF is Blockchain?</title>
