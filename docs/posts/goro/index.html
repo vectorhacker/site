@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Victor A. Martinez">
 <meta name="description" content="A personal bliki">
-<meta name="generator" content="Hugo 0.52" />
+<meta name="generator" content="Hugo 0.60.0" />
 <title>Goro</title>
 <link rel="shortcut icon" href="https://victoramartinez.com/images/favicon.ico">
 <link rel="stylesheet" href="https://victoramartinez.com/css/style.css">
@@ -24,15 +24,13 @@
 <meta property="og:title" content="Goro" />
 <meta property="og:description" content="I created a Go library for the EventStore database and I wanted to share it with the world" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://victoramartinez.com/posts/goro/" /><meta property="article:published_time" content="2018-05-21T13:36:22-04:00"/>
-<meta property="article:modified_time" content="2018-05-21T13:36:22-04:00"/>
-
+<meta property="og:url" content="https://victoramartinez.com/posts/goro/" />
+<meta property="article:published_time" content="2018-05-21T13:36:22-04:00" />
+<meta property="article:modified_time" content="2018-05-21T13:36:22-04:00" />
 
 
 <meta itemprop="name" content="Goro">
 <meta itemprop="description" content="I created a Go library for the EventStore database and I wanted to share it with the world">
-
-
 <meta itemprop="datePublished" content="2018-05-21T13:36:22-04:00" />
 <meta itemprop="dateModified" content="2018-05-21T13:36:22-04:00" />
 <meta itemprop="wordCount" content="591">
@@ -40,7 +38,6 @@
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Goro"/>
 <meta name="twitter:description" content="I created a Go library for the EventStore database and I wanted to share it with the world"/>
@@ -75,89 +72,61 @@
         </h2>
     </header>
     <section id="post-body">
-        
-
-<p>I know I haven&rsquo;t posted in a long time, but I finally felt I needed an update in my blog. I&rsquo;ve recently updated some work on my own Go library for <a href="https://eventstore.org">EventStore</a> called <a href="https://github.com/vectorhacker/goro">goro</a>. I made this for my own personal work and my job at <a href="http://alqmy.io">ALQMY</a>.</p>
-
-<p>I used to use <a href="https://github.com/jetbasrawi/go.geteventstore">Go.GetEventStore</a> as my prefered library for working with EventStore. It was nice, but I felt it was lacking in many features and was ultimitely very cumbersome to work with, especially when it comes to reading events in a streaming fashion. I modeled my libary much like the sarama library for Kafka which has a similar api for streaming. On top of that I&rsquo;ve added native support for reading streams, not only forwards, but backwards as well. This to me was a very important feature to have, as sometimes things like inlined snapshots in <a href="https://martinfowler.com/eaaDev/EventSourcing.html">Event Sourcing</a> <a href="https://martinfowler.com/eaaDev/EventSourcing.html">[1]</a><a href="http://microservices.io/patterns/data/event-sourcing.html">[2]</a><a href="https://eventstore.org/docs/event-sourcing-basics/index.html">[3]</a> require that you read a stream backwards.</p>
-
+        <p>I know I haven't posted in a long time, but I finally felt I needed an update in my blog. I've recently updated some work on my own Go library for <a href="https://eventstore.org">EventStore</a> called <a href="https://github.com/vectorhacker/goro">goro</a>. I made this for my own personal work and my job at <a href="http://alqmy.io">ALQMY</a>.</p>
+<p>I used to use <a href="https://github.com/jetbasrawi/go.geteventstore">Go.GetEventStore</a> as my prefered library for working with EventStore. It was nice, but I felt it was lacking in many features and was ultimitely very cumbersome to work with, especially when it comes to reading events in a streaming fashion. I modeled my libary much like the sarama library for Kafka which has a similar api for streaming. On top of that I've added native support for reading streams, not only forwards, but backwards as well. This to me was a very important feature to have, as sometimes things like inlined snapshots in <a href="https://martinfowler.com/eaaDev/EventSourcing.html">Event Sourcing</a> <a href="https://martinfowler.com/eaaDev/EventSourcing.html">[1]</a><a href="http://microservices.io/patterns/data/event-sourcing.html">[2]</a><a href="https://eventstore.org/docs/event-sourcing-basics/index.html">[3]</a> require that you read a stream backwards.</p>
 <p>So I think I should show you how the library actually works. First things first connecting to EventStore is as simple as:</p>
-
-<pre><code class="language-go">client := goro.Connect(
-        &quot;http://localhost:2113&quot;, 
-        goro.WithBasicAuth(&quot;admin&quot;, &quot;changeit&quot;),
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">client</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">Connect</span>(
+        <span style="color:#e6db74">&#34;http://localhost:2113&#34;</span>, 
+        <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">WithBasicAuth</span>(<span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;changeit&#34;</span>),
     )
-</code></pre>
-
-<p>Now here is the first major difference between my library and that of Go.GetEventStore. When you connect, you initially give it the connection options such as authentication. In the future I&rsquo;ll add more options, but each option is implemented via a simple interface:</p>
-
-<pre><code class="language-go">type ClientOption func(*Client)
-</code></pre>
-
-<p>This enables me to add options to it arbitrarily. This is very similar to how the <a href="https://github.com/grpc/grpc-go">gRPC-Go</a> libraries add options to connections. In contrast Go.GetEventStore does this for authentication for example:</p>
-
-<pre><code class="language-go">client, err := goes.NewClient(nil, &quot;http://youreventstore:2113&quot;)
-if err != nil {
-    log.Fatal(err)
+</code></pre></div><p>Now here is the first major difference between my library and that of Go.GetEventStore. When you connect, you initially give it the connection options such as authentication. In the future I'll add more options, but each option is implemented via a simple interface:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ClientOption</span> <span style="color:#66d9ef">func</span>(<span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span>)
+</code></pre></div><p>This enables me to add options to it arbitrarily. This is very similar to how the <a href="https://github.com/grpc/grpc-go">gRPC-Go</a> libraries add options to connections. In contrast Go.GetEventStore does this for authentication for example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">client</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">goes</span>.<span style="color:#a6e22e">NewClient</span>(<span style="color:#66d9ef">nil</span>, <span style="color:#e6db74">&#34;http://youreventstore:2113&#34;</span>)
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+    <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
 }
 
-client.SetBasicAuth(&quot;admin&quot;, &quot;changeit&quot;)
-</code></pre>
+<span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">SetBasicAuth</span>(<span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;changeit&#34;</span>)
+</code></pre></div><p>I find this partial builder pattern kind of confusing and very fragile. Besdies, I'm usually very averse to the whole getter/setter pattern in general, but that's a topic for another blog post.</p>
+<p>Another big thing I wanted was better streaming. I'm a big fan of using Go's channel feature to manage concurrency and to iterate through streaming data. It is very easy to iterate over a channel as if it where an array:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">
+<span style="color:#a6e22e">stream</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">string</span>)
 
-<p>I find this partial builder pattern kind of confusing and very fragile. Besdies, I&rsquo;m usually very averse to the whole getter/setter pattern in general, but that&rsquo;s a topic for another blog post.</p>
-
-<p>Another big thing I wanted was better streaming. I&rsquo;m a big fan of using Go&rsquo;s channel feature to manage concurrency and to iterate through streaming data. It is very easy to iterate over a channel as if it where an array:</p>
-
-<pre><code class="language-go">
-stream := make(chan string)
-
-go func(){
-    for message := range stream {
-        log.Println(message)
+<span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>(){
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">stream</span> {
+        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">message</span>)
     }
 }()
 
-stream &lt;- &quot;hello&quot;
-stream &lt;- &quot;wow&quot;
+<span style="color:#a6e22e">stream</span> <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;hello&#34;</span>
+<span style="color:#a6e22e">stream</span> <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;wow&#34;</span>
 
-close(stream)
-</code></pre>
+close(<span style="color:#a6e22e">stream</span>)
+</code></pre></div><p>I think this is very nice, simple, clean, and elegant way of handling concurrency. There's also no risk of the channel giving an error when getting messages in this model because the go for loop automatically breaks when the channel is closed. So in that fashion, I modeled my subscriptions for EventStore in this manner:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">client</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">Connect</span>(<span style="color:#e6db74">&#34;http://localhost:2113&#34;</span>, <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">WithBasicAuth</span>(<span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;changeit&#34;</span>))
 
-<p>I think this is very nice, simple, clean, and elegant way of handling concurrency. There&rsquo;s also no risk of the channel giving an error when getting messages in this model because the go for loop automatically breaks when the channel is closed. So in that fashion, I modeled my subscriptions for EventStore in this manner:</p>
+<span style="color:#a6e22e">ctx</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Background</span>()
+<span style="color:#a6e22e">events</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">catchupSubscription</span>.<span style="color:#a6e22e">Subscribe</span>(<span style="color:#a6e22e">ctx</span>)
 
-<pre><code class="language-go">client := goro.Connect(&quot;http://localhost:2113&quot;, goro.WithBasicAuth(&quot;admin&quot;, &quot;changeit&quot;))
-
-ctx := context.Background()
-events := catchupSubscription.Subscribe(ctx)
-
-for event := range events {
-    //...
+<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">event</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">events</span> {
+    <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>}
+</code></pre></div><p>Each stream message has a few things inside it that help you manage the stream. This includes the event, an error, and some acknowledger for when you have persistent subscriptions.</p>
+<p>Streaming style subscriptions isn't the only way to read events, you can also read arbitrarily using a reader:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">reader</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">FowardsReader</span>(<span style="color:#e6db74">&#34;messages&#34;</span>)
+<span style="color:#a6e22e">events</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">reader</span>.<span style="color:#a6e22e">Read</span>(<span style="color:#a6e22e">ctx</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+    panic(<span style="color:#a6e22e">err</span>)
 }
-</code></pre>
-
-<p>Each stream message has a few things inside it that help you manage the stream. This includes the event, an error, and some acknowledger for when you have persistent subscriptions.</p>
-
-<p>Streaming style subscriptions isn&rsquo;t the only way to read events, you can also read arbitrarily using a reader:</p>
-
-<pre><code class="language-go">reader := client.FowardsReader(&quot;messages&quot;)
-events, err := reader.Read(ctx, 0, 1)
-if err != nil {
-    panic(err)
-}
-</code></pre>
-
-<p>as you can see, you can specify very easily the direction in which you want to read, this to me was very important.</p>
-
+</code></pre></div><p>as you can see, you can specify very easily the direction in which you want to read, this to me was very important.</p>
 <h2 id="improvements">Improvements:</h2>
-
-<p>I&rsquo;m still adding things to this library, and I welcome any pull requests that want to add features. A few of the features I want to add are:</p>
-
+<p>I'm still adding things to this library, and I welcome any pull requests that want to add features. A few of the features I want to add are:</p>
 <ul>
 <li>Support for the <a href="https://eventstore.org/docs/projections/api/index.html">Projections API</a></li>
 <li>Support for handling <a href="https://eventstore.org/docs/http-api/swagger/Users.html">users</a>.</li>
 </ul>
-
-<p>These should be simple to implement, but I&rsquo;ve been to lazy to build them yet and right now it&rsquo;s not a pressing concern.</p>
+<p>These should be simple to implement, but I've been to lazy to build them yet and right now it's not a pressing concern.</p>
 
     </section>
 </article>
@@ -212,23 +181,23 @@ if err != nil {
     
     
         <li>
-            <a href="/posts/wtf-is-blockchain/">WTF is Blockchain?<aside class="dates">Aug 7 2018</aside></a>
+            <a href="https://victoramartinez.com/posts/wtf-is-blockchain/">WTF is Blockchain?<aside class="dates">Aug 7 2018</aside></a>
         </li>
     
         <li>
-            <a href="/posts/work-in-progress/">Work in Progress<aside class="dates">Mar 13 2018</aside></a>
+            <a href="https://victoramartinez.com/posts/work-in-progress/">Work in Progress<aside class="dates">Mar 13 2018</aside></a>
         </li>
     
         <li>
-            <a href="/posts/amazon-key/">Amazon Key<aside class="dates">Nov 26 2017</aside></a>
+            <a href="https://victoramartinez.com/posts/amazon-key/">Amazon Key<aside class="dates">Nov 26 2017</aside></a>
         </li>
     
         <li>
-            <a href="/posts/github-pages/">Github Pages<aside class="dates">Nov 26 2017</aside></a>
+            <a href="https://victoramartinez.com/posts/github-pages/">Github Pages<aside class="dates">Nov 26 2017</aside></a>
         </li>
     
         <li>
-            <a href="/posts/net-neutrality-opinion/">Net Neutrality Opinion<aside class="dates">Nov 26 2017</aside></a>
+            <a href="https://victoramartinez.com/posts/net-neutrality-opinion/">Net Neutrality Opinion<aside class="dates">Nov 26 2017</aside></a>
         </li>
     
 </ul>
