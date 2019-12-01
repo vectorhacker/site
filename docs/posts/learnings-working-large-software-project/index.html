@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Victor A. Martinez">
 <meta name="description" content="A personal bliki">
-<meta name="generator" content="Hugo 0.60.0" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>What I&#39;ve Learned Working in a Large Software Project</title>
 <link rel="shortcut icon" href="https://victoramartinez.com/images/favicon.ico">
 <link rel="stylesheet" href="https://victoramartinez.com/css/style.css">
@@ -33,7 +33,7 @@
 <meta itemprop="description" content="I discuss the things I&#39;ve learned over the past year while working in the SURI project for the Department of Treasury of Puerto Rico (Hacienda)">
 <meta itemprop="datePublished" content="2019-11-28T20:46:11-04:00" />
 <meta itemprop="dateModified" content="2019-11-28T20:46:11-04:00" />
-<meta itemprop="wordCount" content="2265">
+<meta itemprop="wordCount" content="2266">
 
 
 
@@ -73,7 +73,7 @@
     </header>
     <section id="post-body">
         <p>I've been working at my first large software project for almost a year now (one year anniversary coming up in December.) And I'd like to share my learnings from this project. The things I've learned, discovered, and realized during this time might be interesting to some, might be old news to others, and might even shed some light on how certain things are done in certain types of projects, but all in all I hope this proves to be an interesting read.</p>
-<p>First things first, where have I been working? I'm currently (as of this post) a software developer at the <a href="https://suri.hacienda.pr.gov">SURI</a> project, the current largest government software project for the Puerto Rico government under the arm of the Treasury Department, also known as Hacienda. This is the software that is going to handle all the new tax related activities for the treasury and is already being used for corporate tax returns, decorations, and other tax activities. Next year the plan is to rollout the individual tax returns. We already handle individuals in the system, but only show informative and W2s and not their tax returns yet. I'm here as a contractor on behalf of my employer.</p>
+<p>First things first, where have I been working? I'm currently (as of this post) a software developer at the <a href="https://suri.hacienda.pr.gov">SURI</a> project, the current largest government software project for the Puerto Rico government under the arm of the Treasury Department, also known as Hacienda. This is the software that is going to handle all the new tax related activities for the treasury and is already being used for corporate tax returns, import declarations, and other tax activities. Next year the plan is to rollout the individual tax returns. We already handle individuals in the system, but only show informative and W2s and not their tax returns yet. I'm here as a contractor on behalf of my employer.</p>
 <p>Here are some of the things I've learned while working here and some of the things I've discovered when comparing to other jobs, positions, and projects I've been in or have compared to.</p>
 <h2 id="automated-deploys">Automated Deploys</h2>
 <p>Once you're done developing and testing your components in a large project like this, it is very important that you have a setup a reliable automated deployment framework. In the SURI project we have such a system that's setup by Fast Enterprises FCR product. Once final testing in done we create a migration script using the internal tools that takes all the component over to the production environment. The same goes for our testing and staging environments. I don't think we could be as productive as we are without this. Having to manually move things around is a pain and having an automated system to this is really quite helpful. Now, our teams have specific times of day and during the week when things are deployed. Deployment to the testing and staging environment happen every four hours or so on a schedule and production happens at the end of day every day for urgent items and every Wednesday for everything else. One thing to note tho, in our system we still choose which components or configuration to move manually. It's something that I personally dislike, at least in terms of components, but it works well and I can see the advantages of this method. I'd personally like to see truly automated deploys to the testing and staging environments,but that would require an additional and I believe necessary change in order to this effectively. Which brings me to the following&hellip;</p>
