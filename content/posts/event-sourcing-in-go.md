@@ -3,7 +3,6 @@ title: "Event Sourcing in Go"
 date: 2020-03-23T21:13:59-04:00
 draft: false
 ---
-
 I've recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I've been doing it in Go and want to share how I do it. 
 
 To begin with, I've researched this topic thoroughly; I've probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it. First thing I want to put out there is that you don't need a framework to do this. In fact, ddd and cqrs/es are best done without a framework getting in the way and instead you should create a [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) where the framework you choose later on becomes a sort of plugin into your application. 
@@ -50,10 +49,9 @@ type PatientDischarged struct {
 }
 ```
 
-Notice how the events are simply go structs which reference the id of the aggregate they're related to. There is also a marker interface that is implemented by them by way of a single un-exported method; this is to prevent outside structs from being flagged as possible events from this package and also to limit the scope of what counts as an event for this application. 
+Notice how the events are simply going structs which reference the id of the aggregate they're related to. There is also a marker interface that is implemented by them by way of a single un-exported method; this is to prevent outside structs from being flagged as possible events from this package and also to limit the scope of what counts as an event for this application. 
 
-Next we turn to our aggregate, which looks like this.
-
+Next, we turn to our aggregate, which looks like this.
 
 ```go
 package patient
@@ -207,7 +205,6 @@ Notice how the `Transfer` method first checks if the patient has already been di
 
 Let's look at the `On` and `raise` methods more closely. 
 
-
 ```go
 // On handles patient events on the patient aggregate.
 func (p *Patient) On(event Event, new bool) {
@@ -241,6 +238,7 @@ Notice, the On method first does a type switch on the event and selects the case
 So let's look at how we might use this aggregate. First we have a repository that saves and retrieves the aggregate from the event store and we also have a service that represents a particular use case. 
 
 One method on the service might look like this. We first load up the aggregate by replaying the events, we execute the command, and save it to the repository. Simple, no?
+
 ```go 
 func (s *service) TransferPatient(
 	ctx context.Context,
@@ -383,6 +381,7 @@ func eventName(event patient.Event) string {
 ```
 
 In the `Save` method, you'll notice we extract the events from the aggregate, convert them to json and give them a version number, starting from the last version the aggregate was at. The version number is important for optimistic concurrency as we check before we save that there are not events with those versions before we save. If there are, we've been beaten by another command handler and need to reject, because we are stale.
+
 ```go
 	for i := range records {
 		expectedVersion := i + p.Version()

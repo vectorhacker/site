@@ -111,8 +111,8 @@ To begin with, I&rsquo;ve researched this topic thoroughly; I&rsquo;ve probably 
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">PatientDischarged</span> <span style="color:#66d9ef">struct</span> {
 	<span style="color:#a6e22e">ID</span> <span style="color:#a6e22e">ID</span> <span style="color:#e6db74">`json:&#34;id&#34;`</span>
 }
-</code></pre></div><p>Notice how the events are simply go structs which reference the id of the aggregate they&rsquo;re related to. There is also a marker interface that is implemented by them by way of a single un-exported method; this is to prevent outside structs from being flagged as possible events from this package and also to limit the scope of what counts as an event for this application.</p>
-<p>Next we turn to our aggregate, which looks like this.</p>
+</code></pre></div><p>Notice how the events are simply going structs which reference the id of the aggregate they&rsquo;re related to. There is also a marker interface that is implemented by them by way of a single un-exported method; this is to prevent outside structs from being flagged as possible events from this package and also to limit the scope of what counts as an event for this application.</p>
+<p>Next, we turn to our aggregate, which looks like this.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">patient</span>
 
 <span style="color:#75715e">// Patient aggregate.
