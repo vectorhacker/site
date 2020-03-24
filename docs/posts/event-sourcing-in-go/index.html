@@ -23,7 +23,7 @@
 
 <meta property="og:title" content="Event Sourcing in Go" />
 <meta property="og:description" content="I&rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&rsquo;ve been doing it in Go and want to share how I do it.
-To begin with I&rsquo;ve researched this topic thoroughly. I&rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it." />
+To begin with, I&rsquo;ve researched this topic thoroughly; I&rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://victoramartinez.com/posts/event-sourcing-in-go/" />
 <meta property="article:published_time" content="2020-03-23T21:13:59-04:00" />
@@ -32,7 +32,7 @@ To begin with I&rsquo;ve researched this topic thoroughly. I&rsquo;ve probably w
 
 <meta itemprop="name" content="Event Sourcing in Go">
 <meta itemprop="description" content="I&rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&rsquo;ve been doing it in Go and want to share how I do it.
-To begin with I&rsquo;ve researched this topic thoroughly. I&rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it.">
+To begin with, I&rsquo;ve researched this topic thoroughly; I&rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it.">
 <meta itemprop="datePublished" content="2020-03-23T21:13:59-04:00" />
 <meta itemprop="dateModified" content="2020-03-23T21:13:59-04:00" />
 <meta itemprop="wordCount" content="2350">
@@ -43,7 +43,7 @@ To begin with I&rsquo;ve researched this topic thoroughly. I&rsquo;ve probably w
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Event Sourcing in Go"/>
 <meta name="twitter:description" content="I&rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&rsquo;ve been doing it in Go and want to share how I do it.
-To begin with I&rsquo;ve researched this topic thoroughly. I&rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it."/>
+To begin with, I&rsquo;ve researched this topic thoroughly; I&rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it."/>
 <meta name="twitter:site" content="@https://www.twitter.com/vectorhacker"/>
 
 
@@ -76,7 +76,7 @@ To begin with I&rsquo;ve researched this topic thoroughly. I&rsquo;ve probably w
     </header>
     <section id="post-body">
         <p>I&rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&rsquo;ve been doing it in Go and want to share how I do it.</p>
-<p>To begin with I&rsquo;ve researched this topic thoroughly. I&rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it. First thing I want to put out there is that you don&rsquo;t need a framework to do this. In fact, ddd and cqrs/es are best done without a framework getting in the way and instead you should create a <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">Clean Architecture</a> where the framework you choose later on becomes a sort of plugin into your application.</p>
+<p>To begin with, I&rsquo;ve researched this topic thoroughly; I&rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it. First thing I want to put out there is that you don&rsquo;t need a framework to do this. In fact, ddd and cqrs/es are best done without a framework getting in the way and instead you should create a <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">Clean Architecture</a> where the framework you choose later on becomes a sort of plugin into your application.</p>
 <p>So what is event sourcing? Simply put, event sourcing is a pattern by which current state is derived from previous facts (events). That is to say, to get the current state of an object you replay all the events of an object in memory to rebuild it from the actions you took previously. And you must accept these previous actions as fact, that is they already happened and you can&rsquo;t change it. You can change your mind about what a fact means to you in the future, but you can&rsquo;t change the fact or that it happened. New events are emitted when new actions are taken and that gets saved into the event store. The only unit of persistance in an event sourced application is the events, everything else is a projection of those events or more correctly a cache.</p>
 <p>Events are emitted by aggregates who are composed of one or more entities. The repository for those aggregates are responsible for saving saving those events into the event store.</p>
 <p>Where do these events come from? They come from the initial design of the system through various exercises such as event storming, a process by which the overall process or subprocess of an application are discovered and modeled as events that have happened. Keep in mind, these aren&rsquo;t fine grained low-level events like you might be used to in GUI programming, such as a user clicked event, they&rsquo;re more coarse than that. Take the example of a system that deals with hospital admissions of a patient, let us model the interactions the patient has in the system with events. A patient might first be admitted into the hospital, we might say we have a &ldquo;Patient Admitted&rdquo; event; notice the past perfect tense. Later on, when a patient is transferred to another ward we say that we have a &ldquo;Patient Transferred&rdquo; event. Finally when a patient gets discharged we have &ldquo;Patient Discharged&rdquo;. These events arose out of the need to describe what has happened to a patient.</p>
