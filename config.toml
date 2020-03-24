@@ -35,7 +35,7 @@ publishDir = "docs"
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = "I'm a software develoer with opinions"
+	aboutAuthor = "I'm a software developer with opinions"
 	tweet = ""
 	share = ""
 	# 404 page
