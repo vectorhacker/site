@@ -17,7 +17,7 @@
       <pubDate>Tue, 24 Mar 2020 04:32:51 -0400</pubDate>
       
       <guid>https://victoramartinez.com/posts/dont-use-frameworks/</guid>
-      <description>Stop using frameworks for everything. Just stop. You don&amp;rsquo;t need a framework to write good code and deliver products. Don&amp;rsquo;t get me wrong, frameworks are useful, but they are all consuming and hide the application. So if you shouldn&amp;rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and actually think about the structure of you application and remove the need for frameworks to express your application.</description>
+      <description>Stop using frameworks for everything. Just stop. You don&amp;rsquo;t need a framework to write good code and deliver products. Don&amp;rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&amp;rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application.</description>
     </item>
     
     <item>
