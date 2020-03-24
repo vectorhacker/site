@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://victoramartinez.com/posts/event-sourcing-in-go/</loc>
-    <lastmod>2020-03-23T21:13:59-04:00</lastmod>
+    <loc>https://victoramartinez.com/posts/dont-use-frameworks/</loc>
+    <lastmod>2020-03-24T04:32:51-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://victoramartinez.com/posts/</loc>
-    <lastmod>2020-03-23T21:13:59-04:00</lastmod>
+    <lastmod>2020-03-24T04:32:51-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://victoramartinez.com/</loc>
+    <lastmod>2020-03-24T04:32:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victoramartinez.com/posts/event-sourcing-in-go/</loc>
     <lastmod>2020-03-23T21:13:59-04:00</lastmod>
   </url>
   
