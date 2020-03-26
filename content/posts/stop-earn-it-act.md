@@ -19,7 +19,7 @@ Don't be fooled. Companies do not have to "earn" this immunity from what their u
 >
 > -- <cite>James Brokenshire</cite>
 
-Many security and privacy experts, as expected, disagree with that assessment. And, In my opinion, is a red flag to what the [true intentions](wired.com/story/earn-it-act-sneak-attack-on-encryption/) of these politicians are. Either that or they are so completely ignorant of how all of this works that it is borderline irresponsible. We are not dealing with tech-savvy or even privacy-savvy individuals.
+Many security and privacy experts, as expected, disagree with that assessment. And, In my opinion, is a red flag to what the [true intentions](https://wired.com/story/earn-it-act-sneak-attack-on-encryption/) of these politicians are. Either that or they are so completely ignorant of how all of this works that it is borderline irresponsible. We are not dealing with tech-savvy or even privacy-savvy individuals.
 
 What's more, there are serious concerns that this act is [unconstitutional](https://cyberlaw.stanford.edu/blog/2020/03/earn-it-act-unconstitutional-fourth-amendment) or at least it should be. Some say that it violates the first and fourth amendments of freedom of speech and the press, and the right to protect against unreasonable searches and seizures. How? By giving courts unprecedented access to previously encrypted information such as emails, private messages, and other documents.
 
