@@ -8,7 +8,7 @@ A new threat to your freedom of speech and privacy has been created. Senators Li
 
 Various rights watch organizations have already denounced the bill, including the [ACLU](https://www.aclu.org/press-releases/aclu-afp-comment-earn-it-act). 
 
-> Tech companies have an extraordinary special safeguard against legal liability, but that unique protection comes with a responsibility. Companies that fail to comport with basic standards that protect children from exploitation have betrayed the public trust granted them by this special exemption. Online platforms' near complete immunity from legal responsibility is a privilege – they have to earn it – and that's what our bipartisan bill requires.
+> Tech companies have an extraordinary special safeguard against legal liability, but that unique protection comes with a responsibility. Companies that fail to comport with basic standards that protect children from exploitation have betrayed the public trust granted them by this special exemption. Online platforms' near-complete immunity from legal responsibility is a privilege – they have to earn it – and that's what our bipartisan bill requires.
 >
 > -- <cite>Blumenthal</cite>
 
