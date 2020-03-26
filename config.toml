@@ -26,6 +26,14 @@ languageCode = "en-us"
   contentTypeName = "posts"
   defaultTheme = "dark"
 
+[languages]
+  [languages.en]
+    title = "Victor's Personal Blog"
+    subtitle = "Ramblings of a Software Professional"
+    keywords = ""
+    copyright = "Victor A. Martínez Santiago"
+    readOtherPosts = "Read other posts"
+
 [social]
     twitter  = "https://www.twitter.com/vectorhacker"
     github   = "https://www.github.com/vectorhacker"

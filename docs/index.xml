@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Victor A Martinez&#39;s Blog</title>
+    <title>Victor&#39;s Personal Blog</title>
     <link>https://victoramartinez.com/</link>
-    <description>Recent content on Victor A Martinez&#39;s Blog</description>
+    <description>Recent content on Victor&#39;s Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Victor A. Martínez Santiago</copyright>
     <lastBuildDate>Wed, 25 Mar 2020 19:51:27 -0400</lastBuildDate>
     
 	<atom:link href="https://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
