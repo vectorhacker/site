@@ -17,13 +17,13 @@ languageCode = "en-us"
   dateformNum = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  disableReadOtherPosts = false
+  disableReadOtherPosts = true
   
   description = "My personal bliki"
   keywords = "blog, homepage, technology, go, tech, golang, opinion"
   images = [""]
 
-  contentTypeName = "posts"
+  contentTypeName = "content/posts"
   defaultTheme = "dark"
 
 [languages]
