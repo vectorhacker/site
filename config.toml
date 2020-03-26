@@ -1,53 +1,31 @@
 # Site settings
 baseurl = "https://victoramartinez.com/"
 themesDir = "./themes"
-languageCode = "en-us"
 title = "Victor A Martinez's Blog"
-theme = "hugo-cactus-theme"
+theme = "hello-friend-ng"
+paginate = 5
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-110221350-2"
 # Disable comments by leaving disqusShortname empty
 disqusShortname = "vams"
 publishDir = "docs"
+languageCode = "en-us"
 
 [params]
-	name = "Victor A. Martinez"
-	description = "A personal bliki"
-	bio = "Software Developer With Some Opinions On Things"
-	# Enter optionally your twitter account
-	twitter = "vectorhacker"
-	enableRSS = false 
+  dateform = "Jan 2, 2006"
+  dateformShort = "Jan 2"
+  dateformNum = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
-	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
-	# linking local files with their path relative to the static folder, e.g. "css/styles.css"
-	customCSS = ["css/override.css"]
-	customJS  = []
+  disableReadOtherPosts = false
+  
+  description = "My personal bliki"
+  keywords = "blog, homepage, technology, go, tech, golang, opinion"
+  images = [""]
 
-	# The variables below are optionally too and can be used to
-	# translate or customize each string of the theme.
+  contentTypeName = "post"
+  defaultTheme = "dark"
 
-	# Navigation links
-	home = ""
-	subscribe = ""
-	# Pagination links
-	olderPosts = ""
-	newerPosts = ""
-	readMore = ""
-	copyright = ""
-	# Sharing options and author information in posts
-	aboutAuthor = "I'm a software developer with opinions"
-	tweet = ""
-	share = ""
-	# 404 page
-	title404 = "Well this is embarrassing."
-	subtitle404 = "Looks like something's missing, here I'm sorry."
-
-	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-	iconFont = "font-awesome"
-    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-   socialIconStyle = "circle"
-
-# Add additional social link entries underneath
 [social]
     twitter  = "https://www.twitter.com/vectorhacker"
     github   = "https://www.github.com/vectorhacker"
@@ -57,8 +35,13 @@ publishDir = "docs"
 		reddit = "https://www.reddit.com/user/vectorhacker/"
 
 [[menu.main]]
-	name = "About Me"
-	url = "/about/"
+  name = "About Me"
+  url = "/about/"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts"
 
 # [[menu.main]]
 # 	name = "There Ought To Be A Law..."
