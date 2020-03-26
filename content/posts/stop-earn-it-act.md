@@ -12,7 +12,7 @@ Various rights watch organizations have already denounced the bill, including th
 >
 > -- <cite>Blumenthal</cite>
 
-Don't be fooled. Companies do not have to "earn" this immunity from what their users say and do on their platforms. What's more, it's a false premise. Online criminals will use other means to conduct their operations and believe me, they will. This only hurts the everyday citizen, who has done nothing wrong and everything to lose.
+Don't be fooled. Companies do not have to "earn" this immunity from what their users say and do on their platforms. What's more, it's a false premise. Online criminals will use other means to conduct their operations and believe me, they will. This only hurts the everyday citizen, who has done nothing wrong and has everything to lose.
 
 
 > I’ve got to say that putting our children at risk for what I believe are marginal privacy gains is something I really struggle to believe any of us want.
