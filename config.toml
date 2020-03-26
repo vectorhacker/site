@@ -43,7 +43,8 @@ languageCode = "en-us"
 		reddit = "https://www.reddit.com/user/vectorhacker/"
 
 [[menu.main]]
-  name = "About Me"
+  identifier = "about"
+  name = "About"
   url = "/about/"
 
 [[menu.main]]
