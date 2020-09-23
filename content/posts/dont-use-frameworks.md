@@ -358,9 +358,9 @@ You can imagine that in a production environment you would implement this using 
 ## Conclusion
 So what should you take away from all this? That you don't need a framework. That simply applying these principles will get you far and frameworks are just plugins into your application. I recommend that you study these principles and practices more in-depth and stop thinking in terms of frameworks but in terms of your domain. What is it that you're trying to accomplish and build that, don't focus on the tools.
 
-To see the entire code, go to the [GoDDD repository](https://github.com/marcusolsson/goddd/) where a complete example of DDD in Go lives. Fair warning, he does tend to ramble a lot during the beginning of those talks with interesting anecdotes, but they're always fun to watch. He's also written several books you should check out on clean code and architecture.
+To see the entire code, go to the [GoDDD repository](https://github.com/marcusolsson/goddd/) where a complete example of DDD in Go lives.
 
-Also, check out the talks given by Uncle Bob on clean architecture. He's the OG when it comes to clean code and maintainability these days. 
+Also, check out the talks given by Uncle Bob on clean architecture. He's the OG when it comes to clean code and maintainability these days. Fair warning, he does tend to ramble a lot during the beginning of those talks with interesting anecdotes, but they're always fun to watch. He's also written several books you should check out on clean code and architecture. 
 * [ITkonekt 2019 | Robert C. Martin (Uncle Bob), Clean Architecture and Design](https://www.youtube.com/watch?v=2dKZ-dWaCiU&t=1290s)
 * [Uncle Bob Martin - The Clean Coder](https://www.youtube.com/watch?v=NeXQEJNWO5w)
 * [The Principles of Clean Architecture by Uncle Bob Martin](https://www.youtube.com/watch?v=o_TH-Y78tt4)
