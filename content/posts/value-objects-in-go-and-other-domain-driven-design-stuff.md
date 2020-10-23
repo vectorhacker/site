@@ -13,7 +13,7 @@ Recently I've been thinking a lot about how to apply some DDD principles in Go i
 
 ## Description
 
-What is a value object first of all? It's an object that isn't quite an entity, but represents data that entities might use to complete their tasks. These are, as the name sugests, objects that contain the values of something useful to the domain being worked on. Examples of these objects include Social Security Numbers, Names of people, Locations, Dates, Routing information, etc. Two of the key characteristics for value is that they are 1. Immutable and 2. not strings.
+What is a value object first of all? It's an object that isn't quite an entity, but represents data that entities might use to complete their tasks. These are, as the name sugests, objects that contain the values of something useful to the domain being worked on. Examples of these objects include Social Security Numbers, Names of people, Locations, Dates, Routing information, etc. Two of the key characteristics for value is that they are 1. Immutable and 2. not littering our domain with just strings.
 
 ## Always Valid
 

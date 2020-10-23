@@ -34,7 +34,7 @@
 <meta itemprop="description" content="Recently I&rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&rsquo;ve come accross a few patterns I&rsquo;d like to share. Mainly we&rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.">
 <meta itemprop="datePublished" content="2020-10-23T03:12:35-04:00" />
 <meta itemprop="dateModified" content="2020-10-23T03:12:35-04:00" />
-<meta itemprop="wordCount" content="766">
+<meta itemprop="wordCount" content="771">
 <meta itemprop="image" content="https://victoramartinez.com/"/>
 
 
@@ -129,7 +129,7 @@
             <div class="post-content">
                 <p>Recently I&rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&rsquo;ve come accross a few patterns I&rsquo;d like to share. Mainly we&rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.</p>
 <h2 id="description">Description</h2>
-<p>What is a value object first of all? It&rsquo;s an object that isn&rsquo;t quite an entity, but represents data that entities might use to complete their tasks. These are, as the name sugests, objects that contain the values of something useful to the domain being worked on. Examples of these objects include Social Security Numbers, Names of people, Locations, Dates, Routing information, etc. Two of the key characteristics for value is that they are 1. Immutable and 2. not strings.</p>
+<p>What is a value object first of all? It&rsquo;s an object that isn&rsquo;t quite an entity, but represents data that entities might use to complete their tasks. These are, as the name sugests, objects that contain the values of something useful to the domain being worked on. Examples of these objects include Social Security Numbers, Names of people, Locations, Dates, Routing information, etc. Two of the key characteristics for value is that they are 1. Immutable and 2. not littering our domain with just strings.</p>
 <h2 id="always-valid">Always Valid</h2>
 <p>On top of what the concept of a value object, I&rsquo;d like to introduce the concept of an always valid value object. For value objects that represent something more complex or have strict validation rules, I often introduce the concept of them always being valid once created. That is to say if when constructing the object all the inputs are valid then the object is always in a valid state, otherwise it is never created. Put another way, you cannot create and use a value object that isn&rsquo;t valid.</p>
 <h3 id="immutability">Immutability</h3>
@@ -189,7 +189,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://victoramartinez.com/tags/ddd">DDD</a></span><span class="tag"><a href="https://victoramartinez.com/tags/go">Go</a></span><span class="tag"><a href="https://victoramartinez.com/tags/domain-driven-design">Domain Driven Design</a></span>
                 </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>766 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>771 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-10-23 03:12 -0400</p>
         </div>
