@@ -1,7 +1,6 @@
 ---
 title: "Value Objects in Go"
 date: 2020-10-23T03:12:35-04:00
-draft: false
 toc: false
 images:
 tags:

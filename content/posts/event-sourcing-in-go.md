@@ -1,7 +1,6 @@
 ---
 title: "Event Sourcing in Go"
 date: 2020-03-23T21:13:59-04:00
-draft: false
 
 tags:
   - DDD
