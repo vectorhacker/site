@@ -2,6 +2,12 @@
 title: "Event Sourcing in Go"
 date: 2020-03-23T21:13:59-04:00
 draft: false
+
+tags:
+  - DDD
+  - Domain-Driven Design
+  - Go
+  - Event Sourcing
 ---
 I've recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I've been doing it in Go and want to share how I do it. 
 

@@ -6,8 +6,69 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Victor A. Martínez Santiago</copyright>
-        <lastBuildDate>Wed, 25 Mar 2020 19:51:27 -0400</lastBuildDate>
+        <lastBuildDate>Fri, 23 Oct 2020 03:12:35 -0400</lastBuildDate>
         <atom:link href="https://victoramartinez.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Value Objects in Go</title>
+            <link>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</link>
+            <pubDate>Fri, 23 Oct 2020 03:12:35 -0400</pubDate>
+            
+            <guid>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</guid>
+            <description>Recently I&amp;rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&amp;rsquo;ve come accross a few patterns I&amp;rsquo;d like to share. Mainly we&amp;rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.</description>
+            <content type="html"><![CDATA[<p>Recently I&rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&rsquo;ve come accross a few patterns I&rsquo;d like to share. Mainly we&rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.</p>
+<h2 id="description">Description</h2>
+<p>What is a value object first of all? It&rsquo;s an object that isn&rsquo;t quite an entity, but represents data that entities might use to complete their tasks. These are, as the name sugests, objects that contain the values of something useful to the domain being worked on. Examples of these objects include Social Security Numbers, Names of people, Locations, Dates, Routing information, etc. Two of the key characteristics for value is that they are 1. Immutable and 2. not strings.</p>
+<h2 id="always-valid">Always Valid</h2>
+<p>On top of what the concept of a value object, I&rsquo;d like to introduce the concept of an always valid value object. For value objects that represent something more complex or have strict validation rules, I often introduce the concept of them always being valid once created. That is to say if when constructing the object all the inputs are valid then the object is always in a valid state, otherwise it is never created. Put another way, you cannot create and use a value object that isn&rsquo;t valid.</p>
+<h3 id="immutability">Immutability</h3>
+<p>In order to be always valid, the object must be immutable. To do that in Go we use encapsulation by using package level hiding of fields.</p>
+<h2 id="implementing-in-go">Implementing in Go</h2>
+<p>The first and and most common kind of value object I create in Go is the simple type alias.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ID</span> <span style="color:#66d9ef">string</span>
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">City</span> <span style="color:#66d9ef">string</span>
+</code></pre></div><p>If the object does not need complex validation and is just a simple field then it can be a type alias. Examples include things like ids, names that don&rsquo;t need to be checked if empty or not, and sometimes certain numbers. Some value objects are even simpler and come with the standard library, such as <code>time.Time</code> (tho admitidly internally internally it is more complex) and <code>bool</code>.</p>
+<p>The second kind is one that I also use often, if not more often considering that it represents complex concepts, is the immutable field value object.</p>
+<p>As an example, take a name field that need to be within a certain length of characters. We&rsquo;d implement them in Go like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Name</span> <span style="color:#66d9ef">struct</span> {
+  <span style="color:#75715e">// explicitly not public field
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
+}
+
+
+<span style="color:#75715e">// NewName creates a new valid name object
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewName</span>(<span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>) (<span style="color:#a6e22e">Name</span>, <span style="color:#66d9ef">error</span>) {
+  <span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">name</span>) &gt; <span style="color:#ae81ff">20</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span>  {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Name</span>{}, <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Errorf</span>(<span style="color:#e6db74">&#34;invalid name, must be withn 20 charcters and non-empty&#34;</span>)
+  }
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Name</span>{<span style="color:#a6e22e">name</span>: <span style="color:#a6e22e">name</span>}, <span style="color:#66d9ef">nil</span>
+}
+
+<span style="color:#75715e">// String implements the fmt.Stringer interface.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">String</span>() <span style="color:#66d9ef">string</span> {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">name</span>
+}
+
+<span style="color:#75715e">// MarshalText used to serialize the object
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">MarshalText</span>() ([]<span style="color:#66d9ef">byte</span>, <span style="color:#66d9ef">error</span>) {
+  <span style="color:#66d9ef">return</span> []byte(<span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">name</span>), <span style="color:#66d9ef">error</span>
+}
+
+<span style="color:#75715e">// UnmarshalText deserializes the object and returns an error if it&#39;s invalid. 
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">UnmarshalText</span>(<span style="color:#a6e22e">d</span> []<span style="color:#66d9ef">byte</span>) <span style="color:#66d9ef">error</span> {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>
+  <span style="color:#f92672">*</span><span style="color:#a6e22e">n</span>, <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">NewName</span>(string(<span style="color:#a6e22e">d</span>))
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">err</span>
+}
+</code></pre></div><p>A few things to note are that first, the only way to create the object is through the constructor; there&rsquo;s no other way, this way we gaurantee it&rsquo;s valid once created. If it&rsquo;s invalid to create it, we quickly return an error. The other thing to note is the implementation of the Stringer, TextMarshaller, and TextUnmarshaller interfaces; we do this so that it is easy to serialize and deserialize the objects.</p>
+<p>With all those combined, we&rsquo;ve created our value objects and this has several advantages. Firstly when we use these objects we can rest assured that they are always valid. When created, say in our application layer we can quickly validate them. The aggregates need not worry about checking them nor should the application code, because they are never in an invalid state nor in any risk of being set to something invalid. The only check we should enforce in our aggregates and service layers is to check if one of the simpler types are empty when using them if that&rsquo;s something we need to have not happen, other than that it&rsquo;s simple to just assume they aren&rsquo;t empty.</p>
+<p>We can of course create value object out of value objects, but that&rsquo;s another story.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In Go, value object are simple to implement and we can reap numerous rewards by applying the always valid concept. With that, I&rsquo;ll let you Go and may your objects always be valid.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Stop The EARN IT Act</title>
