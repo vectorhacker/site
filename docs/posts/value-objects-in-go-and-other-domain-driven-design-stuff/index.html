@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Recently I&amp;rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&amp;rsquo;ve come accross a few patterns I&amp;rsquo;d like to share. Mainly we&amp;rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples." />
+<meta name="keywords" content=", DDD, Go, Domain Driven Design" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/" />
+
+
+    <title>
+        
+            Value Objects in Go :: Victor&#39;s Personal Blog  — Ramblings of a Software Professional
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.d235e788b40b442aba9cd6c69fdc330353b2dec27dcbc4235961469d2155f5a9.css">
+
+
+
+
+<meta itemprop="name" content="Value Objects in Go">
+<meta itemprop="description" content="Recently I&rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&rsquo;ve come accross a few patterns I&rsquo;d like to share. Mainly we&rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples."><meta itemprop="datePublished" content="2020-10-23T03:12:35-04:00" />
+<meta itemprop="dateModified" content="2020-10-23T03:12:35-04:00" />
+<meta itemprop="wordCount" content="771"><meta itemprop="image" content="https://victoramartinez.com/"/>
+<meta itemprop="keywords" content="DDD,Go,Domain Driven Design," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://victoramartinez.com/"/>
+
+<meta name="twitter:title" content="Value Objects in Go"/>
+<meta name="twitter:description" content="Recently I&rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&rsquo;ve come accross a few patterns I&rsquo;d like to share. Mainly we&rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples."/>
+<meta name="twitter:site" content="@https://www.twitter.com/vectorhacker"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-10-23 03:12:35 -0400 AST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://victoramartinez.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://victoramartinez.com/about/">About</a></li><li><a href="https://victoramartinez.com/posts">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>4 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/">Value Objects in Go</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>Recently I&rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&rsquo;ve come accross a few patterns I&rsquo;d like to share. Mainly we&rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.</p>
+<h2 id="description">Description</h2>
+<p>What is a value object first of all? It&rsquo;s an object that isn&rsquo;t quite an entity, but represents data that entities might use to complete their tasks. These are, as the name sugests, objects that contain the values of something useful to the domain being worked on. Examples of these objects include Social Security Numbers, Names of people, Locations, Dates, Routing information, etc. Two of the key characteristics for value is that they are 1. Immutable and 2. not littering our domain with just strings.</p>
+<h2 id="always-valid">Always Valid</h2>
+<p>On top of what the concept of a value object, I&rsquo;d like to introduce the concept of an always valid value object. For value objects that represent something more complex or have strict validation rules, I often introduce the concept of them always being valid once created. That is to say if when constructing the object all the inputs are valid then the object is always in a valid state, otherwise it is never created. Put another way, you cannot create and use a value object that isn&rsquo;t valid.</p>
+<h3 id="immutability">Immutability</h3>
+<p>In order to be always valid, the object must be immutable. To do that in Go we use encapsulation by using package level hiding of fields.</p>
+<h2 id="implementing-in-go">Implementing in Go</h2>
+<p>The first and and most common kind of value object I create in Go is the simple type alias.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ID</span> <span style="color:#66d9ef">string</span>
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">City</span> <span style="color:#66d9ef">string</span>
+</code></pre></div><p>If the object does not need complex validation and is just a simple field then it can be a type alias. Examples include things like ids, names that don&rsquo;t need to be checked if empty or not, and sometimes certain numbers. Some value objects are even simpler and come with the standard library, such as <code>time.Time</code> (tho admitidly internally internally it is more complex) and <code>bool</code>.</p>
+<p>The second kind is one that I also use often, if not more often considering that it represents complex concepts, is the immutable field value object.</p>
+<p>As an example, take a name field that need to be within a certain length of characters. We&rsquo;d implement them in Go like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Name</span> <span style="color:#66d9ef">struct</span> {
+  <span style="color:#75715e">// explicitly not public field
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
+}
+
+
+<span style="color:#75715e">// NewName creates a new valid name object
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewName</span>(<span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>) (<span style="color:#a6e22e">Name</span>, <span style="color:#66d9ef">error</span>) {
+  <span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">name</span>) &gt; <span style="color:#ae81ff">20</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span>  {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Name</span>{}, <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Errorf</span>(<span style="color:#e6db74">&#34;invalid name, must be withn 20 charcters and non-empty&#34;</span>)
+  }
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Name</span>{<span style="color:#a6e22e">name</span>: <span style="color:#a6e22e">name</span>}, <span style="color:#66d9ef">nil</span>
+}
+
+<span style="color:#75715e">// String implements the fmt.Stringer interface.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">String</span>() <span style="color:#66d9ef">string</span> {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">name</span>
+}
+
+<span style="color:#75715e">// MarshalText used to serialize the object
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">MarshalText</span>() ([]<span style="color:#66d9ef">byte</span>, <span style="color:#66d9ef">error</span>) {
+  <span style="color:#66d9ef">return</span> []byte(<span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">name</span>), <span style="color:#66d9ef">error</span>
+}
+
+<span style="color:#75715e">// UnmarshalText deserializes the object and returns an error if it&#39;s invalid. 
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">UnmarshalText</span>(<span style="color:#a6e22e">d</span> []<span style="color:#66d9ef">byte</span>) <span style="color:#66d9ef">error</span> {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>
+  <span style="color:#f92672">*</span><span style="color:#a6e22e">n</span>, <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">NewName</span>(string(<span style="color:#a6e22e">d</span>))
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">err</span>
+}
+</code></pre></div><p>A few things to note are that first, the only way to create the object is through the constructor; there&rsquo;s no other way, this way we gaurantee it&rsquo;s valid once created. If it&rsquo;s invalid to create it, we quickly return an error. The other thing to note is the implementation of the Stringer, TextMarshaller, and TextUnmarshaller interfaces; we do this so that it is easy to serialize and deserialize the objects.</p>
+<p>With all those combined, we&rsquo;ve created our value objects and this has several advantages. Firstly when we use these objects we can rest assured that they are always valid. When created, say in our application layer we can quickly validate them. The aggregates need not worry about checking them nor should the application code, because they are never in an invalid state nor in any risk of being set to something invalid. The only check we should enforce in our aggregates and service layers is to check if one of the simpler types are empty when using them if that&rsquo;s something we need to have not happen, other than that it&rsquo;s simple to just assume they aren&rsquo;t empty.</p>
+<p>We can of course create value object out of value objects, but that&rsquo;s another story.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In Go, value object are simple to implement and we can reap numerous rewards by applying the always valid concept. With that, I&rsquo;ll let you Go and may your objects always be valid.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://victoramartinez.com/tags/ddd">DDD</a></span><span class="tag"><a href="https://victoramartinez.com/tags/go">Go</a></span><span class="tag"><a href="https://victoramartinez.com/tags/domain-driven-design">Domain Driven Design</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>771 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-10-23 03:12 -0400</p>
+        </div>
+
+        
+            <div id="comments" class="thin">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vams" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            
+            <span>Victor A. Martínez Santiago</span>
+            <span> <a href="https://victoramartinez.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.08ccaf9cef8b4e0ebd0b0158e66a7bfc0ddbb2194cdb0099e8814ddb89cc7628b27b1158846564e6e03d9ffc5f4d1bc7dfc274d359f9408d1c63d73a3f7332e9.js" integrity="sha512-CMyvnO&#43;LTg69CwFY5mp7/A3bshlM2wCZ6IFN24nMdiiyexFYhGVk5uA9n/xfTRvH38J001n5QI0cY9c6P3My6Q=="></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-110221350-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    </body>
+</html>

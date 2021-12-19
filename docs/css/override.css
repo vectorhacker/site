@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+ul, ol 	{ margin:0; padding:0; margin-bottom: 20px; margin-left: 2.5vw; }
+ul { list-style-type: disc; }
+ol { list-style: decimal; }
+li	{  list-style-position: outside; }
+
+h1 {
+  margin-bottom: 2vh;
+}
+
+#header>h1 {
+  font-size: 1.75rem;
+}
+
+#header>h2 {
+  font-size: 1.25rem;
+}
+
+ul#post-list > li > a, .post>header>h1, #header>*, h2, h1, h3, h4, h5, h6,
+ul#post-list.archive.readmore > li > a {
+  font-family: 'Arvo', 'serif';
+}
