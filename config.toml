@@ -24,7 +24,7 @@ languageCode = "en-us"
   images = [""]
 
   contentTypeName = "content/posts"
-  defaultTheme = "dark"
+  defaultTheme = "light"
 
 [languages]
   [languages.en]
@@ -52,7 +52,3 @@ languageCode = "en-us"
   name = "Posts"
   url = "/posts"
 
-# [[menu.main]]
-# 	name = "There Ought To Be A Law..."
-# 	url = "/totbal/"
-# 	weight = 1
