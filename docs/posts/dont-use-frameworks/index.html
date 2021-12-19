@@ -25,22 +25,16 @@
 
 
 
-<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="/main.min.d235e788b40b442aba9cd6c69fdc330353b2dec27dcbc4235961469d2155f5a9.css">
 
 
 
 
 <meta itemprop="name" content="Don&#39;t Use Frameworks">
-<meta itemprop="description" content="Stop using frameworks for everything. Just stop. You don&rsquo;t need a framework to write good code and deliver products. Don&rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application.">
-<meta itemprop="datePublished" content="2020-03-24T04:32:51-04:00" />
+<meta itemprop="description" content="Stop using frameworks for everything. Just stop. You don&rsquo;t need a framework to write good code and deliver products. Don&rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application."><meta itemprop="datePublished" content="2020-03-24T04:32:51-04:00" />
 <meta itemprop="dateModified" content="2020-03-24T04:32:51-04:00" />
-<meta itemprop="wordCount" content="2126">
-<meta itemprop="image" content="https://victoramartinez.com/"/>
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="2126"><meta itemprop="image" content="https://victoramartinez.com/"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://victoramartinez.com/"/>
 
 <meta name="twitter:title" content="Don&#39;t Use Frameworks"/>
@@ -131,7 +125,7 @@
 <p>What should you do about frameworks then? You can still use them, but only as plugins to your application. The use of a framework should be done by implementing internal interfaces for your applications' inner layers. Let me ask you this, how many times have you answered the question &ldquo;what is your architecture?&rdquo; with a phrase like &ldquo;We have a ruby on rails back-end persisted by postgres using an angular front-end?&rdquo; If you have, what you have just described is not an architecture, it is an application stack. And what is the application stack? The stack is a detail! No one cares what your application stack is, well no one who wants to get the work done cares what it is, and you shouldn&rsquo;t either. To be fair, I&rsquo;m not saying your technology stack isn&rsquo;t important at some level, I&rsquo;m saying that it&rsquo;s a detail. So what is an application&rsquo;s architecture then? It is the system of patterns that we use to carry out our application&rsquo;s functionality. Your architecture could be a simple CRUD system, or it might be a complex trading application that receives trade orders as incoming messages and delivers them by reserving credits and emitting order events depending on what state you&rsquo;re in. One thing is clear, your application&rsquo;s architecture is driven by the domain you&rsquo;re in and the complexity of the problem you are solving, a framework is not architecture.</p>
 <p>So what does a frameworkless application look like? Here&rsquo;s an example in Go. Let us start by the business rules and implement entities. In this example we&rsquo;re using a Cargo shipping application. Notice that our entities are free of any database dependencies and external concerns.</p>
 <h3 id="entities">Entities</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// TrackingID uniquely identifies a particular cargo.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// TrackingID uniquely identifies a particular cargo.
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">TrackingID</span> <span style="color:#66d9ef">string</span>
 
 <span style="color:#75715e">// Cargo is the central class in the domain model.
@@ -174,7 +168,7 @@
 	}
 }
 </code></pre></div><p>The cargo object is an entity that is concerned with the carrying out of business rules related to shipping cargo, such as route assignments and delivery progress. We abstract the saving and retrieving of the cargo using the repository pattern and creating an interface for the repository.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// CargoRepository provides access a cargo store.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// CargoRepository provides access a cargo store.
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">CargoRepository</span> <span style="color:#66d9ef">interface</span> {
 	<span style="color:#a6e22e">Store</span>(<span style="color:#a6e22e">cargo</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>) <span style="color:#66d9ef">error</span>
 	<span style="color:#a6e22e">Find</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">TrackingID</span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>, <span style="color:#66d9ef">error</span>)
@@ -183,7 +177,7 @@
 </code></pre></div><p>This interface is not given a concrete implementation at this step, instead, it is used in our use case through dependency injection in which the specific implementation will be chosen later. This is where our persistence technology will plug into. Notice how our application needs to know nothing about how cargo is persisted to use it, it is a detail we&rsquo;ll sort out later.</p>
 <h3 id="use-cases">Use cases</h3>
 <p>Our use cases are implemented by exposing a common use case interface for that particular use case and a hidden implementation that gets chosen using the factory pattern. That is to say, our use cases are expressed as interfaces with methods (actions) we can take. Use cases import only the inner layers of our application, such as the entities, and get injected with the concrete implementation of other interfaces like repositories and other uses cases.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Service is the interface that provides booking methods.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Service is the interface that provides booking methods.
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Service</span> <span style="color:#66d9ef">interface</span> {
 	<span style="color:#75715e">// BookNewCargo registers a new cargo in the tracking system, not yet
 </span><span style="color:#75715e"></span>	<span style="color:#75715e">// routed.
@@ -295,7 +289,7 @@
 }
 </code></pre></div><p>In this example, we have a booking use case that handles the booking of new cargo. Notice how in the constructor we are expressing the repository dependencies as arguments and do no instantiate our implementations. Instead, concrete implementations of these interfaces are passed on to us, injected, in the main package. We also don&rsquo;t pass entities in and out of this layer to the outside, instead, we receive and output DTOs that are specific to this use case. These DTOS are just simple structs with no logic which we transform into and from our internal entities and value objects. We do not cheat and pass out our entities because that would couple them to the needs of the outside world, and we want to shield our innermost layers from change.</p>
 <p>Now, where do we put in the framework if we use one? We put them on the outside and include our use cases as dependencies. For example, in our booking cargo use case, we will have HTTP handlers for each method in the service interface.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">bookingHandler</span> <span style="color:#66d9ef">struct</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">bookingHandler</span> <span style="color:#66d9ef">struct</span> {
 	<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">booking</span>.<span style="color:#a6e22e">Service</span>
 
 	<span style="color:#a6e22e">logger</span> <span style="color:#a6e22e">kitlog</span>.<span style="color:#a6e22e">Logger</span>
@@ -357,7 +351,7 @@
 	}
 }
 </code></pre></div><p>In this example, we are using the chi package to implement routing and include our booking service as a dependency. This layer has no application logic and only calls the appropriate methods on our use case, converting the raw data into and from dtos for our use case. When we instantiate our server implementation we pass in the use case implementations as arguments to the constructor.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Server holds the dependencies for a HTTP server.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Server holds the dependencies for a HTTP server.
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Server</span> <span style="color:#66d9ef">struct</span> {
 	<span style="color:#a6e22e">Booking</span>  <span style="color:#a6e22e">booking</span>.<span style="color:#a6e22e">Service</span>
 	<span style="color:#a6e22e">Tracking</span> <span style="color:#a6e22e">tracking</span>.<span style="color:#a6e22e">Service</span>
@@ -402,7 +396,7 @@
 }
 </code></pre></div><p>Notice, no logic relating to our use case is here, only logic to satisfy our framework an be a bridge between our use case and the framework. In this way, the core of our application knows nothing about what frameworks we use. It doesn&rsquo;t care at all. The framework could be changed two weeks from now and you wouldn&rsquo;t have to change a thing about the use case because of it. The only time use cases or entities might change is when business requirements change, never for technical reasons.</p>
 <p>What about the repositories? Those are an outside-in thing that gets implemented elsewhere. When we choose a persistence technology we simply implement that interface and it gets passed into our use cases upon application startup. Here&rsquo;s a trivial, but important illustration, of an in-memory repository for our Cargo example.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Package inmem provides in-memory implementations of all the domain repositories.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Package inmem provides in-memory implementations of all the domain repositories.
 </span><span style="color:#75715e"></span><span style="color:#f92672">package</span> <span style="color:#a6e22e">inmem</span>
 
 <span style="color:#f92672">import</span> (
@@ -504,7 +498,7 @@
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2020</span>
+            <span>&copy; 2021</span>
             
             <span>Victor A. Martínez Santiago</span>
             <span> <a href="https://victoramartinez.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
@@ -526,7 +520,7 @@
 
 
 
-<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="/bundle.min.08ccaf9cef8b4e0ebd0b0158e66a7bfc0ddbb2194cdb0099e8814ddb89cc7628b27b1158846564e6e03d9ffc5f4d1bc7dfc274d359f9408d1c63d73a3f7332e9.js" integrity="sha512-CMyvnO&#43;LTg69CwFY5mp7/A3bshlM2wCZ6IFN24nMdiiyexFYhGVk5uA9n/xfTRvH38J001n5QI0cY9c6P3My6Q=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

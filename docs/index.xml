@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Victor A. Martínez Santiago</copyright>
-    <lastBuildDate>Fri, 23 Oct 2020 03:12:35 -0400</lastBuildDate><atom:link href="https://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 17:22:45 -0400</lastBuildDate><atom:link href="https://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Back to Blogging</title>
+      <link>https://victoramartinez.com/posts/getting-back-to-blogging/</link>
+      <pubDate>Sun, 19 Dec 2021 17:22:45 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/getting-back-to-blogging/</guid>
+      <description>It&amp;rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&amp;rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&amp;rsquo;ve been so full of ideas.
+Recently I&amp;rsquo;ve been thinking a lot about finance, economics, and of course programming. I want to share my findings with you in hopes that this will help someone.</description>
+    </item>
+    
     <item>
       <title>Value Objects in Go</title>
       <link>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</link>

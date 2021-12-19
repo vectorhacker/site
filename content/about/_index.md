@@ -4,7 +4,7 @@ date: 2017-11-25T23:49:38-04:00
 draft: false
 ---
 
-I'm Victor Martinez and I live in Bayamon, PR. I work as a software engineer/developer. I co-founded at [ALQMY](http://alqmy.io) and used to partner with [Engine 4](http://engine-4.com). I left ALQMY in 2018 to work on other things. I started work as a software developer when I started college in 2013. I'm now finishing my degree in Computer Science at the Polytechnic University of Puerto Rico in San Juan, PR. My first programming language was PHP and C. I then moved on to programming in mainly in JavaScript. Nowadays I work in a mix of Python, JavaScript and Go.
+I'm Victor Martinez and I live in Bayamon, PR. I work as a software engineer/developer at [Coqui Health](https://coquihealth.com). I co-founded at [ALQMY](http://alqmy.io) and used to partner with [Engine 4](http://engine-4.com). I left ALQMY in 2018 to work on other things. I started work as a software developer when I started college in 2013. I'm now finishing my degree in Computer Science at the Polytechnic University of Puerto Rico in San Juan, PR. My first programming language was PHP and C. I then moved on to programming in mainly in JavaScript. Nowadays I work in a mix of Python, JavaScript and Go.
 
 I consider myself a decent software developer, mainly focused in systems architecture and business logic. 
 
@@ -19,6 +19,10 @@ I consider myself a decent software developer, mainly focused in systems archite
 - In 2018 I started work in the Treasury Department of Puerto Rico as a programming consultant working on the SURI project and other financial systems.
 
 - In 2019 I started working on my own through my company and accepting various gigs.
+
+- In 2020 I ended my job in the Treasury and starting going full time into a gig client.
+
+- In 2021 I began working with [Coqui Health](https://coquihealth.com).
 
 This blog is running using [HUGO](http://gohugo.io) and is hosted using [Github pages](https://pages.github.com/).
 
