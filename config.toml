@@ -24,15 +24,18 @@ languageCode = "en-us"
   images = [""]
 
   contentTypeName = "content/posts"
-  defaultTheme = "light"
+  defaultTheme = "dark"
 
 [languages]
   [languages.en]
-    title = "Victor's Personal Blog"
+    title = "Victor's Blog"
     subtitle = "Ramblings of a Software Professional"
-    keywords = ""
-    copyright = "Victor A. Martínez Santiago"
+    keywords = "blog, victor, personal, wiki, bliki, opinions"
+    copyright = "Victor Martínez"
     readOtherPosts = "Read other posts"
+    [languages.en.params.logo]
+      logoText = "echo \"Hey!\""
+      logoHomeLink = "/"
 
 [social]
     twitter  = "https://www.twitter.com/vectorhacker"
