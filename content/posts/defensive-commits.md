@@ -25,7 +25,9 @@ npx husky-init && npm install       # npm
 
 Then configure the git hooks, like this for pre-push
 
-`npx husky add .husky/pre-push "npm test"`
+```bash
+npx husky add .husky/pre-push "npm test"
+```
 
 ## Conclusion
 
