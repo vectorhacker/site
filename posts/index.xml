@@ -6,8 +6,8 @@ At Coqui Health, we&amp;rsquo;ve implemented this strategy successfully and this
 <p>First install and configure husky</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky-init <span style="color:#f92672">&amp;&amp;</span> npm install       <span style="color:#75715e"># npm</span>
 </span></span></code></pre></div><p>Then configure the git hooks, like this for pre-push</p>
-<p><code>npx husky add .husky/pre-push &quot;npm test&quot;</code></p>
-<h2 id="conclusion">Conclusion</h2>
+<pre tabindex="0"><code>npx husky add .husky/pre-push &#34;npm test&#34;
+</code></pre><h2 id="conclusion">Conclusion</h2>
 <p>Using this strategy you can save a lot of time and effort from having to wait for ci/cd pipelines and potentially braking the build over stupid little things. I can&rsquo;t guarantee your build will never break, but the probability it will fail is a lot less.</p>
 ]]></content></item><item><title>Getting Back to Blogging</title><link>https://victoramartinez.com/posts/getting-back-to-blogging/</link><pubDate>Sun, 19 Dec 2021 17:22:45 -0400</pubDate><guid>https://victoramartinez.com/posts/getting-back-to-blogging/</guid><description>It&amp;rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&amp;rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&amp;rsquo;ve been so full of ideas.
 Recently I&amp;rsquo;ve been thinking a lot about finance, economics, and of course programming. I want to share my findings with you in hopes that this will help someone.</description><content type="html"><![CDATA[<p>It&rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&rsquo;ve been so full of ideas.</p>
