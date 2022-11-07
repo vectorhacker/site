@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Victor&#39;s Blog</title>
+    <link>https://victoramartinez.com/</link>
+    <description>Recent content on Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Victor Martínez</copyright>
+    <lastBuildDate>Sat, 22 Oct 2022 21:55:26 -0400</lastBuildDate><atom:link href="https://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Defensive Commits</title>
+      <link>https://victoramartinez.com/posts/defensive-commits/</link>
+      <pubDate>Sat, 22 Oct 2022 21:55:26 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/defensive-commits/</guid>
+      <description>Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with trunk-based development and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.
+At Coqui Health, we&amp;rsquo;ve implemented this strategy successfully and this is now the default way we work.</description>
+    </item>
+    
+    <item>
+      <title>Getting Back to Blogging</title>
+      <link>https://victoramartinez.com/posts/getting-back-to-blogging/</link>
+      <pubDate>Sun, 19 Dec 2021 17:22:45 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/getting-back-to-blogging/</guid>
+      <description>It&amp;rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&amp;rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&amp;rsquo;ve been so full of ideas.
+Recently I&amp;rsquo;ve been thinking a lot about finance, economics, and of course programming. I want to share my findings with you in hopes that this will help someone.</description>
+    </item>
+    
+    <item>
+      <title>Value Objects in Go</title>
+      <link>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</link>
+      <pubDate>Fri, 23 Oct 2020 03:12:35 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</guid>
+      <description>Recently I&amp;rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&amp;rsquo;ve come accross a few patterns I&amp;rsquo;d like to share. Mainly we&amp;rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.</description>
+    </item>
+    
+    <item>
+      <title>Stop The EARN IT Act</title>
+      <link>https://victoramartinez.com/posts/stop-earn-it-act/</link>
+      <pubDate>Wed, 25 Mar 2020 19:51:27 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/stop-earn-it-act/</guid>
+      <description>A new threat to your freedom of speech and privacy has appeared. Senators Lindsey Graham (R-SC) and Richard Blumenthal (D-CT) have joined in introducing the EARN IT Act (S. 3398) bill in Congress. This act&amp;rsquo;s intention is hidden behind the guise of protecting children, but in reality seeks to potentially undermine the end-to-end encryption and security that exists for almost all internet communications, especially social messaging platforms like WhatsApp and other U.</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t Use Frameworks</title>
+      <link>https://victoramartinez.com/posts/dont-use-frameworks/</link>
+      <pubDate>Tue, 24 Mar 2020 04:32:51 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/dont-use-frameworks/</guid>
+      <description>Stop using frameworks for everything. Just stop. You don&amp;rsquo;t need a framework to write good code and deliver products. Don&amp;rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&amp;rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application.</description>
+    </item>
+    
+    <item>
+      <title>Event Sourcing in Go</title>
+      <link>https://victoramartinez.com/posts/event-sourcing-in-go/</link>
+      <pubDate>Mon, 23 Mar 2020 21:13:59 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/event-sourcing-in-go/</guid>
+      <description>I&amp;rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&amp;rsquo;ve been doing it in Go and want to share how I do it.
+To begin with, I&amp;rsquo;ve researched this topic thoroughly; I&amp;rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it.</description>
+    </item>
+    
+    <item>
+      <title>What I&#39;ve Learned Working in a Large Software Project</title>
+      <link>https://victoramartinez.com/posts/learnings-working-large-software-project/</link>
+      <pubDate>Thu, 28 Nov 2019 20:46:11 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/learnings-working-large-software-project/</guid>
+      <description>I&amp;rsquo;ve been working my first large software project for almost a year now and I&amp;rsquo;d like to share my learnings from this project. The things I&amp;rsquo;ve learned, discovered, and realized during this time might be interesting to some, might be old news to others, and might even shed some light on how certain things are done in certain types of projects, but all in all I hope this proves to be an interesting read.</description>
+    </item>
+    
+    <item>
+      <title>WTF is Blockchain?</title>
+      <link>https://victoramartinez.com/posts/wtf-is-blockchain/</link>
+      <pubDate>Tue, 07 Aug 2018 19:44:17 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/wtf-is-blockchain/</guid>
+      <description>This post was inspired by a talk given by Jared Haight from Microsoft at BSidesPR. Jared talked about giving back to the InfoSec community at a large, and he mentioned things to write about, including Blockchain. Specifically, he asked &amp;ldquo;WTF is Blockchain?&amp;rdquo; and said it that if you actually title it like that, he&amp;rsquo;d read it. So, this is my attempt at writing that description.
+TLDR: Blockchain is an unchangeable series of blocks that each reference the previous&amp;rsquo; block&amp;rsquo;s contents via a hash of that content.</description>
+    </item>
+    
+    <item>
+      <title>Goro</title>
+      <link>https://victoramartinez.com/posts/goro/</link>
+      <pubDate>Mon, 21 May 2018 13:36:22 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/goro/</guid>
+      <description>I know I haven&amp;rsquo;t posted in a long time, but I finally felt I needed an update in my blog. I&amp;rsquo;ve recently updated some work on my own Go library for EventStore called goro. I made this for my own personal work and my job at ALQMY.
+I used to use Go.GetEventStore as my prefered library for working with EventStore. It was nice, but I felt it was lacking in many features and was ultimitely very cumbersome to work with, especially when it comes to reading events in a streaming fashion.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Key</title>
+      <link>https://victoramartinez.com/posts/amazon-key/</link>
+      <pubDate>Sun, 26 Nov 2017 23:20:47 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/amazon-key/</guid>
+      <description>So Amazon recently announced a new program called Amazon Key. This program would let deliverymen enter the house of people who have purchased the program. I&amp;rsquo;m really uncomfortable with this idea. For one thing, I don&amp;rsquo;t want Amazon, much less any other giant company, controlling entrance to my home. Second, this just feels like a whole new invasion of privacy.
+This is just part of a much bigger problem. Silicon Valley companies are becoming so arrogant and negligent, and they&amp;rsquo;re giving me more and more reason to stop trusting them.</description>
+    </item>
+    
+    <item>
+      <title>Github Pages</title>
+      <link>https://victoramartinez.com/posts/github-pages/</link>
+      <pubDate>Sun, 26 Nov 2017 01:06:20 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/github-pages/</guid>
+      <description>I&amp;rsquo;m hosting this blog using Github pages (because I&amp;rsquo;m cheap.) You can browser through the source code here. I&amp;rsquo;m using Hugo to generate the static site. Overall it&amp;rsquo;s pretty great.</description>
+    </item>
+    
+    <item>
+      <title>Net Neutrality Opinion</title>
+      <link>https://victoramartinez.com/posts/net-neutrality-opinion/</link>
+      <pubDate>Sun, 26 Nov 2017 00:44:22 -0400</pubDate>
+      
+      <guid>https://victoramartinez.com/posts/net-neutrality-opinion/</guid>
+      <description>Background This December, the FCC will vote on wether to keep or reverse Title II of the Communications Act of 1934 in regards to ISPs. This decision will affect the way the internet works in the United States and if reversed, would give ISPs incentive to give preferential treatment of some data packets over others, among many other things that they could do. These rules are with the intent of creating a level playing field within the internet and keeping the internet free and open.</description>
+    </item>
+    
+  </channel>
+</rss>

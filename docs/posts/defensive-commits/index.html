@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with trunk-based development and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.
+At Coqui Health, we&amp;rsquo;ve implemented this strategy successfully and this is now the default way we work." />
+<meta name="keywords" content="blog, victor, personal, wiki, bliki, opinions, git, ci, continuous delivery" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://victoramartinez.com/posts/defensive-commits/" />
+
+
+    <title>
+        
+            Defensive Commits :: Victor&#39;s Blog  — Ramblings of a Software Professional
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.d235e788b40b442aba9cd6c69fdc330353b2dec27dcbc4235961469d2155f5a9.css">
+
+
+
+
+<meta itemprop="name" content="Defensive Commits">
+<meta itemprop="description" content="Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with trunk-based development and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.
+At Coqui Health, we&rsquo;ve implemented this strategy successfully and this is now the default way we work."><meta itemprop="datePublished" content="2022-10-22T21:55:26-04:00" />
+<meta itemprop="dateModified" content="2022-10-22T21:55:26-04:00" />
+<meta itemprop="wordCount" content="247"><meta itemprop="image" content="https://victoramartinez.com/"/>
+<meta itemprop="keywords" content="git,ci,continuous delivery," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://victoramartinez.com/"/>
+
+<meta name="twitter:title" content="Defensive Commits"/>
+<meta name="twitter:description" content="Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with trunk-based development and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.
+At Coqui Health, we&rsquo;ve implemented this strategy successfully and this is now the default way we work."/>
+<meta name="twitter:site" content="@https://www.twitter.com/vectorhacker"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2022-10-22 21:55:26 -0400 AST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">echo &#34;Hey!&#34;</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://victoramartinez.com/about/">About</a></li><li><a href="https://victoramartinez.com/posts">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://victoramartinez.com/posts/defensive-commits/">Defensive Commits</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with <a href="https://trunkbaseddevelopment.com">trunk-based development</a> and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.</p>
+<p>At <a href="https://coquihealth.com">Coqui Health</a>, we&rsquo;ve implemented this strategy successfully and this is now the default way we work. We use a monorepo strategy coupled with ci/cd and trunk-based development, which means we work close to or in trunk and so having a robust ci/cd pipeline is paramount. Defensive commits allows us to catch bugs early and get feedback that our code will work or break things. It&rsquo;s allowed us to move faster and not break things.</p>
+<h2 id="how-to-implement">How to Implement</h2>
+<p>The easiest way to implement Defensive Commits (TM) is to use git hooks, particularly on push or after a commit, literally. We used <a href="https://typicode.github.io/husky/#/">husky</a> to help us do this.</p>
+<p>First install and configure husky</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky-init <span style="color:#f92672">&amp;&amp;</span> npm install       <span style="color:#75715e"># npm</span>
+</span></span></code></pre></div><p>Then configure the git hooks, like this for pre-push</p>
+<p><code>npx husky add .husky/pre-push &quot;npm test&quot;</code></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Using this strategy you can save a lot of time and effort from having to wait for ci/cd pipelines and potentially braking the build over stupid little things. I can&rsquo;t guarantee your build will never break, but the probability it will fail is a lot less.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://victoramartinez.com/tags/git">git</a></span><span class="tag"><a href="https://victoramartinez.com/tags/ci">ci</a></span><span class="tag"><a href="https://victoramartinez.com/tags/continuous-delivery">continuous delivery</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>247 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2022-10-22 21:55 -0400</p>
+        </div>
+
+        
+            <div id="comments" class="thin">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vams" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2022</span>
+            
+            <span>Victor Martínez</span>
+            <span> <a href="https://victoramartinez.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-110221350-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    </body>
+</html>
