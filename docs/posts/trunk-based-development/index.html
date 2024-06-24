@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Trunk-based development is a way of maintaining source code that is popular among teams that practice continuous integration and delivery. It requires merging frequent small changes to the trunk or “main” of the repository, often directly, for it to work properly. Some developers are afraid to adopt this practice, for fear of breaking the codebase and instead opt for the perceived safety of workflows like GitHub Flow or Gitflow. But I argue that this safety is a myth and that trunk-based development, not only a good alternative to these two strategies, but it is also in fact the only proven way to develop quality software faster and the only way to do proper continuous integration and delivery." />
+<meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/posts/trunk-based-development/" />
+
+
+    <title>
+        
+            Trunk Based Development :: Victor&#39;s Blog  — Ramblings of a Software Professional
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.4e5c639214707eff609bb55fe49e183dee42258a73bc90e4cc7b0a84f900798a.css">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Trunk Based Development">
+  <meta itemprop="description" content="Trunk-based development is a way of maintaining source code that is popular among teams that practice continuous integration and delivery. It requires merging frequent small changes to the trunk or “main” of the repository, often directly, for it to work properly. Some developers are afraid to adopt this practice, for fear of breaking the codebase and instead opt for the perceived safety of workflows like GitHub Flow or Gitflow. But I argue that this safety is a myth and that trunk-based development, not only a good alternative to these two strategies, but it is also in fact the only proven way to develop quality software faster and the only way to do proper continuous integration and delivery.">
+  <meta itemprop="datePublished" content="2024-03-31T00:27:32-04:00">
+  <meta itemprop="dateModified" content="2024-03-31T00:27:32-04:00">
+  <meta itemprop="wordCount" content="996">
+  <meta itemprop="image" content="http://localhost:1313/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Trunk Based Development">
+  <meta name="twitter:description" content="Trunk-based development is a way of maintaining source code that is popular among teams that practice continuous integration and delivery. It requires merging frequent small changes to the trunk or “main” of the repository, often directly, for it to work properly. Some developers are afraid to adopt this practice, for fear of breaking the codebase and instead opt for the perceived safety of workflows like GitHub Flow or Gitflow. But I argue that this safety is a myth and that trunk-based development, not only a good alternative to these two strategies, but it is also in fact the only proven way to develop quality software faster and the only way to do proper continuous integration and delivery.">
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-03-31 00:27:32 -0400 AST" />
+
+
+
+
+
+
+
+
+
+    
+  
+    
+      
+    
+  
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">echo &#34;Hey!&#34;</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        5 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="http://localhost:1313/posts/trunk-based-development/">Trunk Based Development</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>Trunk-based development is a way of maintaining source code that is popular among teams that practice continuous integration and delivery. It requires merging frequent small changes to the trunk or “main” of the repository, often directly, for it to work properly. Some developers are afraid to adopt this practice, for fear of breaking the codebase and instead opt for the perceived safety of workflows like GitHub Flow or Gitflow. But I argue that this safety is a myth and that trunk-based development, not only a good alternative to these two strategies, but it is also in fact the only proven way to develop quality software faster and the only way to do proper continuous integration and delivery.</p>
+<p>In the past, source version control was costly and labor-intensive, as it required large amounts of work and effort to track changes to software and merge them together as engineers worked on the source code. These tools improved and out came workflows like Gitflow which relies on strict management of feature and hotfix branches, merged into a develop branch which is then merge into main with cherry picks (Driessen, 2010). This complex workflow works well to maintain code quality, but at the cost of speed and merge conflicts as feature branches tend to live for a long time and is difficult to use with CI/CD (Atlassian, n.d.). Trunk-based development instead focuses on using short-lived feature branches that merge directly to trunk (main) or in some cases have developers commit directly to main and it is designed to work well with, and often requires, CI/CD (Hammant, 2017). It is not only operationally simpler, but it has also been shown to be more effective at producing higher quality code and positively affects continuous delivery and that users of this method are among the highest IT performers (Puppet + DORA, 2017).</p>
+<p>Trunk-based development is often compared to GitHub Flow which has a very similar workflow of branching from and merging directly to trunk, but there are two important distinctions. GitHub Flow makes no assertions about the lifetime of feature branches, so they can live for a long time and cause large merge conflicts when trying to integrate and secondly integration happens on a per-request basis via a chatbot that tests and deploys your pull request branch to production on a queue, which locks the main branch, merges to deploy in several steps that take several minutes each, and then monitors each step for problems and then unlocks main. This second distinction is a big one as with large teams, one could be stuck waiting for a merge request to happen and problems to arise and be the chances of merge conflicts go up over time (Thomson, 2018). The trunk-based workflow does not have this problem, each merge request or commit to main is evaluated individually and does not lock the main branch and each developer is required to pull the latest changes from head frequently, thus reducing the possibility of merge conflicts.</p>
+<p>So, trunk-based development is simpler and works well with CI/CD, but it must be dangerous to work directly in main, right? Not so, in fact many different companies in various industries (both highly and less regulated) work this way safely. Microsoft (Thomson, 2018), Google (Potvin, 2015), Atlassian, NASA, and SpaceX all work in trunk. SpaceX is a particularly great example, as they attribute working in trunk as a key factor in the safety of their rockets, often pushing changes to trunk and uploading software to rockets on the launchpad up to 45 minutes before a scheduled launch. If SpaceX uses it in the highly regulated industry of making missiles that launch objects into space, so can you. (Rajadurai, 2020) (Lofgren, 2020).</p>
+<p>To setup trunk-based development, certain things must be put in place. A reliable CI/CD infrastructure must be setup from the beginning, investing in good CI/CD is critical to make trunk-based development work. Engineers must write proper tests that they can trust and run every time they commit to trunk. Engineers commit their changes to trunk frequently, ideally at least daily if not more often, so they may integrate their changes frequently and find out quickly whether their changes will work well with everyone else’s. Continuous code review must be performed and often pair-programming along with comments on commits is sufficient, if not implement merge requests of short-lived feature branches. And finally, since engineers are pushing potentially unfinished changes to trunk daily, care must be taken to hide unfinished features from users in the form of feature toggles and dark launching. (Ehn, 2019) (Thomson, 2018)</p>
+<p>In conclusion, trunk-based development is not only operationally simpler than more complicated alternatives like Gitflow, but it strongly correlated with high-performing IT practitioners and is the best way of doing continuous integration and delivery. Working on trunk can seem scary but is in fact the best way to deliver high quality software and figure that your changes are going to in fact work with everyone else’s. Trunk-based development speeds up the creation of software in s safe and effective manner. It requires a bit of an upfront investment, but the rewards are well worth it.</p>
+<h2 id="sources">Sources</h2>
+<p>Atlassian. (n.d.). Gitflow workflow. Retrieved from Atlasian Git Tutorial: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow</a></p>
+<p>Driessen, V. (2010, January 5). A successful Git branching model. Retrieved from nvie.com: <a href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a></p>
+<p>Ehn, J. (2019, June 5). Real Programmers Commit To Master . Retrieved from YouTube: <a href="https://www.youtube.com/watch?v=hL1OZfgoZGk&t=1271s&pp=ygUXdHJ1bmsgYmFzZWQgZGV2ZWxvcG1lbnQ%3D">https://www.youtube.com/watch?v=hL1OZfgoZGk&t=1271s&pp=ygUXdHJ1bmsgYmFzZWQgZGV2ZWxvcG1lbnQ%3D</a>
+Hammant, P. (2017). Trunk Based Development: Introduction. Retrieved from Trunk Based Development: <a href="https://trunkbaseddevelopment.com/#history">https://trunkbaseddevelopment.com/#history</a></p>
+<p>Lofgren, E. (2020, December 4). Is continuous testing the key to SpaceX software success? Retrieved from Acquisition Talk: <a href="https://acquisitiontalk.com/2020/12/is-continuous-testing-the-key-to-spacex-software-success/">https://acquisitiontalk.com/2020/12/is-continuous-testing-the-key-to-spacex-software-success/</a>
+Potvin, R. (2015, September 14). Why Google Stores Billions of Lines of Code in a Single Repository. Retrieved from YouTube: <a href="https://youtu.be/W71BTkUbdqE">https://youtu.be/W71BTkUbdqE</a></p>
+<p>Puppet + DORA. (2017). 2017 State of DevOps Report. Puppet + DORA. Retrieved from <a href="https://services.google.com/fh/files/misc/state-of-devops-2017.pdf">https://services.google.com/fh/files/misc/state-of-devops-2017.pdf</a></p>
+<p>Rajadurai, N. (2020, June 25). How SpaceX develops software. Retrieved from {Coders} Kitchen: <a href="https://www.coderskitchen.com/spacex-software-development-and-testing/">https://www.coderskitchen.com/spacex-software-development-and-testing/</a></p>
+<p>Thomson, E. (2018, May 9). Git patterns and anti-patterns for successful developers: Build 2018. Retrieved from YouTube: <a href="https://youtu.be/ykZbBD-CmP8">https://youtu.be/ykZbBD-CmP8</a></p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        996 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-03-31 00:27 -0400
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+
+    
+      
+        <div id="comments">
+          <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vams" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.cd02730fd05b41b54d92604217e84fa2cacd2277df1088430a8eab8b73ec0ed1cb010a80c1419cb7865b26c96742c3864291fee0598889560a83ae842fc90e0b.js" integrity="sha512-zQJzD9BbQbVNkmBCF&#43;hPosrNInffEIhDCo6ri3PsDtHLAQqAwUGct4ZbJslnQsOGQpH&#43;4FmIiVYKg66EL8kOCw=="></script>
+
+
+
+    </body>
+</html>

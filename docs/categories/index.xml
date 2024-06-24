@@ -4,8 +4,9 @@
     <title>Categories on Victor&#39;s Blog</title>
     <link>https://victoramartinez.com/categories/</link>
     <description>Recent content in Categories on Victor&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Victor Martínez</copyright><atom:link href="https://victoramartinez.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Victor Martínez</copyright>
+    <atom:link href="https://victoramartinez.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

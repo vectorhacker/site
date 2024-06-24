@@ -4,9 +4,10 @@
     <title>About Me on Victor&#39;s Blog</title>
     <link>https://victoramartinez.com/about/</link>
     <description>Recent content in About Me on Victor&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <generator>Hugo</generator>
+    <language>en</language>
     <copyright>Victor Martínez</copyright>
-    <lastBuildDate>Sat, 25 Nov 2017 23:49:38 -0400</lastBuildDate><atom:link href="https://victoramartinez.com/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://victoramartinez.com/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
