@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Stop using frameworks for everything. Just stop. You don&amp;rsquo;t need a framework to write good code and deliver products. Don&amp;rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&amp;rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application." />
-<meta name="keywords" content="blog, victor, personal, wiki, bliki, opinions" />
+<meta name="description" content="Stop using frameworks for everything. Just stop. You don&rsquo;t need a framework to write good code and deliver products. Don&rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application. The patterns I suggest you use are Clean Architecture, Domain Driven Design, and the SOLID principles. Having a maintainable application is a matter of applying certain design principles and professionalism. In particular, applying TDD or BDD and Domain Driven Design principles. Think about your application before you write a single line of code, design it, and test before you implement it.
+" />
+<meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://victoramartinez.com/posts/dont-use-frameworks/" />
+<link rel="canonical" href="http://localhost:1313/posts/dont-use-frameworks/" />
 
 
     <title>
         
-            Don&#39;t Use Frameworks :: Victor&#39;s Blog  — Ramblings of a Software Professional
+            Don&#39;t Use Frameworks :: Victor&#39;s Blog 
         
     </title>
 
 
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
 
 
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
 
-<link rel="stylesheet" href="/main.4e5c639214707eff609bb55fe49e183dee42258a73bc90e4cc7b0a84f900798a.css">
+
 
 
 
@@ -40,16 +41,16 @@
 
 
   <meta itemprop="name" content="Don&#39;t Use Frameworks">
-  <meta itemprop="description" content="Stop using frameworks for everything. Just stop. You don’t need a framework to write good code and deliver products. Don’t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn’t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application.">
+  <meta itemprop="description" content="Stop using frameworks for everything. Just stop. You don’t need a framework to write good code and deliver products. Don’t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn’t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application. The patterns I suggest you use are Clean Architecture, Domain Driven Design, and the SOLID principles. Having a maintainable application is a matter of applying certain design principles and professionalism. In particular, applying TDD or BDD and Domain Driven Design principles. Think about your application before you write a single line of code, design it, and test before you implement it.">
   <meta itemprop="datePublished" content="2020-03-24T04:32:51-04:00">
   <meta itemprop="dateModified" content="2020-03-24T04:32:51-04:00">
   <meta itemprop="wordCount" content="2126">
-  <meta itemprop="image" content="https://victoramartinez.com/">
+  <meta itemprop="image" content="http://localhost:1313/">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://victoramartinez.com/">
+  <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Don&#39;t Use Frameworks">
-  <meta name="twitter:description" content="Stop using frameworks for everything. Just stop. You don’t need a framework to write good code and deliver products. Don’t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn’t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application.">
+  <meta name="twitter:description" content="Stop using frameworks for everything. Just stop. You don’t need a framework to write good code and deliver products. Don’t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn’t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application. The patterns I suggest you use are Clean Architecture, Domain Driven Design, and the SOLID principles. Having a maintainable application is a matter of applying certain design principles and professionalism. In particular, applying TDD or BDD and Domain Driven Design principles. Think about your application before you write a single line of code, design it, and test before you implement it.">
 
 
 
@@ -68,11 +69,6 @@
 
 
     
-  
-    
-      
-    
-  
 
 
 
@@ -89,7 +85,8 @@
     <div class="logo">
         
             <span class="logo__mark">></span>
-            <span class="logo__text">echo &#34;Hey!&#34;</span>
+            <span class="logo__text ">
+                echo &#34;Hey!&#34;</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -101,7 +98,6 @@
 
 
         <span class="header__right">
-            
                 <nav class="menu">
     <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts">Posts</a></li>
     </ul>
@@ -113,7 +109,6 @@
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
-            
         </span>
     </span>
 </header>
@@ -137,7 +132,7 @@
 
     <article>
       <h1 class="post-title">
-        <a href="https://victoramartinez.com/posts/dont-use-frameworks/">Don&rsquo;t Use Frameworks</a>
+        <a href="http://localhost:1313/posts/dont-use-frameworks/">Don&rsquo;t Use Frameworks</a>
       </h1>
 
       
@@ -549,6 +544,8 @@
 
     
 
+    
+
   </main>
 
             </div>
@@ -566,7 +563,8 @@
 
 
 
-<script type="text/javascript" src="/bundle.min.cd02730fd05b41b54d92604217e84fa2cacd2277df1088430a8eab8b73ec0ed1cb010a80c1419cb7865b26c96742c3864291fee0598889560a83ae842fc90e0b.js" integrity="sha512-zQJzD9BbQbVNkmBCF&#43;hPosrNInffEIhDCo6ri3PsDtHLAQqAwUGct4ZbJslnQsOGQpH&#43;4FmIiVYKg66EL8kOCw=="></script>
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
 
 
 

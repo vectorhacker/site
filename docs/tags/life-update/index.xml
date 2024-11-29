@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life Update on Victor&#39;s Blog</title>
-    <link>https://victoramartinez.com/tags/life-update/</link>
+    <link>http://localhost:1313/tags/life-update/</link>
     <description>Recent content in Life Update on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Victor Martínez</copyright>
     <lastBuildDate>Mon, 24 Jun 2024 03:42:30 -0400</lastBuildDate>
-    <atom:link href="https://victoramartinez.com/tags/life-update/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/life-update/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Finishing My BSCS</title>
-      <link>https://victoramartinez.com/posts/on-finishing-my-bscs/</link>
+      <link>http://localhost:1313/posts/on-finishing-my-bscs/</link>
       <pubDate>Mon, 24 Jun 2024 03:42:30 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/on-finishing-my-bscs/</guid>
-      <description>Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.</description>
+      <guid>http://localhost:1313/posts/on-finishing-my-bscs/</guid>
+      <description>&lt;p&gt;Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

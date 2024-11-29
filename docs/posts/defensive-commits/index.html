@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
 <meta name="description" content="Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with trunk-based development and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.
-At Coqui Health, we&amp;rsquo;ve implemented this strategy successfully and this is now the default way we work." />
-<meta name="keywords" content="blog, victor, personal, wiki, bliki, opinions, git, ci, continuous delivery" />
+At Coqui Health, we&rsquo;ve implemented this strategy successfully and this is now the default way we work. We use a monorepo strategy coupled with ci/cd and trunk-based development, which means we work close to or in trunk and so having a robust ci/cd pipeline is paramount. Defensive commits allows us to catch bugs early and get feedback that our code will work or break things. It&rsquo;s allowed us to move faster and not break things.
+" />
+<meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion, git, ci, continuous delivery" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://victoramartinez.com/posts/defensive-commits/" />
+<link rel="canonical" href="http://localhost:1313/posts/defensive-commits/" />
 
 
     <title>
         
-            Defensive Commits :: Victor&#39;s Blog  — Ramblings of a Software Professional
+            Defensive Commits :: Victor&#39;s Blog 
         
     </title>
 
 
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
 
 
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
 
-<link rel="stylesheet" href="/main.4e5c639214707eff609bb55fe49e183dee42258a73bc90e4cc7b0a84f900798a.css">
+
 
 
 
@@ -42,18 +43,18 @@ At Coqui Health, we&amp;rsquo;ve implemented this strategy successfully and this
 
   <meta itemprop="name" content="Defensive Commits">
   <meta itemprop="description" content="Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with trunk-based development and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.
-At Coqui Health, we’ve implemented this strategy successfully and this is now the default way we work.">
+At Coqui Health, we’ve implemented this strategy successfully and this is now the default way we work. We use a monorepo strategy coupled with ci/cd and trunk-based development, which means we work close to or in trunk and so having a robust ci/cd pipeline is paramount. Defensive commits allows us to catch bugs early and get feedback that our code will work or break things. It’s allowed us to move faster and not break things.">
   <meta itemprop="datePublished" content="2022-10-22T21:55:26-04:00">
   <meta itemprop="dateModified" content="2022-10-22T21:55:26-04:00">
   <meta itemprop="wordCount" content="247">
-  <meta itemprop="image" content="https://victoramartinez.com/">
+  <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Git,Ci,Continuous Delivery">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://victoramartinez.com/">
+  <meta name="twitter:image" content="http://localhost:1313/">
   <meta name="twitter:title" content="Defensive Commits">
   <meta name="twitter:description" content="Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with trunk-based development and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.
-At Coqui Health, we’ve implemented this strategy successfully and this is now the default way we work.">
+At Coqui Health, we’ve implemented this strategy successfully and this is now the default way we work. We use a monorepo strategy coupled with ci/cd and trunk-based development, which means we work close to or in trunk and so having a robust ci/cd pipeline is paramount. Defensive commits allows us to catch bugs early and get feedback that our code will work or break things. It’s allowed us to move faster and not break things.">
 
 
 
@@ -72,11 +73,6 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
 
 
     
-  
-    
-      
-    
-  
 
 
 
@@ -93,7 +89,8 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
     <div class="logo">
         
             <span class="logo__mark">></span>
-            <span class="logo__text">echo &#34;Hey!&#34;</span>
+            <span class="logo__text ">
+                echo &#34;Hey!&#34;</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -105,7 +102,6 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
 
 
         <span class="header__right">
-            
                 <nav class="menu">
     <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts">Posts</a></li>
     </ul>
@@ -117,7 +113,6 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
-            
         </span>
     </span>
 </header>
@@ -141,7 +136,7 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
 
     <article>
       <h1 class="post-title">
-        <a href="https://victoramartinez.com/posts/defensive-commits/">Defensive Commits</a>
+        <a href="http://localhost:1313/posts/defensive-commits/">Defensive Commits</a>
       </h1>
 
       
@@ -172,9 +167,9 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="https://victoramartinez.com/tags/git/">git</a></span>
-        <span class="tag"><a href="https://victoramartinez.com/tags/ci/">ci</a></span>
-        <span class="tag"><a href="https://victoramartinez.com/tags/continuous-delivery/">continuous delivery</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/git/">git</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/ci/">ci</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/continuous-delivery/">continuous delivery</a></span>
         
     </p>
 
@@ -239,6 +234,8 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
 
     
 
+    
+
   </main>
 
             </div>
@@ -256,7 +253,8 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
 
 
 
-<script type="text/javascript" src="/bundle.min.cd02730fd05b41b54d92604217e84fa2cacd2277df1088430a8eab8b73ec0ed1cb010a80c1419cb7865b26c96742c3864291fee0598889560a83ae842fc90e0b.js" integrity="sha512-zQJzD9BbQbVNkmBCF&#43;hPosrNInffEIhDCo6ri3PsDtHLAQqAwUGct4ZbJslnQsOGQpH&#43;4FmIiVYKg66EL8kOCw=="></script>
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
 
 
 
