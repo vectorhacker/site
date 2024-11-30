@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/accepted-to-gt/</loc>
+    <lastmod>2024-11-29T22:16:40-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-11-29T22:16:40-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-11-29T22:16:40-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/untagged/</loc>
+    <lastmod>2024-11-29T22:16:40-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-11-29T22:16:40-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</loc>
+    <lastmod>2024-11-29T17:02:20-04:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/life-update/</loc>
     <lastmod>2024-06-24T03:42:30-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/on-finishing-my-bscs/</loc>
     <lastmod>2024-06-24T03:42:30-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-06-24T03:42:30-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/school/</loc>
-    <lastmod>2024-06-24T03:42:30-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-06-24T03:42:30-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-06-24T03:42:30-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/trunk-based-development/</loc>
@@ -36,9 +45,6 @@
     <lastmod>2022-10-22T21:55:26-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/getting-back-to-blogging/</loc>
-    <lastmod>2021-12-19T17:22:45-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/untagged/</loc>
     <lastmod>2021-12-19T17:22:45-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ddd/</loc>

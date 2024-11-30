@@ -5,8 +5,8 @@ draft: false
 toc: false
 images:
 tags:
+  - computer science
   - life update
-  - school
 ---
 Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.
 
