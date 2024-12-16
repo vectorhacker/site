@@ -2,32 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Untagged on Victor&#39;s Blog</title>
-    <link>http://localhost:1313/tags/untagged/</link>
+    <link>https://victoramartinez.com/tags/untagged/</link>
     <description>Recent content in Untagged on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Victor Martínez</copyright>
-    <lastBuildDate>Fri, 29 Nov 2024 22:16:40 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Accepted to Georgia Tech</title>
-      <link>http://localhost:1313/posts/accepted-to-gt/</link>
-      <pubDate>Fri, 29 Nov 2024 22:16:40 -0400</pubDate>
-      <guid>http://localhost:1313/posts/accepted-to-gt/</guid>
-      <description>&lt;p&gt;Back on May 31st, 2024, right as I submitted my last assignment for my capstone course, my last class on my BSCS at WGU, I applied for Georgia Tech’s OMSCS program. In August, days before my graduation ceremony, I heard back that I got accepted into the Spring 2025 cohort of Georgia Tech’s Online Masters of Science in Computer Science and this week I just got my gatech.edu email address.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Get a Bscs Efficiently</title>
-      <link>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</link>
-      <pubDate>Fri, 29 Nov 2024 17:02:20 -0400</pubDate>
-      <guid>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Sun, 19 Dec 2021 17:22:45 -0400</lastBuildDate>
+    <atom:link href="https://victoramartinez.com/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Back to Blogging</title>
-      <link>http://localhost:1313/posts/getting-back-to-blogging/</link>
+      <link>https://victoramartinez.com/posts/getting-back-to-blogging/</link>
       <pubDate>Sun, 19 Dec 2021 17:22:45 -0400</pubDate>
-      <guid>http://localhost:1313/posts/getting-back-to-blogging/</guid>
+      <guid>https://victoramartinez.com/posts/getting-back-to-blogging/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&amp;rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&amp;rsquo;ve been so full of ideas.&lt;/p&gt;&#xA;&lt;p&gt;Recently I&amp;rsquo;ve been thinking a lot about finance, economics, and of course programming. I want to share my findings with you in hopes that this will help someone. So with that declaration out of the way, let&amp;rsquo;s get back to it!&lt;/p&gt;</description>
     </item>
   </channel>

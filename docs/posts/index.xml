@@ -1,20 +1,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Victor&#39;s Blog</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>https://victoramartinez.com/posts/</link>
         <description>Recent content in Posts on Victor&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Victor Martínez</copyright>
-        <lastBuildDate>Fri, 29 Nov 2024 22:16:40 -0400</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://victoramartinez.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>How to Get a Computer Science Degree Fast and Cheaply</title>
+            <link>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</link>
+            <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</guid>
+            <description>&lt;p&gt;You read the title, you&amp;rsquo;re probably thinking &amp;ldquo;that sounds like it&amp;rsquo;ll be a crappy idea&amp;rdquo; or &amp;ldquo;that sounds exactly like what I want!&amp;rdquo; For the first person, I hope to convince you that a computer science degree need not take 4 years nor be expensive. For the second, I hope to give you a roadmap to earn an accredited CS degree. But, before I start I want to preface this by saying that I am not advocating you go out to a degree mill and just buy a Diploma from a fake school, I&amp;rsquo;ll only be talking about legal, accredited, and reputable ways to get your degree in under 2 years, even less. I also know that it&amp;rsquo;s possible, because I essentially did it last year. So, without further ado, here&amp;rsquo;s how to get a bachelors degree in computer science fast and cheaply.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>You read the title, you&rsquo;re probably thinking &ldquo;that sounds like it&rsquo;ll be a crappy idea&rdquo; or &ldquo;that sounds exactly like what I want!&rdquo; For the first person, I hope to convince you that a computer science degree need not take 4 years nor be expensive. For the second, I hope to give you a roadmap to earn an accredited CS degree. But, before I start I want to preface this by saying that I am not advocating you go out to a degree mill and just buy a Diploma from a fake school, I&rsquo;ll only be talking about legal, accredited, and reputable ways to get your degree in under 2 years, even less. I also know that it&rsquo;s possible, because I essentially did it last year. So, without further ado, here&rsquo;s how to get a bachelors degree in computer science fast and cheaply.</p>
+<h1 id="step-1-choose-the-right-school">Step 1. Choose the Right School</h1>
+<p>This first step will depend on a few things, mainly how much you like the model of education the school uses, how much many credits you can transfer, and if you want more or less free electives. Here&rsquo;s a non-comprehensive list of schools I recommend, and yes they&rsquo;re all Online</p>
+<h2 id="western-governors-university">Western Governors University</h2>
+<p>This is the school I ended up going to. I absolutely love their model for education and they are the only online school to have ABET accreditation for their BSCS degree on top of Institutional Accreditation from the NWCCU. They also have a BSSWE that&rsquo;s prety good if you want to take a more hands on approach and wish to specialize in software engineering from the beginning.</p>
+<p>WGU will run you about ~$4700 per six month term and terms start the first of every month. They use a subscription-based competency-based model of education, which means you pay for the term, not per class and you can take as many classes as you can pass each term. Competency-based means that you essentially test out of classes by passing one big final exam or doing a few projects, write a few papers and getting a good grade. At WGU, to pass a class you simply need to show competency by either passing a test with a score of 80% or higher or complete a project and have an evaluator sign off on it. This model lets you move as fast or as slow as you wish, provided you complete at least 12 CUs per term when. I was able to finish 61 CUs or 19 courses in 4 months because I was able to apply what I already knew to pass and concentrate on what I didn&rsquo;t know, like discrete mathematics.</p>
+<h3 id="pros">Pros:</h3>
+<ul>
+<li>Cheap</li>
+<li>ABET accreditation</li>
+<li>Fast</li>
+<li>Competency-based</li>
+<li>Well known for around tech circles</li>
+<li>Very transfer friendly</li>
+<li>Instructors are knowledgeable and experts in their field, usually with doctorates</li>
+<li>You get assigned a professional mentor throughout your degree</li>
+</ul>
+<h3 id="cons">Cons:</h3>
+<ul>
+<li>There are no lectures, it&rsquo;s all self-paced modules with live cohorts from instructors occasionally</li>
+<li>Does not accept international students</li>
+<li>No free electives, it&rsquo;s all structured so there&rsquo;s no place to put any extra credits you might&rsquo;ve taken in other schools</li>
+</ul>
+<h2 id="southern-new-hampshire-university">Southern New Hampshire University</h2>
+<p>The so-called Walmart of higher education, because they have almost every degree, but hey they&rsquo;re cheap and they&rsquo;re accredited. I like SNHU because of these reasons:</p>
+<ul>
+<li>Lots of specializations for their BSCS, including:
+<ul>
+<li>Data Analysis</li>
+<li>Information Security</li>
+<li>Project Management for STEM</li>
+<li>Software Engineering</li>
+</ul>
+</li>
+<li>Very transfer friendly, accepting ACE, CLEP and other alternative credits for up to 90 credits of a 120 credit degree, letting you finish in less than 18 months potentially and only costing you $9,900.</li>
+<li>Short 8 week terms means you can move pretty quickly</li>
+<li>Accepting of international students</li>
+</ul>
+<p>What I don&rsquo;t like:</p>
+<ul>
+<li>They made certain courses less hackable recently and they dropped Sophia.org from their list of acceptable ACE credit institutions.</li>
+<li>You pay per-credit not per-term like at WGU so you can&rsquo;t save more by taking more classes per term.</li>
+</ul>
+<p>Overall, though. It&rsquo;s a great school and it&rsquo;s a good option if you want to get into one of their specializations and you can&rsquo;t find it anywhere else or you can&rsquo;t get into WGU.</p>
+<h2 id="thomas-edison-state-university">Thomas Edison State University</h2>
+<p>This is a very little known state school from New Jersey. They&rsquo;re one of the few public schools on this list as they are part of the New Jersey university system. I really like this school because they are designed explicitly for adult learners, they&rsquo;re cheap, accredited, non-profit, and their degrees are very flexible.</p>
+<p>They have a Bachelors of Arts in Computer Science and a Bachelor of Science in Computer Information Systems that are very hackable and transfer friendly with a lot of free electives letting you choose what you want to study. They&rsquo;re very close in cost to WGU costing around $4400 per term, but they&rsquo;re not competency-based. The great thing tho, is that you can still test out of a lot of classes.</p>
+<h2 id="colorado-state-university-global">Colorado State University Global</h2>
+<p>I like this school mostly because a friend of mine completed their BSCS there, but wanted to go to WGU and couldn&rsquo;t becaus they were an international student. It&rsquo;s relatively cheap, costing $9,000 and with more savings if your transfer up to 90 credits. They&rsquo;re run by Colorado State University and art a public university, fully accredited just like CSU.</p>
+<h2 id="honorable-mention">Honorable Mention</h2>
+<h3 id="liberty-university">Liberty University</h3>
+<p>Though Liberty does not offer their computer science degree proper online, they do offer a very close Computational Mathematics (B.S) with a concentration in Computer Science online. They&rsquo;re very cheap, at $390 per credit, with the option to transfer in up to 75% of the degree, leaving you with only $11,700 left to pay and you can finish in under 2 years.</p>
+<h1 id="step-2-transfer-in-alternative-credits">Step 2. Transfer in Alternative Credits</h1>
+<p>Now that you&rsquo;ve chosen an accredited school that&rsquo;s transfer friendly and online, you&rsquo;ll want to transfer in as many credits as possible to finish even sooner and save even more money. My first recommendation is to lookup the school&rsquo;s transfer policy, either on their website or the website of the alternative credit site, and see how many alternative credits you can transfer from places like CLEP, Study.com, Sophia.org, and StraighterLine.</p>
+<h2 id="clephttpsclepcollegeboardorg"><a href="https://clep.collegeboard.org/">CLEP</a></h2>
+<p><a href="https://clep.collegeboard.org/">CLEP</a> or the College-Level Examination Program is a program designed by the College Board to evaluate students and recommend them for college credit should they pass the tests over a certain level. Depending on the score you get in certain exams you can get anywhere from 3, 6, even 9 credits! (depending on the school). CLEP is also in-expensive, coming at $95 per test, which is way cheaper than paying for college courses. In some cases, you can get CLEP for free depending on your high school or if you use <a href="https://modernstates.org/">Modern States</a></p>
+<p>They have tests ranging from American Government to Calculus, so these tests will mostly cover any general education or elective credits you might need to pass.</p>
+<p>Checkout which schools accept CLEP <a href="https://clep.collegeboard.org/clep-college-credit-policy-search">here</a>.</p>
+<h2 id="sophiaorghttpssophiaorg"><a href="https://sophia.org/">Sophia.org</a></h2>
+<p>This is one of my favorites, as it&rsquo;s one of the subscription based options that is really easy to pass quickly. I did 18 Sophia.org credits in 3 months at a leisurely pace. They have courses that cover more than just general education, but also some required courses for many schools, including Intro to Java Programming, Intro to Python Programming, Intro to Relational Databases, Intro to Networking, etc. They also have one of the easiest Calculus courses online as it&rsquo;s open book exams. It&rsquo;s just $99 a month or $299 or $599 for 4 and 12 months respectively and you&rsquo;re paying per subscription not per course.</p>
+<p>Checkout their transfer partners <a href="https://www.sophia.org/find-your-school/">here</a></p>
+<h2 id="studycom">Study.com</h2>
+<p><a href="https://study.com">Study.com</a> is probably the biggest and oldest of the online ACE credit websites. They have courses that cover nearly everything, letting you earn basically most of your degree here for a low flat rate. It costs around $199 per month and you get 2 free proctored exams per month, additional exams are $70 and you can take up to 5 exams per month, for a theoretical cost of $210 per month if you move at an accelerated pace. They have courses ranging from Calculus to Computer Architecture. Check out which schools they transfer to <a href="https://study.com/college/school/index.html#transferSearch">here</a>.</p>
+<h2 id="recommendations">Recommendations</h2>
+<p>Take Calculus at Sophia.org, it&rsquo;s by far the easiest and it&rsquo;s accepted at every school listed here. Use CLEP for things you already know and test out of quickly. Sophia.org is great for getting courses out quickly, so take as many of those which will transfer as possible and do the rest at Study.com.</p>
+<p>Make sure to view your schools transfer policy for each program. Here&rsquo;s the ones for WGU for example:</p>
+<h3 id="wgu">WGU</h3>
+<p><a href="https://partners.wgu.edu/transfer-pathway-agreement?uniqueId=BSCS7110&collegeCode=IT&instId=796&programId=182">WGU Transfer Pathways Agreement for Sophia Learning LLC</a></p>
+<p><a href="https://partners.wgu.edu/transfer-pathway-agreement?uniqueId=BSCS4424&collegeCode=IT&instId=678&programId=182">WGU Transfer Pathways Agreement for Study.com</a></p>
+<h3 id="snhu">SNHU</h3>
+<p><a href="https://snhu.sophia.org/">Sophia.org</a></p>
+<p><a href="https://study.com/college/school/snhu.html">Study.com</a></p>
+<h3 id="tesu">TESU</h3>
+<p><a href="https://study.com/college/school/thomas-edison-state-university.html">Study.com</a></p>
+<p><a href="https://tesu.sophia.org/">Sophia.org</a></p>
+<h3 id="csu-global">CSU Global</h3>
+<p><a href="https://study.com/college/school/csu-global.html">Study.com</a></p>
+<p><a href="https://csuglobal.sophia.org/">Sophia.org</a></p>
+<h1 id="step-3-get-a-transfer-evaluation-and-enroll">Step 3. Get a transfer evaluation and enroll</h1>
+<p>After you&rsquo;ve taken all the courses you needed or wanted to at sites like Sophia or Study.com it&rsquo;s time to finally apply and get a transfer evaluation from your target school and finally enroll. With WGU you can apply and get a transfer evaluation while you get your alternative credits. But whatever you do, make sure you have ALL your alternative credits transferred in and evaluated BEFORE you enroll. In most cases you cannot transfer in more credits once you enrolled.</p>
+<p>If you did everything right, you should be sitting pretty and have only 50 to 25 per-cent of your degree left and you can finish in about a year. If you&rsquo;re like me, you <a href="/posts/on-finishing-my-bscs/">finish in 4 months</a></p>
+<h1 id="step-4-graduate">Step 4. Graduate</h1>
+<p>That&rsquo;s it, if you did everything right, all you have to do is finish!</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Hopefully after reading this, you can see how you can finish an accredited computer science degree in 6 months to 2 years for less than $15k! If you take my route you can finish in under a year and for less than $5k. So go get it! The quicker you can finish a CS degree the quicker you can get into the industry and start making money or go into a masters program. I went this route and now <a href="/posts/accepted-to-gt/">I&rsquo;m a graduate student at Georgia Tech.</a>. Good luck to you and go get that education! がんばってください！</p>
+]]></content>
+        </item>
         
         <item>
             <title>Accepted to Georgia Tech</title>
-            <link>http://localhost:1313/posts/accepted-to-gt/</link>
+            <link>https://victoramartinez.com/posts/accepted-to-gt/</link>
             <pubDate>Fri, 29 Nov 2024 22:16:40 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/accepted-to-gt/</guid>
+            <guid>https://victoramartinez.com/posts/accepted-to-gt/</guid>
             <description>&lt;p&gt;Back on May 31st, 2024, right as I submitted my last assignment for my capstone course, my last class on my BSCS at WGU, I applied for Georgia Tech’s OMSCS program. In August, days before my graduation ceremony, I heard back that I got accepted into the Spring 2025 cohort of Georgia Tech’s Online Masters of Science in Computer Science and this week I just got my gatech.edu email address.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Back on May 31st, 2024, right as I submitted my last assignment for my capstone course, my last class on my BSCS at WGU, I applied for Georgia Tech’s OMSCS program. In August, days before my graduation ceremony, I heard back that I got accepted into the Spring 2025 cohort of Georgia Tech’s Online Masters of Science in Computer Science and this week I just got my gatech.edu email address.</p>
 <p>I’m excited to be taking part in this amazing program, it’s really a dream come true. This will give me an opportunity to really focus in on areas of computer science I find most interesting. I plan on doing the Interactive Intelligence specialization. Now I know what you’re probably thinking (or not, I don’t personally know you and it’s rude to assume, but I can make a pretty good guess) “oh boy, just another one looking to get in on the AI hyper train.” Well, no… You see, for me AI and ML have always been an are of intrigue for me since my first freshman year back in 2013, during my first degree attempt and I want to learn about AI as a field in general because of a personal curiosity of not just AI itself, but computer science as a whole.</p>
@@ -32,21 +127,11 @@
         </item>
         
         <item>
-            <title>How to Get a Bscs Efficiently</title>
-            <link>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</link>
-            <pubDate>Fri, 29 Nov 2024 17:02:20 -0400</pubDate>
-            
-            <guid>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
             <title>On Finishing My BSCS</title>
-            <link>http://localhost:1313/posts/on-finishing-my-bscs/</link>
+            <link>https://victoramartinez.com/posts/on-finishing-my-bscs/</link>
             <pubDate>Mon, 24 Jun 2024 03:42:30 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/on-finishing-my-bscs/</guid>
+            <guid>https://victoramartinez.com/posts/on-finishing-my-bscs/</guid>
             <description>&lt;p&gt;Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.</p>
 <p>But first, let me outline why I did this. I&rsquo;ve been working for close to 9 years as a software engineer, including 2 years of internships and 7+ years of non-internship work experience. I had been thrusted onto the roll of senior software engineer in my last job over the course of two years and had lead a team of 6 other developers. I felt like I was at the top of my game, but something was missing, but what? I was noticing that I was starting to lack in certain areas of theoretical knowledge and lacked the structure and accountability to master them. I had attempted a degree before, once in 2013 through 2017 as a computer engineering student at the University of Puerto Rico, and then transferred over to Computer Science at the Polytechnic University of Puerto Rico when I found hardware too uninteresting and difficult. During the transfer, nearly nothing had transferred over so I had to start all over again, I was the equivalent of a Junior or Sophomore, it was rough. Over the course of three years, I was passing classes left and right, keeping an above 3.0 GPA while also holding down a full-time 9 to 5 job.</p>
@@ -59,37 +144,11 @@
         </item>
         
         <item>
-            <title>Trunk Based Development</title>
-            <link>http://localhost:1313/posts/trunk-based-development/</link>
-            <pubDate>Sun, 31 Mar 2024 00:27:32 -0400</pubDate>
-            
-            <guid>http://localhost:1313/posts/trunk-based-development/</guid>
-            <description>&lt;p&gt;Trunk-based development is a way of maintaining source code that is popular among teams that practice continuous integration and delivery. It requires merging frequent small changes to the trunk or “main” of the repository, often directly, for it to work properly. Some developers are afraid to adopt this practice, for fear of breaking the codebase and instead opt for the perceived safety of workflows like GitHub Flow or Gitflow. But I argue that this safety is a myth and that trunk-based development, not only a good alternative to these two strategies, but it is also in fact the only proven way to develop quality software faster and the only way to do proper continuous integration and delivery.&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<p>Trunk-based development is a way of maintaining source code that is popular among teams that practice continuous integration and delivery. It requires merging frequent small changes to the trunk or “main” of the repository, often directly, for it to work properly. Some developers are afraid to adopt this practice, for fear of breaking the codebase and instead opt for the perceived safety of workflows like GitHub Flow or Gitflow. But I argue that this safety is a myth and that trunk-based development, not only a good alternative to these two strategies, but it is also in fact the only proven way to develop quality software faster and the only way to do proper continuous integration and delivery.</p>
-<p>In the past, source version control was costly and labor-intensive, as it required large amounts of work and effort to track changes to software and merge them together as engineers worked on the source code. These tools improved and out came workflows like Gitflow which relies on strict management of feature and hotfix branches, merged into a develop branch which is then merge into main with cherry picks (Driessen, 2010). This complex workflow works well to maintain code quality, but at the cost of speed and merge conflicts as feature branches tend to live for a long time and is difficult to use with CI/CD (Atlassian, n.d.). Trunk-based development instead focuses on using short-lived feature branches that merge directly to trunk (main) or in some cases have developers commit directly to main and it is designed to work well with, and often requires, CI/CD (Hammant, 2017). It is not only operationally simpler, but it has also been shown to be more effective at producing higher quality code and positively affects continuous delivery and that users of this method are among the highest IT performers (Puppet + DORA, 2017).</p>
-<p>Trunk-based development is often compared to GitHub Flow which has a very similar workflow of branching from and merging directly to trunk, but there are two important distinctions. GitHub Flow makes no assertions about the lifetime of feature branches, so they can live for a long time and cause large merge conflicts when trying to integrate and secondly integration happens on a per-request basis via a chatbot that tests and deploys your pull request branch to production on a queue, which locks the main branch, merges to deploy in several steps that take several minutes each, and then monitors each step for problems and then unlocks main. This second distinction is a big one as with large teams, one could be stuck waiting for a merge request to happen and problems to arise and be the chances of merge conflicts go up over time (Thomson, 2018). The trunk-based workflow does not have this problem, each merge request or commit to main is evaluated individually and does not lock the main branch and each developer is required to pull the latest changes from head frequently, thus reducing the possibility of merge conflicts.</p>
-<p>So, trunk-based development is simpler and works well with CI/CD, but it must be dangerous to work directly in main, right? Not so, in fact many different companies in various industries (both highly and less regulated) work this way safely. Microsoft (Thomson, 2018), Google (Potvin, 2015), Atlassian, NASA, and SpaceX all work in trunk. SpaceX is a particularly great example, as they attribute working in trunk as a key factor in the safety of their rockets, often pushing changes to trunk and uploading software to rockets on the launchpad up to 45 minutes before a scheduled launch. If SpaceX uses it in the highly regulated industry of making missiles that launch objects into space, so can you. (Rajadurai, 2020) (Lofgren, 2020).</p>
-<p>To setup trunk-based development, certain things must be put in place. A reliable CI/CD infrastructure must be setup from the beginning, investing in good CI/CD is critical to make trunk-based development work. Engineers must write proper tests that they can trust and run every time they commit to trunk. Engineers commit their changes to trunk frequently, ideally at least daily if not more often, so they may integrate their changes frequently and find out quickly whether their changes will work well with everyone else’s. Continuous code review must be performed and often pair-programming along with comments on commits is sufficient, if not implement merge requests of short-lived feature branches. And finally, since engineers are pushing potentially unfinished changes to trunk daily, care must be taken to hide unfinished features from users in the form of feature toggles and dark launching. (Ehn, 2019) (Thomson, 2018)</p>
-<p>In conclusion, trunk-based development is not only operationally simpler than more complicated alternatives like Gitflow, but it strongly correlated with high-performing IT practitioners and is the best way of doing continuous integration and delivery. Working on trunk can seem scary but is in fact the best way to deliver high quality software and figure that your changes are going to in fact work with everyone else’s. Trunk-based development speeds up the creation of software in s safe and effective manner. It requires a bit of an upfront investment, but the rewards are well worth it.</p>
-<h2 id="sources">Sources</h2>
-<p>Atlassian. (n.d.). Gitflow workflow. Retrieved from Atlasian Git Tutorial: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow</a></p>
-<p>Driessen, V. (2010, January 5). A successful Git branching model. Retrieved from nvie.com: <a href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a></p>
-<p>Ehn, J. (2019, June 5). Real Programmers Commit To Master . Retrieved from YouTube: <a href="https://www.youtube.com/watch?v=hL1OZfgoZGk&t=1271s&pp=ygUXdHJ1bmsgYmFzZWQgZGV2ZWxvcG1lbnQ%3D">https://www.youtube.com/watch?v=hL1OZfgoZGk&t=1271s&pp=ygUXdHJ1bmsgYmFzZWQgZGV2ZWxvcG1lbnQ%3D</a>
-Hammant, P. (2017). Trunk Based Development: Introduction. Retrieved from Trunk Based Development: <a href="https://trunkbaseddevelopment.com/#history">https://trunkbaseddevelopment.com/#history</a></p>
-<p>Lofgren, E. (2020, December 4). Is continuous testing the key to SpaceX software success? Retrieved from Acquisition Talk: <a href="https://acquisitiontalk.com/2020/12/is-continuous-testing-the-key-to-spacex-software-success/">https://acquisitiontalk.com/2020/12/is-continuous-testing-the-key-to-spacex-software-success/</a>
-Potvin, R. (2015, September 14). Why Google Stores Billions of Lines of Code in a Single Repository. Retrieved from YouTube: <a href="https://youtu.be/W71BTkUbdqE">https://youtu.be/W71BTkUbdqE</a></p>
-<p>Puppet + DORA. (2017). 2017 State of DevOps Report. Puppet + DORA. Retrieved from <a href="https://services.google.com/fh/files/misc/state-of-devops-2017.pdf">https://services.google.com/fh/files/misc/state-of-devops-2017.pdf</a></p>
-<p>Rajadurai, N. (2020, June 25). How SpaceX develops software. Retrieved from {Coders} Kitchen: <a href="https://www.coderskitchen.com/spacex-software-development-and-testing/">https://www.coderskitchen.com/spacex-software-development-and-testing/</a></p>
-<p>Thomson, E. (2018, May 9). Git patterns and anti-patterns for successful developers: Build 2018. Retrieved from YouTube: <a href="https://youtu.be/ykZbBD-CmP8">https://youtu.be/ykZbBD-CmP8</a></p>
-]]></content>
-        </item>
-        
-        <item>
             <title>Defensive Commits</title>
-            <link>http://localhost:1313/posts/defensive-commits/</link>
+            <link>https://victoramartinez.com/posts/defensive-commits/</link>
             <pubDate>Sat, 22 Oct 2022 21:55:26 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/defensive-commits/</guid>
+            <guid>https://victoramartinez.com/posts/defensive-commits/</guid>
             <description>&lt;p&gt;Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with &lt;a href=&#34;https://trunkbaseddevelopment.com&#34;&gt;trunk-based development&lt;/a&gt; and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.&lt;/p&gt;
 &lt;p&gt;At &lt;a href=&#34;https://coquihealth.com&#34;&gt;Coqui Health&lt;/a&gt;, we&amp;rsquo;ve implemented this strategy successfully and this is now the default way we work. We use a monorepo strategy coupled with ci/cd and trunk-based development, which means we work close to or in trunk and so having a robust ci/cd pipeline is paramount. Defensive commits allows us to catch bugs early and get feedback that our code will work or break things. It&amp;rsquo;s allowed us to move faster and not break things.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with <a href="https://trunkbaseddevelopment.com">trunk-based development</a> and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.</p>
@@ -107,10 +166,10 @@ Potvin, R. (2015, September 14). Why Google Stores Billions of Lines of Code in 
         
         <item>
             <title>Getting Back to Blogging</title>
-            <link>http://localhost:1313/posts/getting-back-to-blogging/</link>
+            <link>https://victoramartinez.com/posts/getting-back-to-blogging/</link>
             <pubDate>Sun, 19 Dec 2021 17:22:45 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/getting-back-to-blogging/</guid>
+            <guid>https://victoramartinez.com/posts/getting-back-to-blogging/</guid>
             <description>&lt;p&gt;It&amp;rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&amp;rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&amp;rsquo;ve been so full of ideas.&lt;/p&gt;
 &lt;p&gt;Recently I&amp;rsquo;ve been thinking a lot about finance, economics, and of course programming. I want to share my findings with you in hopes that this will help someone. So with that declaration out of the way, let&amp;rsquo;s get back to it!&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>It&rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&rsquo;ve been so full of ideas.</p>
@@ -120,10 +179,10 @@ Potvin, R. (2015, September 14). Why Google Stores Billions of Lines of Code in 
         
         <item>
             <title>Value Objects in Go</title>
-            <link>http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</link>
+            <link>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</link>
             <pubDate>Fri, 23 Oct 2020 03:12:35 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</guid>
+            <guid>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</guid>
             <description>&lt;p&gt;Recently I&amp;rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&amp;rsquo;ve come accross a few patterns I&amp;rsquo;d like to share. Mainly we&amp;rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Recently I&rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&rsquo;ve come accross a few patterns I&rsquo;d like to share. Mainly we&rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.</p>
 <h2 id="description">Description</h2>
@@ -181,10 +240,10 @@ Potvin, R. (2015, September 14). Why Google Stores Billions of Lines of Code in 
         
         <item>
             <title>Stop The EARN IT Act</title>
-            <link>http://localhost:1313/posts/stop-earn-it-act/</link>
+            <link>https://victoramartinez.com/posts/stop-earn-it-act/</link>
             <pubDate>Wed, 25 Mar 2020 19:51:27 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/stop-earn-it-act/</guid>
+            <guid>https://victoramartinez.com/posts/stop-earn-it-act/</guid>
             <description>&lt;p&gt;A new threat to your freedom of speech and privacy has appeared. Senators Lindsey Graham (R-SC) and Richard Blumenthal (D-CT) have joined in introducing the &lt;a href=&#34;https://www.congress.gov/bill/116th-congress/senate-bill/3398&#34;&gt;EARN IT Act (S. 3398)&lt;/a&gt; bill in Congress. This act&amp;rsquo;s intention is hidden behind the guise of protecting children, but in reality seeks to potentially undermine the end-to-end encryption and security that exists for almost all internet communications, especially social messaging platforms like WhatsApp and other U.S. based messaging platforms. This would give dangerous men like Attorney General William Barr, who has expressed his opinions about encryption in the past, the legal authority to demand platforms decrypt communications. Don&amp;rsquo;t be fooled, if this bill passes it will do little to actually protect children and instead put your data and private conversations at risk to online criminals and foreign governments. It is not just your private messages, but other means of communications that are at risk.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>A new threat to your freedom of speech and privacy has appeared. Senators Lindsey Graham (R-SC) and Richard Blumenthal (D-CT) have joined in introducing the <a href="https://www.congress.gov/bill/116th-congress/senate-bill/3398">EARN IT Act (S. 3398)</a> bill in Congress. This act&rsquo;s intention is hidden behind the guise of protecting children, but in reality seeks to potentially undermine the end-to-end encryption and security that exists for almost all internet communications, especially social messaging platforms like WhatsApp and other U.S. based messaging platforms. This would give dangerous men like Attorney General William Barr, who has expressed his opinions about encryption in the past, the legal authority to demand platforms decrypt communications. Don&rsquo;t be fooled, if this bill passes it will do little to actually protect children and instead put your data and private conversations at risk to online criminals and foreign governments. It is not just your private messages, but other means of communications that are at risk.</p>
 <p>Various rights watch organizations have already denounced the bill, including the <a href="https://www.aclu.org/press-releases/aclu-afp-comment-earn-it-act">ACLU</a>.</p>
@@ -206,10 +265,10 @@ Potvin, R. (2015, September 14). Why Google Stores Billions of Lines of Code in 
         
         <item>
             <title>Don&#39;t Use Frameworks</title>
-            <link>http://localhost:1313/posts/dont-use-frameworks/</link>
+            <link>https://victoramartinez.com/posts/dont-use-frameworks/</link>
             <pubDate>Tue, 24 Mar 2020 04:32:51 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/dont-use-frameworks/</guid>
+            <guid>https://victoramartinez.com/posts/dont-use-frameworks/</guid>
             <description>&lt;p&gt;Stop using frameworks for everything. Just stop. You don&amp;rsquo;t need a framework to write good code and deliver products. Don&amp;rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&amp;rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application. The patterns I suggest you use are &lt;a href=&#34;https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html&#34;&gt;Clean Architecture&lt;/a&gt;, &lt;a href=&#34;https://www.infoq.com/minibooks/domain-driven-design-quickly/&#34;&gt;Domain Driven Design&lt;/a&gt;, and the &lt;a href=&#34;https://www.youtube.com/watch?v=t86v3N4OshQ&#34;&gt;SOLID&lt;/a&gt; principles. Having a maintainable application is a matter of applying certain design principles and professionalism. In particular, applying &lt;a href=&#34;https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html&#34;&gt;TDD&lt;/a&gt; or BDD and Domain Driven Design principles. Think about your application before you write a single line of code, design it, and test before you implement it.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Stop using frameworks for everything. Just stop. You don&rsquo;t need a framework to write good code and deliver products. Don&rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application. The patterns I suggest you use are <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">Clean Architecture</a>, <a href="https://www.infoq.com/minibooks/domain-driven-design-quickly/">Domain Driven Design</a>, and the <a href="https://www.youtube.com/watch?v=t86v3N4OshQ">SOLID</a> principles. Having a maintainable application is a matter of applying certain design principles and professionalism. In particular, applying <a href="https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html">TDD</a> or BDD and Domain Driven Design principles. Think about your application before you write a single line of code, design it, and test before you implement it.</p>
 <p>What should you do about frameworks then? You can still use them, but only as plugins to your application. The use of a framework should be done by implementing internal interfaces for your applications&rsquo; inner layers. Let me ask you this, how many times have you answered the question &ldquo;what is your architecture?&rdquo; with a phrase like &ldquo;We have a ruby on rails back-end persisted by postgres using an angular front-end?&rdquo; If you have, what you have just described is not an architecture, it is an application stack. And what is the application stack? The stack is a detail! No one cares what your application stack is, well no one who wants to get the work done cares what it is, and you shouldn&rsquo;t either. To be fair, I&rsquo;m not saying your technology stack isn&rsquo;t important at some level, I&rsquo;m saying that it&rsquo;s a detail. So what is an application&rsquo;s architecture then? It is the system of patterns that we use to carry out our application&rsquo;s functionality. Your architecture could be a simple CRUD system, or it might be a complex trading application that receives trade orders as incoming messages and delivers them by reserving credits and emitting order events depending on what state you&rsquo;re in. One thing is clear, your application&rsquo;s architecture is driven by the domain you&rsquo;re in and the complexity of the problem you are solving, a framework is not architecture.</p>
@@ -549,10 +608,10 @@ Potvin, R. (2015, September 14). Why Google Stores Billions of Lines of Code in 
         
         <item>
             <title>Event Sourcing in Go</title>
-            <link>http://localhost:1313/posts/event-sourcing-in-go/</link>
+            <link>https://victoramartinez.com/posts/event-sourcing-in-go/</link>
             <pubDate>Mon, 23 Mar 2020 21:13:59 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/event-sourcing-in-go/</guid>
+            <guid>https://victoramartinez.com/posts/event-sourcing-in-go/</guid>
             <description>&lt;p&gt;I&amp;rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&amp;rsquo;ve been doing it in Go and want to share how I do it.&lt;/p&gt;
 &lt;p&gt;To begin with, I&amp;rsquo;ve researched this topic thoroughly; I&amp;rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it. The first thing I want to put out there is that you don&amp;rsquo;t need a framework to do this. Ddd and cqrs/es are best done without a framework getting in the way and instead you should create a &lt;a href=&#34;https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html&#34;&gt;Clean Architecture&lt;/a&gt; where the framework you choose later on becomes a sort of plugin into your application.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I&rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&rsquo;ve been doing it in Go and want to share how I do it.</p>
@@ -944,22 +1003,11 @@ Potvin, R. (2015, September 14). Why Google Stores Billions of Lines of Code in 
         </item>
         
         <item>
-            <title>How I Started Out As Programmer</title>
-            <link>http://localhost:1313/posts/how-i-started-out/</link>
-            <pubDate>Fri, 29 Nov 2019 23:00:55 -0400</pubDate>
-            
-            <guid>http://localhost:1313/posts/how-i-started-out/</guid>
-            <description>&lt;p&gt;I remember the first time I knew I wanted to do something related to computers. I was in the sixth grade and our computer teacher tried and failed to show us how to build a webpage with HTML. At the end of the class none of us had a working webpage, but the very idea that I could build one on my own and that I didn&amp;rsquo;t need anything special but a computer to do it intrigued me as a kid. Early on I knew I liked computers a lot. I spent most of my time as a child playing computer games, especially those games that involved some sort of planning or strategy like simulators or tycoons such as Roller Coaster Tycoon and SimCity. After our class had finished, I was still interested in the idea of making my own websites and even learn to make computers do what I wanted them to do, so I spent the summer before going to the 7th grade learning how to make websites. I got on to W3 schools and followed the tutorials and guides from the moment I woke up to the moment I went to bed. I had even started downloading books about. It was through that that I learned about programming in general and what it would mean for me if I learned it.&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<p>I remember the first time I knew I wanted to do something related to computers. I was in the sixth grade and our computer teacher tried and failed to show us how to build a webpage with HTML. At the end of the class none of us had a working webpage, but the very idea that I could build one on my own and that I didn&rsquo;t need anything special but a computer to do it intrigued me as a kid. Early on I knew I liked computers a lot. I spent most of my time as a child playing computer games, especially those games that involved some sort of planning or strategy like simulators or tycoons such as Roller Coaster Tycoon and SimCity. After our class had finished, I was still interested in the idea of making my own websites and even learn to make computers do what I wanted them to do, so I spent the summer before going to the 7th grade learning how to make websites. I got on to W3 schools and followed the tutorials and guides from the moment I woke up to the moment I went to bed. I had even started downloading books about. It was through that that I learned about programming in general and what it would mean for me if I learned it.</p>
-]]></content>
-        </item>
-        
-        <item>
             <title>What I&#39;ve Learned Working in a Large Software Project</title>
-            <link>http://localhost:1313/posts/learnings-working-large-software-project/</link>
+            <link>https://victoramartinez.com/posts/learnings-working-large-software-project/</link>
             <pubDate>Thu, 28 Nov 2019 20:46:11 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/learnings-working-large-software-project/</guid>
+            <guid>https://victoramartinez.com/posts/learnings-working-large-software-project/</guid>
             <description>&lt;p&gt;I&amp;rsquo;ve been working my first large software project for almost a year now and I&amp;rsquo;d like to share my learnings from this project. The things I&amp;rsquo;ve learned, discovered, and realized during this time might be interesting to some, might be old news to others, and might even shed some light on how certain things are done in certain types of projects, but all in all I hope this proves to be an interesting read.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I&rsquo;ve been working my first large software project for almost a year now and I&rsquo;d like to share my learnings from this project. The things I&rsquo;ve learned, discovered, and realized during this time might be interesting to some, might be old news to others, and might even shed some light on how certain things are done in certain types of projects, but all in all I hope this proves to be an interesting read.</p>
 <p>First things first, where have I been working? I&rsquo;m currently a software developer at the <a href="https://suri.hacienda.pr.gov">SURI</a> project, the current largest government software project for the Puerto Rico government under the arm of the Treasury Department, also known as Hacienda. This is the software that is going to handle all the new tax related activities for the treasury and is already being used for corporate tax returns, import declarations, and other tax activities. Next year the plan is to rollout the individual tax returns. We already handle individuals in the system, but only show informative and W2s and not their tax returns yet. I&rsquo;m here as a contractor on behalf of my employer.</p>
@@ -987,10 +1035,10 @@ Potvin, R. (2015, September 14). Why Google Stores Billions of Lines of Code in 
         
         <item>
             <title>WTF is Blockchain?</title>
-            <link>http://localhost:1313/posts/wtf-is-blockchain/</link>
+            <link>https://victoramartinez.com/posts/wtf-is-blockchain/</link>
             <pubDate>Tue, 07 Aug 2018 19:44:17 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/wtf-is-blockchain/</guid>
+            <guid>https://victoramartinez.com/posts/wtf-is-blockchain/</guid>
             <description>&lt;p&gt;This post was inspired by a talk given by Jared Haight from Microsoft at &lt;a href=&#34;http://bsidespr.org/2017/&#34;&gt;BSidesPR&lt;/a&gt;. Jared talked about giving back to the InfoSec community at a large, and he mentioned things to write about, including Blockchain. Specifically, he asked &amp;ldquo;WTF is Blockchain?&amp;rdquo; and said it that if you actually title it like that, he&amp;rsquo;d read it. So, this is my attempt at writing that description.&lt;/p&gt;
 &lt;h4 id=&#34;tldr-blockchain-is-an-unchangeable-series-of-blocks-that-each-reference-the-previous-blocks-contents-via-a-hash-of-that-content-blocks-are-a-collection-of-transactions-that-have-been-grouped-together-by-miners&#34;&gt;TLDR: Blockchain is an unchangeable series of blocks that each reference the previous&amp;rsquo; block&amp;rsquo;s contents via a hash of that content. Blocks are a collection of transactions that have been grouped together by miners.&lt;/h4&gt;
 &lt;h1 id=&#34;basic-computer-science&#34;&gt;Basic Computer Science&lt;/h1&gt;
@@ -1018,10 +1066,10 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
         
         <item>
             <title>Goro</title>
-            <link>http://localhost:1313/posts/goro/</link>
+            <link>https://victoramartinez.com/posts/goro/</link>
             <pubDate>Mon, 21 May 2018 13:36:22 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/goro/</guid>
+            <guid>https://victoramartinez.com/posts/goro/</guid>
             <description>&lt;p&gt;I know I haven&amp;rsquo;t posted in a long time, but I finally felt I needed an update in my blog. I&amp;rsquo;ve recently updated some work on my own Go library for &lt;a href=&#34;https://eventstore.org&#34;&gt;EventStore&lt;/a&gt; called &lt;a href=&#34;https://github.com/vectorhacker/goro&#34;&gt;goro&lt;/a&gt;. I made this for my own personal work and my job at &lt;a href=&#34;http://alqmy.io&#34;&gt;ALQMY&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I used to use &lt;a href=&#34;https://github.com/jetbasrawi/go.geteventstore&#34;&gt;Go.GetEventStore&lt;/a&gt; as my prefered library for working with EventStore. It was nice, but I felt it was lacking in many features and was ultimitely very cumbersome to work with, especially when it comes to reading events in a streaming fashion. I modeled my libary much like the sarama library for Kafka which has a similar api for streaming. On top of that I&amp;rsquo;ve added native support for reading streams, not only forwards, but backwards as well. This to me was a very important feature to have, as sometimes things like inlined snapshots in &lt;a href=&#34;https://martinfowler.com/eaaDev/EventSourcing.html&#34;&gt;Event Sourcing&lt;/a&gt; &lt;a href=&#34;https://martinfowler.com/eaaDev/EventSourcing.html&#34;&gt;[1]&lt;/a&gt;&lt;a href=&#34;http://microservices.io/patterns/data/event-sourcing.html&#34;&gt;[2]&lt;/a&gt;&lt;a href=&#34;https://eventstore.org/docs/event-sourcing-basics/index.html&#34;&gt;[3]&lt;/a&gt; require that you read a stream backwards.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I know I haven&rsquo;t posted in a long time, but I finally felt I needed an update in my blog. I&rsquo;ve recently updated some work on my own Go library for <a href="https://eventstore.org">EventStore</a> called <a href="https://github.com/vectorhacker/goro">goro</a>. I made this for my own personal work and my job at <a href="http://alqmy.io">ALQMY</a>.</p>
@@ -1084,11 +1132,11 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
         
         <item>
             <title>Amazon Key</title>
-            <link>http://localhost:1313/posts/amazon-key/</link>
+            <link>https://victoramartinez.com/posts/amazon-key/</link>
             <pubDate>Sun, 26 Nov 2017 23:20:47 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/amazon-key/</guid>
-            <description>&lt;p&gt;&lt;img alt=&#34;Amazon Key&#34; src=&#34;http://localhost:1313/images/amazon-key.jpeg&#34;&gt;&lt;/p&gt;
+            <guid>https://victoramartinez.com/posts/amazon-key/</guid>
+            <description>&lt;p&gt;&lt;img alt=&#34;Amazon Key&#34; src=&#34;https://victoramartinez.com/images/amazon-key.jpeg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;So Amazon &lt;a href=&#34;https://www.recode.net/2017/10/25/16538828/amazon-key-in-home-delivery-prime-camera-lock&#34;&gt;recently announced&lt;/a&gt; a new program called &lt;a href=&#34;https://en.wikipedia.org/wiki/Amazon_Key&#34;&gt;Amazon Key&lt;/a&gt;. This program would let deliverymen enter the house of people who have purchased the program. I&amp;rsquo;m really uncomfortable with this idea. For one thing, I don&amp;rsquo;t want Amazon, much less any other giant company, controlling entrance to my home. Second, this just feels like a whole new invasion of privacy.&lt;/p&gt;
 &lt;p&gt;This is just part of a much bigger problem. Silicon Valley companies are becoming so arrogant and negligent, and they&amp;rsquo;re giving me more and more reason to stop trusting them. Why would Amazon think that I would trust them with the security of my home? I say no.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p><img alt="Amazon Key" src="/images/amazon-key.jpeg"></p>
@@ -1099,10 +1147,10 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
         
         <item>
             <title>Github Pages</title>
-            <link>http://localhost:1313/posts/github-pages/</link>
+            <link>https://victoramartinez.com/posts/github-pages/</link>
             <pubDate>Sun, 26 Nov 2017 01:06:20 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/github-pages/</guid>
+            <guid>https://victoramartinez.com/posts/github-pages/</guid>
             <description>&lt;p&gt;I&amp;rsquo;m hosting this blog using Github pages (because I&amp;rsquo;m cheap.) You can browser through the source code &lt;a href=&#34;https://github.com/vectorhacker/victoramartinez.com&#34;&gt;here&lt;/a&gt;. I&amp;rsquo;m using &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; to generate the static site. Overall it&amp;rsquo;s pretty great.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I&rsquo;m hosting this blog using Github pages (because I&rsquo;m cheap.) You can browser through the source code <a href="https://github.com/vectorhacker/victoramartinez.com">here</a>. I&rsquo;m using <a href="https://gohugo.io">Hugo</a> to generate the static site. Overall it&rsquo;s pretty great.</p>
 ]]></content>
@@ -1110,11 +1158,11 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
         
         <item>
             <title>Net Neutrality Opinion</title>
-            <link>http://localhost:1313/posts/net-neutrality-opinion/</link>
+            <link>https://victoramartinez.com/posts/net-neutrality-opinion/</link>
             <pubDate>Sun, 26 Nov 2017 00:44:22 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/net-neutrality-opinion/</guid>
-            <description>&lt;p&gt;&lt;img alt=&#34;Fight For Net Neutrality!&#34; src=&#34;http://localhost:1313/images/fight-net.jpg&#34;&gt;&lt;/p&gt;
+            <guid>https://victoramartinez.com/posts/net-neutrality-opinion/</guid>
+            <description>&lt;p&gt;&lt;img alt=&#34;Fight For Net Neutrality!&#34; src=&#34;https://victoramartinez.com/images/fight-net.jpg&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
 &lt;p&gt;This December, the FCC will vote on wether to keep or reverse &lt;a href=&#34;http://transition.fcc.gov/Reports/1934new.pdf&#34;&gt;Title II of the Communications Act&lt;/a&gt; of 1934 in regards to ISPs. This decision will affect the way the internet works in the United States and if reversed, would give ISPs incentive to give preferential treatment of some data packets over others, among many other things that they could do. These rules are with the intent of creating a level playing field within the internet and keeping the internet free and open.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p><img alt="Fight For Net Neutrality!" src="/images/fight-net.jpg"></p>

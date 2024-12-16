@@ -2,19 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Science on Victor&#39;s Blog</title>
-    <link>http://localhost:1313/tags/computer-science/</link>
+    <link>https://victoramartinez.com/tags/computer-science/</link>
     <description>Recent content in Computer Science on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Victor Martínez</copyright>
     <lastBuildDate>Fri, 29 Nov 2024 22:16:40 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://victoramartinez.com/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accepted to Georgia Tech</title>
-      <link>http://localhost:1313/posts/accepted-to-gt/</link>
+      <link>https://victoramartinez.com/posts/accepted-to-gt/</link>
       <pubDate>Fri, 29 Nov 2024 22:16:40 -0400</pubDate>
-      <guid>http://localhost:1313/posts/accepted-to-gt/</guid>
+      <guid>https://victoramartinez.com/posts/accepted-to-gt/</guid>
       <description>&lt;p&gt;Back on May 31st, 2024, right as I submitted my last assignment for my capstone course, my last class on my BSCS at WGU, I applied for Georgia Tech’s OMSCS program. In August, days before my graduation ceremony, I heard back that I got accepted into the Spring 2025 cohort of Georgia Tech’s Online Masters of Science in Computer Science and this week I just got my gatech.edu email address.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>On Finishing My BSCS</title>
+      <link>https://victoramartinez.com/posts/on-finishing-my-bscs/</link>
+      <pubDate>Mon, 24 Jun 2024 03:42:30 -0400</pubDate>
+      <guid>https://victoramartinez.com/posts/on-finishing-my-bscs/</guid>
+      <description>&lt;p&gt;Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
