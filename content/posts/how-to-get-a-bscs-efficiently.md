@@ -49,7 +49,7 @@ The so-called Walmart of higher education, because they have almost every degree
 
 What I don't like:
 
-- They made certain courses less hackable recently and they dropped Sophia.org from their list of acceptable ACE credit institutions.
+- They made certain courses [less hackable recently](https://youtu.be/kSIivikonM0).
 - You pay per-credit not per-term like at WGU so you can't save more by taking more classes per term.
 
 Overall, though. It's a great school and it's a good option if you want to get into one of their specializations and you can't find it anywhere else or you can't get into WGU.
