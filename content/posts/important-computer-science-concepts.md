@@ -1,6 +1,6 @@
 ---
 title: The Most Important Topics for a Computer Science Undergrad
-date: 2024-12-23T22:16:40-04:00
+date: 2024-12-22T22:16:40-04:00
 draft: false
 toc: false
 images:
