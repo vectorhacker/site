@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on Victor&#39;s Blog</title>
+    <link>http://localhost:1313/tags/tech/</link>
+    <description>Recent content in Tech on Victor&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Victor Martínez</copyright>
+    <lastBuildDate>Wed, 25 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Engineers Are Safe... For Now</title>
+      <link>http://localhost:1313/posts/software-engineers-are-safe-for-now/</link>
+      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/software-engineers-are-safe-for-now/</guid>
+      <description>&lt;p&gt;Take a look at this search of jobs postings at OpenAI for December 25th, 2024. As of the time of this writing, over 150 results in all, 87 results for the term &amp;ldquo;Software Engineer.&amp;rdquo; This is a few days after the release of their latest frontier model, o3. This tells me that for the foreseeable future, Software Engineering jobs are safe, if not going to continue to be safe from full automation.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

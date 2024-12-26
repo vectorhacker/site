@@ -2,102 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://victoramartinez.com/tags/education/</loc>
+    <loc>http://localhost:1313/tags/computer/</loc>
+    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/science/</loc>
+    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/software-engineers-are-safe-for-now/</loc>
+    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tech/</loc>
+    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/computer-science/</loc>
+    <lastmod>2024-12-22T22:16:40-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/education/</loc>
+    <lastmod>2024-12-22T22:16:40-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/important-computer-science-concepts/</loc>
+    <lastmod>2024-12-22T22:16:40-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/how-to/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/how-to/</loc>
+    <loc>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</loc>
-    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://victoramartinez.com/posts/</loc>
-    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://victoramartinez.com/tags/</loc>
-    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://victoramartinez.com/</loc>
-    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://victoramartinez.com/posts/accepted-to-gt/</loc>
+    <loc>http://localhost:1313/posts/accepted-to-gt/</loc>
     <lastmod>2024-11-29T22:16:40-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/computer-science/</loc>
+    <loc>http://localhost:1313/tags/georgia-tech/</loc>
     <lastmod>2024-11-29T22:16:40-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/georgia-tech/</loc>
+    <loc>http://localhost:1313/tags/life-update/</loc>
     <lastmod>2024-11-29T22:16:40-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/life-update/</loc>
-    <lastmod>2024-11-29T22:16:40-04:00</lastmod>
-  </url><url>
-    <loc>https://victoramartinez.com/posts/on-finishing-my-bscs/</loc>
+    <loc>http://localhost:1313/posts/on-finishing-my-bscs/</loc>
     <lastmod>2024-06-24T03:42:30-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/ci/</loc>
+    <loc>http://localhost:1313/tags/ci/</loc>
     <lastmod>2022-10-22T21:55:26-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/continuous-delivery/</loc>
+    <loc>http://localhost:1313/tags/continuous-delivery/</loc>
     <lastmod>2022-10-22T21:55:26-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/defensive-commits/</loc>
+    <loc>http://localhost:1313/posts/defensive-commits/</loc>
     <lastmod>2022-10-22T21:55:26-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/git/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2022-10-22T21:55:26-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/getting-back-to-blogging/</loc>
+    <loc>http://localhost:1313/posts/getting-back-to-blogging/</loc>
     <lastmod>2021-12-19T17:22:45-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/untagged/</loc>
+    <loc>http://localhost:1313/tags/untagged/</loc>
     <lastmod>2021-12-19T17:22:45-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/ddd/</loc>
+    <loc>http://localhost:1313/tags/ddd/</loc>
     <lastmod>2020-10-23T03:12:35-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/domain-driven-design/</loc>
+    <loc>http://localhost:1313/tags/domain-driven-design/</loc>
     <lastmod>2020-10-23T03:12:35-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/go/</loc>
+    <loc>http://localhost:1313/tags/go/</loc>
     <lastmod>2020-10-23T03:12:35-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</loc>
+    <loc>http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</loc>
     <lastmod>2020-10-23T03:12:35-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/stop-earn-it-act/</loc>
+    <loc>http://localhost:1313/posts/stop-earn-it-act/</loc>
     <lastmod>2020-03-25T19:51:27-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/dont-use-frameworks/</loc>
+    <loc>http://localhost:1313/posts/dont-use-frameworks/</loc>
     <lastmod>2020-03-24T04:32:51-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/tags/event-sourcing/</loc>
+    <loc>http://localhost:1313/tags/event-sourcing/</loc>
     <lastmod>2020-03-23T21:13:59-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/event-sourcing-in-go/</loc>
+    <loc>http://localhost:1313/posts/event-sourcing-in-go/</loc>
     <lastmod>2020-03-23T21:13:59-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/learnings-working-large-software-project/</loc>
+    <loc>http://localhost:1313/posts/learnings-working-large-software-project/</loc>
     <lastmod>2019-11-28T20:46:11-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/wtf-is-blockchain/</loc>
+    <loc>http://localhost:1313/posts/wtf-is-blockchain/</loc>
     <lastmod>2018-08-07T19:44:17-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/goro/</loc>
+    <loc>http://localhost:1313/posts/goro/</loc>
     <lastmod>2018-05-21T13:36:22-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/amazon-key/</loc>
+    <loc>http://localhost:1313/posts/amazon-key/</loc>
     <lastmod>2017-11-26T23:20:47-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/github-pages/</loc>
+    <loc>http://localhost:1313/posts/github-pages/</loc>
     <lastmod>2017-11-26T01:06:20-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/posts/net-neutrality-opinion/</loc>
+    <loc>http://localhost:1313/posts/net-neutrality-opinion/</loc>
     <lastmod>2017-11-26T00:44:22-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2017-11-25T23:49:38-04:00</lastmod>
   </url><url>
-    <loc>https://victoramartinez.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
