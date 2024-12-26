@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 420.5
   },
   "right": {
     "id": "ac7fef036d3bc8c0",
@@ -165,9 +165,10 @@
   },
   "active": "a1f429d3ec085bb2",
   "lastOpenFiles": [
+    "content/posts/important-computer-science-concepts.md",
+    "static/images/linkedin-job-posts-openai.png.png",
     "content/posts/amazon-key.md",
     "content/posts/Software-Engineers-Are-Safe-For-Now.md",
-    "static/images/linkedin-job-posts-openai.png.png",
     "content/about/_index.md",
     "content/posts/accepted-to-gt.md"
   ]
