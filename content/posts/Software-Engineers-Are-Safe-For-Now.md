@@ -11,7 +11,7 @@ tags:
 ---
 Take a look at this search of jobs postings at OpenAI for December 25th, 2024. As of the time of this writing, over 150 results in all, 87 results for the term "Software Engineer." This is a few days after the release of their latest frontier model, o3. This tells me that for the foreseeable future, Software Engineering jobs are safe, if not going to continue to be safe from full automation.
 
-![[Pasted image 20241225215630.png]]
+![LinkedIn Job Postings for OpenAI Dec 25, 2024](images/linkedin-job-posts-openai.png)
 
 Many of these roles require several years of experience developing products, proficiency in programming languages and frameworks like JavaScript, React, and Python, standing up infrastructure, proficiency with SQL, and some interest in AI/ML. This tells me that not only are they still looking to hire people who are experts in their respective fields, but that human work is still favorable to machine's for at least the next several years. 
 
