@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -11,7 +11,7 @@
 <meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/posts/dont-use-frameworks/" />
+<link rel="canonical" href="https://victoramartinez.com/posts/dont-use-frameworks/" />
 
 
     <title>
@@ -24,7 +24,7 @@
 
 
 
-  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.min.07ea7ac7da67e2e153a7dfa2457bc6a19cca824288d175e223fadc579041bc51.css" integrity="sha256-B&#43;p6x9pn4uFTp9&#43;iRXvGoZzKgkKI0XXiI/rcV5BBvFE=" crossorigin="anonymous">
 
 
 
@@ -45,10 +45,10 @@
   <meta itemprop="datePublished" content="2020-03-24T04:32:51-04:00">
   <meta itemprop="dateModified" content="2020-03-24T04:32:51-04:00">
   <meta itemprop="wordCount" content="2126">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://victoramartinez.com/">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://victoramartinez.com/">
   <meta name="twitter:title" content="Don&#39;t Use Frameworks">
   <meta name="twitter:description" content="Stop using frameworks for everything. Just stop. You don’t need a framework to write good code and deliver products. Don’t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn’t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application. The patterns I suggest you use are Clean Architecture, Domain Driven Design, and the SOLID principles. Having a maintainable application is a matter of applying certain design principles and professionalism. In particular, applying TDD or BDD and Domain Driven Design principles. Think about your application before you write a single line of code, design it, and test before you implement it.">
 
@@ -132,7 +132,7 @@
 
     <article>
       <h1 class="post-title">
-        <a href="http://localhost:1313/posts/dont-use-frameworks/">Don&rsquo;t Use Frameworks</a>
+        <a href="https://victoramartinez.com/posts/dont-use-frameworks/">Don&rsquo;t Use Frameworks</a>
       </h1>
 
       
@@ -146,11 +146,11 @@
 <p>What should you do about frameworks then? You can still use them, but only as plugins to your application. The use of a framework should be done by implementing internal interfaces for your applications&rsquo; inner layers. Let me ask you this, how many times have you answered the question &ldquo;what is your architecture?&rdquo; with a phrase like &ldquo;We have a ruby on rails back-end persisted by postgres using an angular front-end?&rdquo; If you have, what you have just described is not an architecture, it is an application stack. And what is the application stack? The stack is a detail! No one cares what your application stack is, well no one who wants to get the work done cares what it is, and you shouldn&rsquo;t either. To be fair, I&rsquo;m not saying your technology stack isn&rsquo;t important at some level, I&rsquo;m saying that it&rsquo;s a detail. So what is an application&rsquo;s architecture then? It is the system of patterns that we use to carry out our application&rsquo;s functionality. Your architecture could be a simple CRUD system, or it might be a complex trading application that receives trade orders as incoming messages and delivers them by reserving credits and emitting order events depending on what state you&rsquo;re in. One thing is clear, your application&rsquo;s architecture is driven by the domain you&rsquo;re in and the complexity of the problem you are solving, a framework is not architecture.</p>
 <p>So what does a frameworkless application look like? Here&rsquo;s an example in Go. Let us start by the business rules and implement entities. In this example we&rsquo;re using a Cargo shipping application. Notice that our entities are free of any database dependencies and external concerns.</p>
 <h3 id="entities">Entities</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// TrackingID uniquely identifies a particular cargo.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">TrackingID</span> <span style="color:#66d9ef">string</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// TrackingID uniquely identifies a particular cargo.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">TrackingID</span> <span style="color:#66d9ef">string</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Cargo is the central class in the domain model.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Cargo</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Cargo is the central class in the domain model.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Cargo</span> <span style="color:#66d9ef">struct</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TrackingID</span>         <span style="color:#a6e22e">TrackingID</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Origin</span>             <span style="color:#a6e22e">UNLocode</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">RouteSpecification</span> <span style="color:#a6e22e">RouteSpecification</span>
@@ -158,26 +158,26 @@
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Delivery</span>           <span style="color:#a6e22e">Delivery</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// SpecifyNewRoute specifies a new route for this cargo.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>) <span style="color:#a6e22e">SpecifyNewRoute</span>(<span style="color:#a6e22e">rs</span> <span style="color:#a6e22e">RouteSpecification</span>) {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// SpecifyNewRoute specifies a new route for this cargo.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>) <span style="color:#a6e22e">SpecifyNewRoute</span>(<span style="color:#a6e22e">rs</span> <span style="color:#a6e22e">RouteSpecification</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RouteSpecification</span> = <span style="color:#a6e22e">rs</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Delivery</span> = <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Delivery</span>.<span style="color:#a6e22e">UpdateOnRouting</span>(<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RouteSpecification</span>, <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Itinerary</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// AssignToRoute attaches a new itinerary to this cargo.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>) <span style="color:#a6e22e">AssignToRoute</span>(<span style="color:#a6e22e">itinerary</span> <span style="color:#a6e22e">Itinerary</span>) {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// AssignToRoute attaches a new itinerary to this cargo.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>) <span style="color:#a6e22e">AssignToRoute</span>(<span style="color:#a6e22e">itinerary</span> <span style="color:#a6e22e">Itinerary</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Itinerary</span> = <span style="color:#a6e22e">itinerary</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Delivery</span> = <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Delivery</span>.<span style="color:#a6e22e">UpdateOnRouting</span>(<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RouteSpecification</span>, <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Itinerary</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// DeriveDeliveryProgress updates all aspects of the cargo aggregate status
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// based on the current route specification, itinerary and handling of the cargo.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>) <span style="color:#a6e22e">DeriveDeliveryProgress</span>(<span style="color:#a6e22e">history</span> <span style="color:#a6e22e">HandlingHistory</span>) {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// DeriveDeliveryProgress updates all aspects of the cargo aggregate status</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// based on the current route specification, itinerary and handling of the cargo.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>) <span style="color:#a6e22e">DeriveDeliveryProgress</span>(<span style="color:#a6e22e">history</span> <span style="color:#a6e22e">HandlingHistory</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Delivery</span> = <span style="color:#a6e22e">DeriveDeliveryFrom</span>(<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RouteSpecification</span>, <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Itinerary</span>, <span style="color:#a6e22e">history</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// NewCargo creates a new, unrouted cargo.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewCargo</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">TrackingID</span>, <span style="color:#a6e22e">rs</span> <span style="color:#a6e22e">RouteSpecification</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span> {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// NewCargo creates a new, unrouted cargo.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewCargo</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">TrackingID</span>, <span style="color:#a6e22e">rs</span> <span style="color:#a6e22e">RouteSpecification</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">itinerary</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Itinerary</span>{}
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">history</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">HandlingHistory</span>{make([]<span style="color:#a6e22e">HandlingEvent</span>, <span style="color:#ae81ff">0</span>)}
 </span></span><span style="display:flex;"><span>
@@ -189,8 +189,8 @@
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The cargo object is an entity that is concerned with the carrying out of business rules related to shipping cargo, such as route assignments and delivery progress. We abstract the saving and retrieving of the cargo using the repository pattern and creating an interface for the repository.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// CargoRepository provides access a cargo store.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">CargoRepository</span> <span style="color:#66d9ef">interface</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// CargoRepository provides access a cargo store.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">CargoRepository</span> <span style="color:#66d9ef">interface</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Store</span>(<span style="color:#a6e22e">cargo</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>) <span style="color:#66d9ef">error</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Find</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">TrackingID</span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>, <span style="color:#66d9ef">error</span>)
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">FindAll</span>() []<span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>
@@ -198,31 +198,31 @@
 </span></span></code></pre></div><p>This interface is not given a concrete implementation at this step, instead, it is used in our use case through dependency injection in which the specific implementation will be chosen later. This is where our persistence technology will plug into. Notice how our application needs to know nothing about how cargo is persisted to use it, it is a detail we&rsquo;ll sort out later.</p>
 <h3 id="use-cases">Use cases</h3>
 <p>Our use cases are implemented by exposing a common use case interface for that particular use case and a hidden implementation that gets chosen using the factory pattern. That is to say, our use cases are expressed as interfaces with methods (actions) we can take. Use cases import only the inner layers of our application, such as the entities, and get injected with the concrete implementation of other interfaces like repositories and other uses cases.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Service is the interface that provides booking methods.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Service</span> <span style="color:#66d9ef">interface</span> {
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// BookNewCargo registers a new cargo in the tracking system, not yet
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// routed.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">BookNewCargo</span>(<span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">UNLocode</span>, <span style="color:#a6e22e">destination</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">UNLocode</span>, <span style="color:#a6e22e">deadline</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>) (<span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>, <span style="color:#66d9ef">error</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Service is the interface that provides booking methods.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Service</span> <span style="color:#66d9ef">interface</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// BookNewCargo registers a new cargo in the tracking system, not yet</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// routed.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">BookNewCargo</span>(<span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">UNLocode</span>, <span style="color:#a6e22e">destination</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">UNLocode</span>, <span style="color:#a6e22e">deadline</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>) (<span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>, <span style="color:#66d9ef">error</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// LoadCargo returns a read model of a shipping.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">LoadCargo</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>) (<span style="color:#a6e22e">Cargo</span>, <span style="color:#66d9ef">error</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// LoadCargo returns a read model of a shipping.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">LoadCargo</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>) (<span style="color:#a6e22e">Cargo</span>, <span style="color:#66d9ef">error</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// RequestPossibleRoutesForCargo requests a list of itineraries describing
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// possible routes for this shipping.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">RequestPossibleRoutesForCargo</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>) []<span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">Itinerary</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// RequestPossibleRoutesForCargo requests a list of itineraries describing</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// possible routes for this shipping.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">RequestPossibleRoutesForCargo</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>) []<span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">Itinerary</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// AssignCargoToRoute assigns a cargo to the route specified by the
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// itinerary.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">AssignCargoToRoute</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>, <span style="color:#a6e22e">itinerary</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">Itinerary</span>) <span style="color:#66d9ef">error</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// AssignCargoToRoute assigns a cargo to the route specified by the</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// itinerary.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">AssignCargoToRoute</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>, <span style="color:#a6e22e">itinerary</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">Itinerary</span>) <span style="color:#66d9ef">error</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ChangeDestination changes the destination of a shipping.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">ChangeDestination</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>, <span style="color:#a6e22e">destination</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">UNLocode</span>) <span style="color:#66d9ef">error</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ChangeDestination changes the destination of a shipping.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ChangeDestination</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>, <span style="color:#a6e22e">destination</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">UNLocode</span>) <span style="color:#66d9ef">error</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Cargos returns a list of all cargos that have been booked.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">Cargos</span>() []<span style="color:#a6e22e">Cargo</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Cargos returns a list of all cargos that have been booked.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Cargos</span>() []<span style="color:#a6e22e">Cargo</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Locations returns a list of registered locations.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">Locations</span>() []<span style="color:#a6e22e">Location</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Locations returns a list of registered locations.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Locations</span>() []<span style="color:#a6e22e">Location</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">service</span> <span style="color:#66d9ef">struct</span> {
@@ -232,8 +232,8 @@
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">routingService</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">RoutingService</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// NewService creates a booking service with necessary dependencies.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewService</span>(<span style="color:#a6e22e">cargos</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">CargoRepository</span>, <span style="color:#a6e22e">locations</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">LocationRepository</span>, <span style="color:#a6e22e">events</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">HandlingEventRepository</span>, <span style="color:#a6e22e">rs</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">RoutingService</span>) <span style="color:#a6e22e">Service</span> {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// NewService creates a booking service with necessary dependencies.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewService</span>(<span style="color:#a6e22e">cargos</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">CargoRepository</span>, <span style="color:#a6e22e">locations</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">LocationRepository</span>, <span style="color:#a6e22e">events</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">HandlingEventRepository</span>, <span style="color:#a6e22e">rs</span> <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">RoutingService</span>) <span style="color:#a6e22e">Service</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">service</span>{
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">cargos</span>:         <span style="color:#a6e22e">cargos</span>,
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">locations</span>:      <span style="color:#a6e22e">locations</span>,
@@ -291,15 +291,15 @@
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">assemble</span>(<span style="color:#a6e22e">c</span>, <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">handlingEvents</span>), <span style="color:#66d9ef">nil</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Location is a read model for booking views.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Location</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//...</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Location is a read model for booking views.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Location</span> <span style="color:#66d9ef">struct</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">UNLocode</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`json:&#34;locode&#34;`</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Name</span>     <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`json:&#34;name&#34;`</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Cargo is a read model for booking views.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Cargo</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Cargo is a read model for booking views.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Cargo</span> <span style="color:#66d9ef">struct</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ArrivalDeadline</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>      <span style="color:#e6db74">`json:&#34;arrival_deadline&#34;`</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Destination</span>     <span style="color:#66d9ef">string</span>         <span style="color:#e6db74">`json:&#34;destination&#34;`</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Legs</span>            []<span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">Leg</span> <span style="color:#e6db74">`json:&#34;legs,omitempty&#34;`</span>
@@ -372,8 +372,8 @@
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In this example, we are using the chi package to implement routing and include our booking service as a dependency. This layer has no application logic and only calls the appropriate methods on our use case, converting the raw data into and from dtos for our use case. When we instantiate our server implementation we pass in the use case implementations as arguments to the constructor.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Server holds the dependencies for a HTTP server.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Server</span> <span style="color:#66d9ef">struct</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Server holds the dependencies for a HTTP server.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Server</span> <span style="color:#66d9ef">struct</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Booking</span>  <span style="color:#a6e22e">booking</span>.<span style="color:#a6e22e">Service</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Tracking</span> <span style="color:#a6e22e">tracking</span>.<span style="color:#a6e22e">Service</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Handling</span> <span style="color:#a6e22e">handling</span>.<span style="color:#a6e22e">Service</span>
@@ -383,8 +383,8 @@
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">router</span> <span style="color:#a6e22e">chi</span>.<span style="color:#a6e22e">Router</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// New returns a new HTTP server.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">New</span>(<span style="color:#a6e22e">bs</span> <span style="color:#a6e22e">booking</span>.<span style="color:#a6e22e">Service</span>, <span style="color:#a6e22e">ts</span> <span style="color:#a6e22e">tracking</span>.<span style="color:#a6e22e">Service</span>, <span style="color:#a6e22e">hs</span> <span style="color:#a6e22e">handling</span>.<span style="color:#a6e22e">Service</span>, <span style="color:#a6e22e">logger</span> <span style="color:#a6e22e">kitlog</span>.<span style="color:#a6e22e">Logger</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Server</span> {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// New returns a new HTTP server.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">New</span>(<span style="color:#a6e22e">bs</span> <span style="color:#a6e22e">booking</span>.<span style="color:#a6e22e">Service</span>, <span style="color:#a6e22e">ts</span> <span style="color:#a6e22e">tracking</span>.<span style="color:#a6e22e">Service</span>, <span style="color:#a6e22e">hs</span> <span style="color:#a6e22e">handling</span>.<span style="color:#a6e22e">Service</span>, <span style="color:#a6e22e">logger</span> <span style="color:#a6e22e">kitlog</span>.<span style="color:#a6e22e">Logger</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Server</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Server</span>{
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">Booking</span>:  <span style="color:#a6e22e">bs</span>,
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">Tracking</span>: <span style="color:#a6e22e">ts</span>,
@@ -417,8 +417,8 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Notice, no logic relating to our use case is here, only logic to satisfy our framework an be a bridge between our use case and the framework. In this way, the core of our application knows nothing about what frameworks we use. It doesn&rsquo;t care at all. The framework could be changed two weeks from now and you wouldn&rsquo;t have to change a thing about the use case because of it. The only time use cases or entities might change is when business requirements change, never for technical reasons.</p>
 <p>What about the repositories? Those are an outside-in thing that gets implemented elsewhere. When we choose a persistence technology we simply implement that interface and it gets passed into our use cases upon application startup. Here&rsquo;s a trivial, but important illustration, of an in-memory repository for our Cargo example.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Package inmem provides in-memory implementations of all the domain repositories.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">package</span> <span style="color:#a6e22e">inmem</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Package inmem provides in-memory implementations of all the domain repositories.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">inmem</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
 </span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;sync&#34;</span>
@@ -457,8 +457,8 @@
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">c</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// NewCargoRepository returns a new instance of a in-memory cargo repository.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewCargoRepository</span>() <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">CargoRepository</span> {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// NewCargoRepository returns a new instance of a in-memory cargo repository.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewCargoRepository</span>() <span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">CargoRepository</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">cargoRepository</span>{
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">cargos</span>: make(<span style="color:#66d9ef">map</span>[<span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">TrackingID</span>]<span style="color:#f92672">*</span><span style="color:#a6e22e">shipping</span>.<span style="color:#a6e22e">Cargo</span>),
 </span></span><span style="display:flex;"><span>	}
@@ -563,7 +563,7 @@
 
 
 
-<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+<script type="text/javascript" src="/bundle.min.ad54ad97364f77ede35def9096b162bb1f0b3973aa50b080f5e82fa147f6882e2a7200d7535adbf9b51bebf939f1c1ca9bbe6be87530092aca720eac4a226fda.js" integrity="sha512-rVStlzZPd&#43;3jXe&#43;QlrFiux8LOXOqULCA9egvoUf2iC4qcgDXU1rb&#43;bUb6/k58cHKm75r6HUwCSrKcg6sSiJv2g=="></script>
 
 
 

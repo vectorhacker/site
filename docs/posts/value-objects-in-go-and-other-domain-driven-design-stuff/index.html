@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -11,7 +11,7 @@
 <meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion, DDD, Go, Domain Driven Design" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/" />
+<link rel="canonical" href="https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/" />
 
 
     <title>
@@ -24,7 +24,7 @@
 
 
 
-  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.min.07ea7ac7da67e2e153a7dfa2457bc6a19cca824288d175e223fadc579041bc51.css" integrity="sha256-B&#43;p6x9pn4uFTp9&#43;iRXvGoZzKgkKI0XXiI/rcV5BBvFE=" crossorigin="anonymous">
 
 
 
@@ -45,11 +45,11 @@
   <meta itemprop="datePublished" content="2020-10-23T03:12:35-04:00">
   <meta itemprop="dateModified" content="2020-10-23T03:12:35-04:00">
   <meta itemprop="wordCount" content="771">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://victoramartinez.com/">
   <meta itemprop="keywords" content="DDD,Go,Domain Driven Design">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://victoramartinez.com/">
   <meta name="twitter:title" content="Value Objects in Go">
   <meta name="twitter:description" content="Recently I’ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I’ve come accross a few patterns I’d like to share. Mainly we’ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.">
 
@@ -133,7 +133,7 @@
 
     <article>
       <h1 class="post-title">
-        <a href="http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/">Value Objects in Go</a>
+        <a href="https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/">Value Objects in Go</a>
       </h1>
 
       
@@ -159,13 +159,13 @@
 <p>As an example, take a name field that need to be within a certain length of characters. We&rsquo;d implement them in Go like this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Name</span> <span style="color:#66d9ef">struct</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// explicitly not public field
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// explicitly not public field</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// NewName creates a new valid name object
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewName</span>(<span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>) (<span style="color:#a6e22e">Name</span>, <span style="color:#66d9ef">error</span>) {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// NewName creates a new valid name object</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewName</span>(<span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>) (<span style="color:#a6e22e">Name</span>, <span style="color:#66d9ef">error</span>) {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">name</span>) &gt; <span style="color:#ae81ff">20</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span>  {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Name</span>{}, <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Errorf</span>(<span style="color:#e6db74">&#34;invalid name, must be withn 20 charcters and non-empty&#34;</span>)
 </span></span><span style="display:flex;"><span>  }
@@ -173,18 +173,18 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Name</span>{<span style="color:#a6e22e">name</span>: <span style="color:#a6e22e">name</span>}, <span style="color:#66d9ef">nil</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// String implements the fmt.Stringer interface.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">String</span>() <span style="color:#66d9ef">string</span> {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// String implements the fmt.Stringer interface.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">String</span>() <span style="color:#66d9ef">string</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">name</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// MarshalText used to serialize the object
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">MarshalText</span>() ([]<span style="color:#66d9ef">byte</span>, <span style="color:#66d9ef">error</span>) {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// MarshalText used to serialize the object</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">MarshalText</span>() ([]<span style="color:#66d9ef">byte</span>, <span style="color:#66d9ef">error</span>) {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> []byte(<span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">name</span>), <span style="color:#66d9ef">error</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// UnmarshalText deserializes the object and returns an error if it&#39;s invalid. 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">UnmarshalText</span>(<span style="color:#a6e22e">d</span> []<span style="color:#66d9ef">byte</span>) <span style="color:#66d9ef">error</span> {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// UnmarshalText deserializes the object and returns an error if it&#39;s invalid. </span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Name</span>) <span style="color:#a6e22e">UnmarshalText</span>(<span style="color:#a6e22e">d</span> []<span style="color:#66d9ef">byte</span>) <span style="color:#66d9ef">error</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">*</span><span style="color:#a6e22e">n</span>, <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">NewName</span>(string(<span style="color:#a6e22e">d</span>))
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">err</span>
@@ -205,9 +205,9 @@
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="http://localhost:1313/tags/ddd/">DDD</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/go/">Go</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/domain-driven-design/">Domain Driven Design</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/ddd/">DDD</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/go/">Go</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/domain-driven-design/">Domain Driven Design</a></span>
         
     </p>
 
@@ -291,7 +291,7 @@
 
 
 
-<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+<script type="text/javascript" src="/bundle.min.ad54ad97364f77ede35def9096b162bb1f0b3973aa50b080f5e82fa147f6882e2a7200d7535adbf9b51bebf939f1c1ca9bbe6be87530092aca720eac4a226fda.js" integrity="sha512-rVStlzZPd&#43;3jXe&#43;QlrFiux8LOXOqULCA9egvoUf2iC4qcgDXU1rb&#43;bUb6/k58cHKm75r6HUwCSrKcg6sSiJv2g=="></script>
 
 
 

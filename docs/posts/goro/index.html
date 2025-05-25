@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -10,7 +10,7 @@
 <meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/posts/goro/" />
+<link rel="canonical" href="https://victoramartinez.com/posts/goro/" />
 
 
     <title>
@@ -23,7 +23,7 @@
 
 
 
-  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.min.07ea7ac7da67e2e153a7dfa2457bc6a19cca824288d175e223fadc579041bc51.css" integrity="sha256-B&#43;p6x9pn4uFTp9&#43;iRXvGoZzKgkKI0XXiI/rcV5BBvFE=" crossorigin="anonymous">
 
 
 
@@ -44,10 +44,10 @@
   <meta itemprop="datePublished" content="2018-05-21T13:36:22-04:00">
   <meta itemprop="dateModified" content="2018-05-21T13:36:22-04:00">
   <meta itemprop="wordCount" content="591">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://victoramartinez.com/">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://victoramartinez.com/">
   <meta name="twitter:title" content="Goro">
   <meta name="twitter:description" content="I created a Go library for the EventStore database and I wanted to share it with the world">
 
@@ -131,7 +131,7 @@
 
     <article>
       <h1 class="post-title">
-        <a href="http://localhost:1313/posts/goro/">Goro</a>
+        <a href="https://victoramartinez.com/posts/goro/">Goro</a>
       </h1>
 
       
@@ -181,8 +181,8 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">events</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">catchupSubscription</span>.<span style="color:#a6e22e">Subscribe</span>(<span style="color:#a6e22e">ctx</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#a6e22e">event</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">events</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//...</span>
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Each stream message has a few things inside it that help you manage the stream. This includes the event, an error, and some acknowledger for when you have persistent subscriptions.</p>
 <p>Streaming style subscriptions isn&rsquo;t the only way to read events, you can also read arbitrarily using a reader:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">reader</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">FowardsReader</span>(<span style="color:#e6db74">&#34;messages&#34;</span>)
@@ -286,7 +286,7 @@
 
 
 
-<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+<script type="text/javascript" src="/bundle.min.ad54ad97364f77ede35def9096b162bb1f0b3973aa50b080f5e82fa147f6882e2a7200d7535adbf9b51bebf939f1c1ca9bbe6be87530092aca720eac4a226fda.js" integrity="sha512-rVStlzZPd&#43;3jXe&#43;QlrFiux8LOXOqULCA9egvoUf2iC4qcgDXU1rb&#43;bUb6/k58cHKm75r6HUwCSrKcg6sSiJv2g=="></script>
 
 
 
