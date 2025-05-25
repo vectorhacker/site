@@ -3,7 +3,7 @@ baseurl = "https://victoramartinez.com/"
 themesDir = "./themes"
 title = "Victor A Martinez's Blog"
 theme = "hello-friend-ng"
-paginate = 5
+pagination.pagerSize = 5
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-110221350-2"
 # Disable comments by leaving disqusShortname empty

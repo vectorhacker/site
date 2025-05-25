@@ -2,131 +2,131 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Victor&#39;s Blog</title>
-    <link>https://victoramartinez.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Victor Martínez</copyright>
     <lastBuildDate>Wed, 25 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://victoramartinez.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software Engineers Are Safe... For Now</title>
-      <link>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</link>
+      <link>http://localhost:1313/posts/software-engineers-are-safe-for-now/</link>
       <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</guid>
+      <guid>http://localhost:1313/posts/software-engineers-are-safe-for-now/</guid>
       <description>&lt;p&gt;Take a look at this search of jobs postings at OpenAI for December 25th, 2024. As of the time of this writing, over 150 results in all, 87 results for the term &amp;ldquo;Software Engineer.&amp;rdquo; This is a few days after the release of their latest frontier model, o3. This tells me that for the foreseeable future, Software Engineering jobs are safe, if not going to continue to be safe from full automation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Most Important Topics for a Computer Science Undergrad</title>
-      <link>https://victoramartinez.com/posts/important-computer-science-concepts/</link>
+      <link>http://localhost:1313/posts/important-computer-science-concepts/</link>
       <pubDate>Sun, 22 Dec 2024 22:16:40 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/important-computer-science-concepts/</guid>
+      <guid>http://localhost:1313/posts/important-computer-science-concepts/</guid>
       <description>&lt;p&gt;As a computer science student, it&amp;rsquo;s essential to have a solid foundation in various topics to succeed in the field. In this post, we&amp;rsquo;ll cover the most critical topics for a computer science undergrad, in no particular order.&lt;/p&gt;&#xA;&lt;h2 id=&#34;maths&#34;&gt;&lt;strong&gt;Maths&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;calculus&#34;&gt;Calculus&lt;/h3&gt;&#xA;&lt;p&gt;Calculus is a fundamental subject that helps understand many computer science concepts, such as optimization, machine learning, and differential equations. It&amp;rsquo;s essential to have a good grasp of limits, derivatives, basic integrals, and multi-variable calculus.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Get a Computer Science Degree Fast and Cheaply</title>
-      <link>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</link>
+      <link>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</guid>
+      <guid>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</guid>
       <description>&lt;p&gt;You read the title, you&amp;rsquo;re probably thinking &amp;ldquo;that sounds like it&amp;rsquo;ll be a crappy idea&amp;rdquo; or &amp;ldquo;that sounds exactly like what I want!&amp;rdquo; For the first person, I hope to convince you that a computer science degree need not take 4 years nor be expensive. For the second, I hope to give you a roadmap to earn an accredited CS degree. But, before I start I want to preface this by saying that I am not advocating you go out to a degree mill and just buy a Diploma from a fake school, I&amp;rsquo;ll only be talking about legal, accredited, and reputable ways to get your degree in under 2 years, even less. I also know that it&amp;rsquo;s possible, because I essentially did it last year. So, without further ado, here&amp;rsquo;s how to get a bachelors degree in computer science fast and cheaply.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Accepted to Georgia Tech</title>
-      <link>https://victoramartinez.com/posts/accepted-to-gt/</link>
+      <link>http://localhost:1313/posts/accepted-to-gt/</link>
       <pubDate>Fri, 29 Nov 2024 22:16:40 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/accepted-to-gt/</guid>
+      <guid>http://localhost:1313/posts/accepted-to-gt/</guid>
       <description>&lt;p&gt;Back on May 31st, 2024, right as I submitted my last assignment for my capstone course, my last class on my BSCS at WGU, I applied for Georgia Tech’s OMSCS program. In August, days before my graduation ceremony, I heard back that I got accepted into the Spring 2025 cohort of Georgia Tech’s Online Masters of Science in Computer Science and this week I just got my gatech.edu email address.&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Finishing My BSCS</title>
-      <link>https://victoramartinez.com/posts/on-finishing-my-bscs/</link>
+      <link>http://localhost:1313/posts/on-finishing-my-bscs/</link>
       <pubDate>Mon, 24 Jun 2024 03:42:30 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/on-finishing-my-bscs/</guid>
+      <guid>http://localhost:1313/posts/on-finishing-my-bscs/</guid>
       <description>&lt;p&gt;Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Defensive Commits</title>
-      <link>https://victoramartinez.com/posts/defensive-commits/</link>
+      <link>http://localhost:1313/posts/defensive-commits/</link>
       <pubDate>Sat, 22 Oct 2022 21:55:26 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/defensive-commits/</guid>
+      <guid>http://localhost:1313/posts/defensive-commits/</guid>
       <description>&lt;p&gt;Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with &lt;a href=&#34;https://trunkbaseddevelopment.com&#34;&gt;trunk-based development&lt;/a&gt; and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.&lt;/p&gt;&#xA;&lt;p&gt;At &lt;a href=&#34;https://coquihealth.com&#34;&gt;Coqui Health&lt;/a&gt;, we&amp;rsquo;ve implemented this strategy successfully and this is now the default way we work. We use a monorepo strategy coupled with ci/cd and trunk-based development, which means we work close to or in trunk and so having a robust ci/cd pipeline is paramount. Defensive commits allows us to catch bugs early and get feedback that our code will work or break things. It&amp;rsquo;s allowed us to move faster and not break things.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting Back to Blogging</title>
-      <link>https://victoramartinez.com/posts/getting-back-to-blogging/</link>
+      <link>http://localhost:1313/posts/getting-back-to-blogging/</link>
       <pubDate>Sun, 19 Dec 2021 17:22:45 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/getting-back-to-blogging/</guid>
+      <guid>http://localhost:1313/posts/getting-back-to-blogging/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&amp;rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&amp;rsquo;ve been so full of ideas.&lt;/p&gt;&#xA;&lt;p&gt;Recently I&amp;rsquo;ve been thinking a lot about finance, economics, and of course programming. I want to share my findings with you in hopes that this will help someone. So with that declaration out of the way, let&amp;rsquo;s get back to it!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Value Objects in Go</title>
-      <link>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</link>
+      <link>http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</link>
       <pubDate>Fri, 23 Oct 2020 03:12:35 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</guid>
+      <guid>http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</guid>
       <description>&lt;p&gt;Recently I&amp;rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&amp;rsquo;ve come accross a few patterns I&amp;rsquo;d like to share. Mainly we&amp;rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stop The EARN IT Act</title>
-      <link>https://victoramartinez.com/posts/stop-earn-it-act/</link>
+      <link>http://localhost:1313/posts/stop-earn-it-act/</link>
       <pubDate>Wed, 25 Mar 2020 19:51:27 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/stop-earn-it-act/</guid>
+      <guid>http://localhost:1313/posts/stop-earn-it-act/</guid>
       <description>&lt;p&gt;A new threat to your freedom of speech and privacy has appeared. Senators Lindsey Graham (R-SC) and Richard Blumenthal (D-CT) have joined in introducing the &lt;a href=&#34;https://www.congress.gov/bill/116th-congress/senate-bill/3398&#34;&gt;EARN IT Act (S. 3398)&lt;/a&gt; bill in Congress. This act&amp;rsquo;s intention is hidden behind the guise of protecting children, but in reality seeks to potentially undermine the end-to-end encryption and security that exists for almost all internet communications, especially social messaging platforms like WhatsApp and other U.S. based messaging platforms. This would give dangerous men like Attorney General William Barr, who has expressed his opinions about encryption in the past, the legal authority to demand platforms decrypt communications. Don&amp;rsquo;t be fooled, if this bill passes it will do little to actually protect children and instead put your data and private conversations at risk to online criminals and foreign governments. It is not just your private messages, but other means of communications that are at risk.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Don&#39;t Use Frameworks</title>
-      <link>https://victoramartinez.com/posts/dont-use-frameworks/</link>
+      <link>http://localhost:1313/posts/dont-use-frameworks/</link>
       <pubDate>Tue, 24 Mar 2020 04:32:51 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/dont-use-frameworks/</guid>
+      <guid>http://localhost:1313/posts/dont-use-frameworks/</guid>
       <description>&lt;p&gt;Stop using frameworks for everything. Just stop. You don&amp;rsquo;t need a framework to write good code and deliver products. Don&amp;rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&amp;rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application. The patterns I suggest you use are &lt;a href=&#34;https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html&#34;&gt;Clean Architecture&lt;/a&gt;, &lt;a href=&#34;https://www.infoq.com/minibooks/domain-driven-design-quickly/&#34;&gt;Domain Driven Design&lt;/a&gt;, and the &lt;a href=&#34;https://www.youtube.com/watch?v=t86v3N4OshQ&#34;&gt;SOLID&lt;/a&gt; principles. Having a maintainable application is a matter of applying certain design principles and professionalism. In particular, applying &lt;a href=&#34;https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html&#34;&gt;TDD&lt;/a&gt; or BDD and Domain Driven Design principles. Think about your application before you write a single line of code, design it, and test before you implement it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Event Sourcing in Go</title>
-      <link>https://victoramartinez.com/posts/event-sourcing-in-go/</link>
+      <link>http://localhost:1313/posts/event-sourcing-in-go/</link>
       <pubDate>Mon, 23 Mar 2020 21:13:59 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/event-sourcing-in-go/</guid>
+      <guid>http://localhost:1313/posts/event-sourcing-in-go/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&amp;rsquo;ve been doing it in Go and want to share how I do it.&lt;/p&gt;&#xA;&lt;p&gt;To begin with, I&amp;rsquo;ve researched this topic thoroughly; I&amp;rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it. The first thing I want to put out there is that you don&amp;rsquo;t need a framework to do this. Ddd and cqrs/es are best done without a framework getting in the way and instead you should create a &lt;a href=&#34;https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html&#34;&gt;Clean Architecture&lt;/a&gt; where the framework you choose later on becomes a sort of plugin into your application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What I&#39;ve Learned Working in a Large Software Project</title>
-      <link>https://victoramartinez.com/posts/learnings-working-large-software-project/</link>
+      <link>http://localhost:1313/posts/learnings-working-large-software-project/</link>
       <pubDate>Thu, 28 Nov 2019 20:46:11 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/learnings-working-large-software-project/</guid>
+      <guid>http://localhost:1313/posts/learnings-working-large-software-project/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been working my first large software project for almost a year now and I&amp;rsquo;d like to share my learnings from this project. The things I&amp;rsquo;ve learned, discovered, and realized during this time might be interesting to some, might be old news to others, and might even shed some light on how certain things are done in certain types of projects, but all in all I hope this proves to be an interesting read.&lt;/p&gt;</description>
     </item>
     <item>
       <title>WTF is Blockchain?</title>
-      <link>https://victoramartinez.com/posts/wtf-is-blockchain/</link>
+      <link>http://localhost:1313/posts/wtf-is-blockchain/</link>
       <pubDate>Tue, 07 Aug 2018 19:44:17 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/wtf-is-blockchain/</guid>
+      <guid>http://localhost:1313/posts/wtf-is-blockchain/</guid>
       <description>&lt;p&gt;This post was inspired by a talk given by Jared Haight from Microsoft at &lt;a href=&#34;http://bsidespr.org/2017/&#34;&gt;BSidesPR&lt;/a&gt;. Jared talked about giving back to the InfoSec community at a large, and he mentioned things to write about, including Blockchain. Specifically, he asked &amp;ldquo;WTF is Blockchain?&amp;rdquo; and said it that if you actually title it like that, he&amp;rsquo;d read it. So, this is my attempt at writing that description.&lt;/p&gt;&#xA;&lt;h4 id=&#34;tldr-blockchain-is-an-unchangeable-series-of-blocks-that-each-reference-the-previous-blocks-contents-via-a-hash-of-that-content-blocks-are-a-collection-of-transactions-that-have-been-grouped-together-by-miners&#34;&gt;TLDR: Blockchain is an unchangeable series of blocks that each reference the previous&amp;rsquo; block&amp;rsquo;s contents via a hash of that content. Blocks are a collection of transactions that have been grouped together by miners.&lt;/h4&gt;&#xA;&lt;h1 id=&#34;basic-computer-science&#34;&gt;Basic Computer Science&lt;/h1&gt;&#xA;&lt;p&gt;To really understand blockchain techonlogy you must first understand a few computer science concepts. Don&amp;rsquo;t worry, I wont bore you with the details.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goro</title>
-      <link>https://victoramartinez.com/posts/goro/</link>
+      <link>http://localhost:1313/posts/goro/</link>
       <pubDate>Mon, 21 May 2018 13:36:22 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/goro/</guid>
+      <guid>http://localhost:1313/posts/goro/</guid>
       <description>&lt;p&gt;I know I haven&amp;rsquo;t posted in a long time, but I finally felt I needed an update in my blog. I&amp;rsquo;ve recently updated some work on my own Go library for &lt;a href=&#34;https://eventstore.org&#34;&gt;EventStore&lt;/a&gt; called &lt;a href=&#34;https://github.com/vectorhacker/goro&#34;&gt;goro&lt;/a&gt;. I made this for my own personal work and my job at &lt;a href=&#34;http://alqmy.io&#34;&gt;ALQMY&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I used to use &lt;a href=&#34;https://github.com/jetbasrawi/go.geteventstore&#34;&gt;Go.GetEventStore&lt;/a&gt; as my prefered library for working with EventStore. It was nice, but I felt it was lacking in many features and was ultimitely very cumbersome to work with, especially when it comes to reading events in a streaming fashion. I modeled my libary much like the sarama library for Kafka which has a similar api for streaming. On top of that I&amp;rsquo;ve added native support for reading streams, not only forwards, but backwards as well. This to me was a very important feature to have, as sometimes things like inlined snapshots in &lt;a href=&#34;https://martinfowler.com/eaaDev/EventSourcing.html&#34;&gt;Event Sourcing&lt;/a&gt; &lt;a href=&#34;https://martinfowler.com/eaaDev/EventSourcing.html&#34;&gt;[1]&lt;/a&gt;&lt;a href=&#34;http://microservices.io/patterns/data/event-sourcing.html&#34;&gt;[2]&lt;/a&gt;&lt;a href=&#34;https://eventstore.org/docs/event-sourcing-basics/index.html&#34;&gt;[3]&lt;/a&gt; require that you read a stream backwards.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Amazon Key</title>
-      <link>https://victoramartinez.com/posts/amazon-key/</link>
+      <link>http://localhost:1313/posts/amazon-key/</link>
       <pubDate>Sun, 26 Nov 2017 23:20:47 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/amazon-key/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://victoramartinez.com/images/amazon-key.jpeg&#34; alt=&#34;Amazon Key&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;So Amazon &lt;a href=&#34;https://www.recode.net/2017/10/25/16538828/amazon-key-in-home-delivery-prime-camera-lock&#34;&gt;recently announced&lt;/a&gt; a new program called &lt;a href=&#34;https://en.wikipedia.org/wiki/Amazon_Key&#34;&gt;Amazon Key&lt;/a&gt;. This program would let deliverymen enter the house of people who have purchased the program. I&amp;rsquo;m really uncomfortable with this idea. For one thing, I don&amp;rsquo;t want Amazon, much less any other giant company, controlling entrance to my home. Second, this just feels like a whole new invasion of privacy.&lt;/p&gt;&#xA;&lt;p&gt;This is just part of a much bigger problem. Silicon Valley companies are becoming so arrogant and negligent, and they&amp;rsquo;re giving me more and more reason to stop trusting them. Why would Amazon think that I would trust them with the security of my home? I say no.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/amazon-key/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/amazon-key.jpeg&#34; alt=&#34;Amazon Key&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;So Amazon &lt;a href=&#34;https://www.recode.net/2017/10/25/16538828/amazon-key-in-home-delivery-prime-camera-lock&#34;&gt;recently announced&lt;/a&gt; a new program called &lt;a href=&#34;https://en.wikipedia.org/wiki/Amazon_Key&#34;&gt;Amazon Key&lt;/a&gt;. This program would let deliverymen enter the house of people who have purchased the program. I&amp;rsquo;m really uncomfortable with this idea. For one thing, I don&amp;rsquo;t want Amazon, much less any other giant company, controlling entrance to my home. Second, this just feels like a whole new invasion of privacy.&lt;/p&gt;&#xA;&lt;p&gt;This is just part of a much bigger problem. Silicon Valley companies are becoming so arrogant and negligent, and they&amp;rsquo;re giving me more and more reason to stop trusting them. Why would Amazon think that I would trust them with the security of my home? I say no.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Github Pages</title>
-      <link>https://victoramartinez.com/posts/github-pages/</link>
+      <link>http://localhost:1313/posts/github-pages/</link>
       <pubDate>Sun, 26 Nov 2017 01:06:20 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/github-pages/</guid>
+      <guid>http://localhost:1313/posts/github-pages/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m hosting this blog using Github pages (because I&amp;rsquo;m cheap.) You can browser through the source code &lt;a href=&#34;https://github.com/vectorhacker/victoramartinez.com&#34;&gt;here&lt;/a&gt;. I&amp;rsquo;m using &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; to generate the static site. Overall it&amp;rsquo;s pretty great.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Net Neutrality Opinion</title>
-      <link>https://victoramartinez.com/posts/net-neutrality-opinion/</link>
+      <link>http://localhost:1313/posts/net-neutrality-opinion/</link>
       <pubDate>Sun, 26 Nov 2017 00:44:22 -0400</pubDate>
-      <guid>https://victoramartinez.com/posts/net-neutrality-opinion/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://victoramartinez.com/images/fight-net.jpg&#34; alt=&#34;Fight For Net Neutrality!&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;&#xA;&lt;p&gt;This December, the FCC will vote on wether to keep or reverse &lt;a href=&#34;http://transition.fcc.gov/Reports/1934new.pdf&#34;&gt;Title II of the Communications Act&lt;/a&gt; of 1934 in regards to ISPs. This decision will affect the way the internet works in the United States and if reversed, would give ISPs incentive to give preferential treatment of some data packets over others, among many other things that they could do. These rules are with the intent of creating a level playing field within the internet and keeping the internet free and open.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/net-neutrality-opinion/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fight-net.jpg&#34; alt=&#34;Fight For Net Neutrality!&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;&#xA;&lt;p&gt;This December, the FCC will vote on wether to keep or reverse &lt;a href=&#34;http://transition.fcc.gov/Reports/1934new.pdf&#34;&gt;Title II of the Communications Act&lt;/a&gt; of 1934 in regards to ISPs. This decision will affect the way the internet works in the United States and if reversed, would give ISPs incentive to give preferential treatment of some data packets over others, among many other things that they could do. These rules are with the intent of creating a level playing field within the internet and keeping the internet free and open.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
