@@ -22,7 +22,7 @@ draft: false
 
 ## Work History
 
-### Senior Software Engineer / AI Engineer, [Zeteo Health](https://zeteo.health), PR
+### Senior Software Engineer / AI Engineer, Zeteo Health, PR
 **January 2025 - Present**
 
 - Created and maintained backend services on AWS to support chatbot, AI, and data analytics applications that help doctors and patients access healthcare information.
@@ -33,7 +33,7 @@ draft: false
 - Maintained and deployed application APIs using Node.js, tRPC, TypeScript, and PostgreSQL to handle user requests and store data.
 - Enhanced chatbot capabilities by integrating Langchain tools that answer questions using Healthcare.gov API for finding doctors, insurance plans, and insurers.
 
-### Senior Serverless Engineer, [Rana LLC](https://rana.ai), San Juan, PR
+### Senior Serverless Engineer, Rana LLC, San Juan, PR
 **July 2024 - January 2025**
 
 - Managed cloud team of three engineers to deliver cloud applications that supported the company's local-first application ecosystem.
@@ -44,7 +44,7 @@ draft: false
 - Developed Discord application allowing users to call into their local-first compute cluster to generate images, text, and memes with collaboration features.
 - Implemented frontend solutions using React and HTMX with GunJS and TypeScript for distributed data synchronization across devices.
 
-### Senior Full-Stack Engineer, [Coqui Health](https://coquihealth.com), San Juan, PR
+### Senior Full-Stack Engineer, Coqui Health, San Juan, PR
 **February 2022 - June 2024**
 
 - Managed cross-functional team of 7 junior, mid-level, and senior engineers to develop lab test ordering platform for parent company Mako Medical.
@@ -57,7 +57,7 @@ draft: false
 - Implemented data storage solutions using DynamoDB and S3 buckets for scalable, cost-effective data management.
 - Created passwordless authentication system using AWS Cognito with secure one-time codes sent to verified email addresses.
 
-### Serverless Developer, [Coqui Health](https://coquihealth.com), San Juan, PR
+### Serverless Developer, Coqui Health, San Juan, PR
 **August 2021 - February 2022**
 
 - Collaborated within a team of 3 engineers as full-stack developer on serverless application built with React and AWS Amplify.
@@ -65,21 +65,21 @@ draft: false
 - Supported safe return of over 100,000 high school students, Navy personnel, and nursing home patients to school, work, and visitation through reliable testing management.
 - Built both front-end and back-end components of the serverless architecture to ensure scalable, reliable testing management that handled varying demand.
 
-### Software Developer II, [Maxar Puerto Rico](https://wovenware.com), San Juan, PR
+### Software Developer II, Maxar Puerto Rico, San Juan, PR
 **April 2021 - August 2021**
 
 - Developed backend microservices for a mileage reimbursement application using Java, Spring Boot, Docker, and MySQL that processed over $500,000 daily to prepaid debit cards.
 - Reduced reimbursement processing time by 40% through optimized system architecture that handled transactions more efficiently.
 - Designed and implemented RESTful APIs to improve system integration and data exchange between different services.
 
-### Full Stack Developer, [Strategic Mobile Services, Corp.](https://www.smscpr.com/), San Juan, PR
+### Full Stack Developer, Strategic Mobile Services, San Juan, PR
 **November 2020 - April 2021**
 
 - Developed serverless cloud software to manage SMS texting and routing infrastructure using AWS Lambda, Node.js, Go, and PostgreSQL for scalability and efficiency.
 - Migrated a 1TB AWS RDS database to AWS Aurora, achieving a 60% reduction in database costs and improving system performance.
 - Utilized DevOps practices to streamline deployment and infrastructure management, ensuring system reliability and maintainability.
 
-### Programmer, [Innovative Solutions Inc](https://insolpr.com/), San Juan, PR
+### Programmer, Innovative Solutions Inc, San Juan, PR
 **November 2018 - December 2020**
 
 - Optimized digital check processing system using Java Streams and multithreading techniques, reducing processing time from hours to minutes.
@@ -91,7 +91,7 @@ draft: false
 - Contributed to the transition to modern software practices, improving overall efficiency and agility within the Department of the Treasury.
 - Worked on Microsoft Windows Server based systems with SQL Server, Oracle, and IBM DB2 databases.
 
-### Full Stack Developer, [ALQMY](https://alqmy.io/en/), Bayamón, PR
+### Full Stack Developer, ALQMY, Bayamón, PR
 **February 2018 - November 2018**
 
 - Co-founded ALQMY, a consulting firm specializing in media solutions and software development for media companies.
@@ -101,7 +101,7 @@ draft: false
 - Collaborated closely with clients to provide strategic technical consulting, helping them achieve their business objectives through customized software solutions.
 - Played a key role in enhancing client media campaigns by leveraging cloud development and innovative software design principles.
 
-### Software Engineer Intern, [MITRE](https://mitre.org), McLean, VA
+### Software Engineer Intern, MITRE, McLean, VA
 **May 2016 - July 2016**
 
 - Researched the use of hybrid cloud infrastructure for government applications and security requirements to help agencies adopt cloud technologies safely.
@@ -109,7 +109,7 @@ draft: false
 - Collaborated with data engineering teams to improve data ingestion pipelines for enhanced performance.
 - Developed infrastructure code using Go and Ansible to create and manage hybrid cloud environments.
 
-### Undergraduate Research Assistant, [University of Puerto Rico-Mayaguez](https://uprm.edu)
+### Research Assistant, University of Puerto Rico, Mayagüez
 **May 2015 - May 2016**
 
 - Collaborated with undergraduate and graduate students in civil and computer engineering to develop GPS tracking system for public transportation.
@@ -117,7 +117,7 @@ draft: false
 - Built real-time bus tracking application using Node.js, RethinkDB, and Angular for the front-end to help people see where buses were located.
 - Deployed and managed the tracking system on Microsoft Azure cloud platform.
 
-### Software Engineer Intern, [Optivon PR](https://www.optivonpr.com/), Guaynabo, PR
+### Software Engineer Intern, Optivon PR, Guaynabo, PR
 **January 2015 - May 2015**
 
 - Worked in a team of 6 engineers to develop a crime reporting and tracking mobile and web application for iOS and Android.
