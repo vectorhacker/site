@@ -22,7 +22,7 @@ draft: false
 
 ## Work History
 
-### Senior Software Engineer / AI Engineer, [Zeteo Health](https://zeteo.health), Bayamón, PR
+### Senior Software Engineer / AI Engineer, [Zeteo Health](https://zeteo.health), PR
 **January 2025 - Present**
 
 - Created and maintained backend services on AWS to support chatbot, AI, and data analytics applications that help doctors and patients access healthcare information.
