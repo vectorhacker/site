@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/computer/</loc>
-    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2025-05-25T21:11:50-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-05-25T21:11:50-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-05-25T21:11:50-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/limits-of-current-ai/</loc>
+    <lastmod>2025-05-25T21:11:50-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-05-25T21:11:50-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/computer/</loc>
     <lastmod>2024-12-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/science/</loc>
@@ -14,13 +26,7 @@
     <loc>http://localhost:1313/posts/software-engineers-are-safe-for-now/</loc>
     <lastmod>2024-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/tech/</loc>
-    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-12-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/computer-science/</loc>
@@ -49,6 +55,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/on-finishing-my-bscs/</loc>
     <lastmod>2024-06-24T03:42:30-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/trunk-based-development/</loc>
+    <lastmod>2024-03-31T00:27:32-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ci/</loc>
     <lastmod>2022-10-22T21:55:26-04:00</lastmod>
@@ -91,6 +100,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/event-sourcing-in-go/</loc>
     <lastmod>2020-03-23T21:13:59-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how-i-started-out/</loc>
+    <lastmod>2019-11-29T23:00:55-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/learnings-working-large-software-project/</loc>
     <lastmod>2019-11-28T20:46:11-04:00</lastmod>
