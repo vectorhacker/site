@@ -92,7 +92,20 @@
             }
 
             .education-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
                 margin-bottom: 3px;
+                width: 100%;
+            }
+
+            .education-text {
+                flex: 1;
+            }
+
+            .status {
+                text-align: right;
+                flex-shrink: 0;
             }
 
             @media print {
@@ -143,12 +156,18 @@
             <section class="section">
                 <h2 class="section-title">Education</h2>
                 <div class="education-item">
-                    • M.S. in Computer Science, Artificial Intelligence from
-                    Georgia Institute of Technology Status - Enrolled
+                    <div class="education-text">
+                        • M.S. in Computer Science, Artificial Intelligence from
+                        Georgia Institute of Technology
+                    </div>
+                    <div class="status">Status - Enrolled</div>
                 </div>
                 <div class="education-item">
-                    • B.S. in Computer Science from Western Governors University
-                    Status - Graduated
+                    <div class="education-text">
+                        • B.S. in Computer Science from Western Governors
+                        University
+                    </div>
+                    <div class="status">Status - Graduated</div>
                 </div>
             </section>
 
