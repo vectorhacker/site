@@ -32,8 +32,7 @@
 
             .header {
                 text-align: center;
-                margin-bottom: 18px;
-                border-bottom: 1px solid #000;
+                margin-bottom: 16px;
                 padding-bottom: 8px;
             }
 
@@ -44,12 +43,12 @@
             }
 
             .contact-info {
-                font-size: 1.2em;
+                font-size: 1.1em;
                 margin-bottom: 4px;
             }
 
             .section {
-                margin-bottom: 16px;
+                margin-bottom: 14px;
             }
 
             .section-title {
@@ -65,7 +64,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: baseline;
-                margin-bottom: 4px;
+                margin-bottom: 3px;
             }
 
             .job-title {
@@ -83,7 +82,7 @@
             }
 
             .bullet-points {
-                margin-left: 20px;
+                margin-left: 18px;
             }
 
             .bullet-points li {
@@ -112,86 +111,147 @@
                 body {
                     -webkit-print-color-adjust: exact;
                     print-color-adjust: exact;
-                    font-size: 10.5pt;
-                    line-height: 1.15;
+                    font-size: 10pt;
+                }
+
+                @page {
+                    margin: 0.5in;
+                    size: letter;
                 }
 
                 .header h1 {
-                    font-size: 14pt;
+                    font-size: 13pt;
                 }
 
                 .contact-info {
-                    font-size: 12pt;
+                    font-size: 11pt;
                 }
 
                 .section-title {
-                    font-size: 10.5pt;
+                    font-size: 10pt;
                 }
 
                 .job-title {
-                    font-size: 10.5pt;
+                    font-size: 10pt;
                 }
 
                 .job-dates {
-                    font-size: 10.5pt;
+                    font-size: 10pt;
+                }
+
+                * {
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
+                    break-after: auto !important;
+                    page-break-after: auto !important;
+                    -webkit-column-break-after: auto !important;
+                    -moz-column-break-after: auto !important;
+                    column-break-after: auto !important;
+                    break-before: auto !important;
+                    page-break-before: auto !important;
+                    -webkit-column-break-before: auto !important;
+                    -moz-column-break-before: auto !important;
+                    column-break-before: auto !important;
+                    orphans: 100 !important;
+                    widows: 100 !important;
+                }
+
+                html,
+                body {
+                    height: auto !important;
+                    overflow: visible !important;
+                }
+
+                .container {
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    height: auto !important;
+                    max-height: none !important;
                 }
 
                 .job-section {
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                    -webkit-column-break-inside: avoid;
-                    -moz-column-break-inside: avoid;
-                    column-break-inside: avoid;
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
+                    overflow: visible !important;
+                    height: auto !important;
                 }
 
                 .section {
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                    -webkit-column-break-inside: avoid;
-                    -moz-column-break-inside: avoid;
-                    column-break-inside: avoid;
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
+                    overflow: visible !important;
+                    height: auto !important;
                 }
 
                 .section-title {
-                    break-after: avoid;
-                    page-break-after: avoid;
-                    -webkit-column-break-after: avoid;
-                    -moz-column-break-after: avoid;
-                    column-break-after: avoid;
+                    break-after: avoid !important;
+                    page-break-after: avoid !important;
+                    -webkit-column-break-after: avoid !important;
+                    -moz-column-break-after: avoid !important;
+                    column-break-after: avoid !important;
                 }
 
                 .job-header {
-                    break-after: avoid;
-                    page-break-after: avoid;
-                    -webkit-column-break-after: avoid;
-                    -moz-column-break-after: avoid;
-                    column-break-after: avoid;
+                    break-after: avoid !important;
+                    page-break-after: avoid !important;
+                    -webkit-column-break-after: avoid !important;
+                    -moz-column-break-after: avoid !important;
+                    column-break-after: avoid !important;
                 }
 
                 .bullet-points li {
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                    -webkit-column-break-inside: avoid;
-                    -moz-column-break-inside: avoid;
-                    column-break-inside: avoid;
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
                 }
 
                 .education-item {
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                    -webkit-column-break-inside: avoid;
-                    -moz-column-break-inside: avoid;
-                    column-break-inside: avoid;
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
+                }
+
+                 
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p,
+                div,
+                li,
+                ul,
+                ol {
+                    break-before: auto !important;
+                    break-after: auto !important;
+                    break-inside: avoid !important;
+                    page-break-before: auto !important;
+                    page-break-after: auto !important;
+                    page-break-inside: avoid !important;
                 }
 
                  
                 @-moz-document url-prefix() {
                     .job-section {
-                        overflow: hidden;
+                        overflow: visible !important;
                     }
 
                     .section {
-                        overflow: hidden;
+                        overflow: visible !important;
                     }
                 }
             }
@@ -245,36 +305,41 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
-                            Created and maintained AWS backend services for
-                            chatbot, AI, and analytics applications supporting
-                            healthcare information access.
+                            Created and maintained HIPAA-compliant backend
+                            services on AWS to support AI and data analytics
+                            applications that advocates for patient's
+                            healthcare.
                         </li>
                         <li>
-                            Migrated infrastructure to Infrastructure as Code
-                            using SST and Pulumi, reducing deployment errors and
-                            improving reliability.
+                            Migrated infrastructure from manual deployments to
+                            Infrastructure as Code using SST and Pulumi,
+                            reducing deployment errors and improving system
+                            reliability.
                         </li>
                         <li>
-                            Optimized Docker containerized applications to
-                            improve performance and reduce cloud resource usage.
+                            Optimized containerized applications using Docker to
+                            improve performance and reduce resource usage on
+                            cloud servers.
                         </li>
                         <li>
                             Developed custom Slack workflow using Python and
-                            JavaScript to automate healthcare information
-                            imports into chatbot knowledgebase.
+                            JavaScript to automatically import healthcare
+                            information sources into AI chatbot's knowledgebase.
                         </li>
                         <li>
-                            Built data ingestion and processing pipelines on AWS
-                            using Python and Langchain for healthcare data
-                            analysis.
+                            Collaborated with data scientists to build data
+                            ingestion and processing pipelines on AWS using
+                            Python and Langchain for analyzing healthcare
+                            conversations and data.
                         </li>
                         <li>
-                            Maintained application APIs using Node.js, tRPC,
-                            TypeScript, and PostgreSQL for user requests and
-                            data storage.
+                            Maintained and deployed application APIs using
+                            Node.js, tRPC, TypeScript, and PostgreSQL to handle
+                            user requests and store data.
                         </li>
                         <li>
-                            Enhanced chatbot with Langchain tools integrating
+                            Enhanced chatbot capabilities by integrating
+                            Langchain tools that answer questions using
                             Healthcare.gov API for finding doctors, insurance
                             plans, and insurers.
                         </li>
@@ -290,35 +355,31 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
-                            Managed cloud team of three engineers delivering
-                            applications for company's local-first application
-                            ecosystem.
+                            Managed cloud team of three engineers to deliver
+                            cloud applications supporting the company's
+                            local-first application ecosystem.
                         </li>
                         <li>
-                            Architected scalable cloud infrastructure and
-                            applications on Cloudflare platform for global
-                            distributed computing.
+                            Architected serverless applications and APIs on
+                            Cloudflare using TypeScript, Hono, React, HTMX, D1
+                            SQL storage, and R2 blob storage.
                         </li>
                         <li>
-                            Built authentication and subscription system using
-                            Discord OAuth, Login with Apple, and Stripe
-                            integration.
-                        </li>
-                        <li>
-                            Developed backend services using Hono and TypeScript
-                            on Cloudflare Pages with D1 SQL and R2 blob storage.
+                            Built comprehensive authentication and subscription
+                            management system using Discord OAuth, Login with
+                            Apple, and Stripe integration.
                         </li>
                         <li>
                             Created browser extension using WXT and Vue enabling
-                            users to remix web pages and save as web clips.
+                            users to remix web pages and save them as web clips
+                            to their local-first cluster through GunJS WebRTC
+                            protocol.
                         </li>
                         <li>
-                            Developed Discord application for users to generate
-                            images, text, and memes with collaboration features.
-                        </li>
-                        <li>
-                            Implemented frontend solutions using React and HTMX
-                            with GunJS for distributed data synchronization.
+                            Developed Discord application allowing users to call
+                            into their local-first compute cluster to generate
+                            images, text, and memes with collaboration features
+                            through GunJS WebRTC protocol.
                         </li>
                     </ul>
                 </div>
@@ -333,44 +394,50 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
-                            Managed cross-functional team of 7 engineers
-                            developing lab test ordering platform for Mako
-                            Medical.
+                            Managed cross-functional team of 7 engineers and
+                            architected HIPAA-compliant lab test ordering
+                            platform for parent company Mako Medical.
                         </li>
                         <li>
                             Architected serverless system on AWS using SST and
-                            AWS CDK for Infrastructure as Code.
+                            AWS CDK for Infrastructure as Code to automatically
+                            manage cloud resources.
                         </li>
                         <li>
-                            Integrated platform with EMS systems through HL7
-                            message processing for healthcare data exchange.
+                            Integrated platform with EHR systems through HL7
+                            message processing for seamless healthcare data
+                            exchange between hospitals and labs.
                         </li>
                         <li>
                             Developed backend services using TypeScript, Go, and
-                            Python on AWS Lambda for orders, integration, and
-                            notifications.
+                            Python on AWS Lambda to handle orders, external
+                            system integration, HL7 messages, and notifications.
                         </li>
                         <li>
-                            Delivered business intelligence solutions for order
-                            processing, tracking, analytics, and infrastructure
-                            management.
+                            Collaborated with data team to deliver business
+                            intelligence solutions for order processing,
+                            tracking, analytics, and infrastructure management.
                         </li>
                         <li>
-                            Built comprehensive CI/CD pipeline for automated
-                            integration, testing, and deployment.
+                            Built CI/CD pipeline in GitLab for automated
+                            integration, testing, and deployment that ran on
+                            each code change.
                         </li>
                         <li>
-                            Instituted Test-Driven Development practices and
-                            established documentation guidelines to improve code
-                            quality.
+                            Instituted Test-Driven Development practices,
+                            established documentation guidelines through
+                            internal wiki, and mentored team in these practices
+                            to improve code quality.
                         </li>
                         <li>
                             Implemented data storage solutions using DynamoDB
-                            and S3 for scalable, cost-effective management.
+                            and S3 buckets for scalable, cost-effective data
+                            management.
                         </li>
                         <li>
                             Created passwordless authentication system using AWS
-                            Cognito with secure one-time email codes.
+                            Cognito with secure one-time codes sent to verified
+                            email addresses.
                         </li>
                     </ul>
                 </div>
@@ -384,9 +451,14 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
-                            Developed full-stack COVID testing application using
-                            React and AWS Amplify for test ordering and
-                            management.
+                            Developed HIPAA-compliant COVID testing app that
+                            allowed Navy personnel and school children to safely
+                            return to work and school.
+                        </li>
+                        <li>
+                            Built serverless application using React and AWS
+                            Amplify to order COVID tests and manage test results
+                            during the pandemic.
                         </li>
                         <li>
                             Supported safe return of over 100,000 high school
@@ -394,8 +466,9 @@
                             through reliable testing management.
                         </li>
                         <li>
-                            Built scalable serverless architecture handling
-                            varying demand during the pandemic.
+                            Worked as full-stack developer in team of 3
+                            engineers to ensure scalable, reliable testing
+                            system that handled varying demand.
                         </li>
                     </ul>
                 </div>
@@ -410,17 +483,19 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
-                            Developed backend microservices for mileage
-                            reimbursement application using Java, Spring Boot,
-                            Docker, and MySQL processing over $500,000 daily.
+                            Built system that automatically paid mileage
+                            reimbursements to people's debit cards, processing
+                            over $500,000 daily.
                         </li>
                         <li>
-                            Reduced reimbursement processing time by 40% through
-                            optimized system architecture.
+                            Developed backend microservices using Java, Spring
+                            Boot, Docker, and MySQL to handle the payment
+                            processing.
                         </li>
                         <li>
-                            Designed RESTful APIs to improve system integration
-                            and data exchange between services.
+                            Designed and implemented RESTful APIs to improve
+                            system integration and data exchange between
+                            different services.
                         </li>
                     </ul>
                 </div>
@@ -435,18 +510,24 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
-                            Developed serverless SMS texting and routing
-                            infrastructure using AWS Lambda, Node.js, Go, and
-                            PostgreSQL.
+                            Built cloud software that managed text messaging
+                            routing and delivery for mobile phone companies.
+                        </li>
+                        <li>
+                            Developed serverless applications using AWS Lambda,
+                            Node.js, Java, Go, and PostgreSQL for scalability
+                            and efficiency.
                         </li>
                         <li>
                             Migrated 1TB AWS RDS database to AWS Aurora,
-                            achieving 60% cost reduction and improved
-                            performance.
+                            achieving reduction in database costs and improving
+                            system performance.
                         </li>
                         <li>
-                            Utilized DevOps practices to streamline deployment
-                            and infrastructure management.
+                            Implemented DevOps practices with Azure DevOps
+                            pipelines and continuous deployment to streamline
+                            infrastructure management and ensure system
+                            reliability.
                         </li>
                     </ul>
                 </div>
@@ -462,35 +543,48 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
+                            Developed financial applications for Puerto Rico's
+                            Treasury Department, including work on SURI, the new
+                            unified tax filing system.
+                        </li>
+                        <li>
                             Optimized digital check processing system using Java
                             Streams and multithreading, reducing processing time
                             from hours to minutes.
                         </li>
                         <li>
-                            Refactored legacy C# and SQL Server software for
-                            internal mail digitization service applying SOLID
-                            principles and Clean Architecture.
+                            Refactored and modernized legacy C# and SQL Server
+                            software for internal mail digitization service
+                            applying SOLID principles and Clean Architecture.
                         </li>
                         <li>
-                            Collaborated on SURI project enabling unified online
-                            portal for tax filing utilized by thousands of
-                            taxpayers.
+                            Collaborated on SURI project to enable unified
+                            online portal for tax filing and treasury
+                            interactions, utilized by thousands of taxpayers.
                         </li>
                         <li>
-                            Designed new features in SURI using C#, VB.Net, and
-                            Microsoft SQL Server, improving user experience.
+                            Designed and implemented new features in SURI using
+                            C#, VB.Net, and Microsoft SQL Server, improving user
+                            experience and system functionality.
                         </li>
                         <li>
-                            Developed data fixes to resolve critical issues
-                            ensuring data integrity and seamless operations.
+                            Developed and deployed data fixes to resolve
+                            critical issues, ensuring data integrity and
+                            seamless operations.
                         </li>
                         <li>
                             Applied version control best practices using
-                            Subversion across multiple developers.
+                            Subversion to manage software development changes
+                            across multiple developers.
                         </li>
                         <li>
-                            Worked on Windows Server systems with SQL Server,
-                            Oracle, and IBM DB2 databases.
+                            Contributed to transition to modern software
+                            practices, improving overall efficiency and agility
+                            within the Department of the Treasury.
+                        </li>
+                        <li>
+                            Worked on Microsoft Windows Server systems with SQL
+                            Server, Oracle, and IBM DB2 databases.
                         </li>
                     </ul>
                 </div>
@@ -506,28 +600,35 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
-                            Co-founded consulting firm specializing in media
-                            solutions and software development for media
+                            Co-founded ALQMY, a consulting firm specializing in
+                            media solutions and software development for media
                             companies.
                         </li>
                         <li>
-                            Partnered with Buena Vibra Group to develop mobile
-                            applications enhancing user engagement and media
-                            campaigns.
+                            Partnered with Buena Vibra Group to design and
+                            develop mobile applications that enhanced user
+                            engagement and supported media campaigns.
                         </li>
                         <li>
                             Optimized Google Analytics integrations to track
-                            campaign performance and drive higher conversion
-                            rates.
+                            campaign performance, improve user insights, and
+                            drive higher conversion rates.
                         </li>
                         <li>
-                            Developed full-stack applications using Go, Node.js,
-                            Angular, and Vue for scalable client solutions.
+                            Developed and maintained full-stack applications
+                            using Go, Node.js, Angular, and Vue, ensuring
+                            scalable solutions tailored to client needs.
                         </li>
                         <li>
-                            Provided strategic technical consulting helping
-                            clients achieve business objectives through
-                            customized software.
+                            Collaborated closely with clients to provide
+                            strategic technical consulting, helping them achieve
+                            business objectives through customized software
+                            solutions.
+                        </li>
+                        <li>
+                            Enhanced client media campaigns by leveraging cloud
+                            development and innovative software design
+                            principles.
                         </li>
                     </ul>
                 </div>
@@ -542,19 +643,20 @@
                     <ul class="bullet-points">
                         <li>
                             Researched hybrid cloud infrastructure for
-                            government applications and security requirements.
+                            government applications and security requirements to
+                            help agencies adopt cloud technologies safely.
                         </li>
                         <li>
                             Attended AWS cloud conferences to stay current with
-                            emerging technologies and best practices.
+                            emerging cloud technologies and best practices.
                         </li>
                         <li>
                             Collaborated with data engineering teams to improve
-                            data ingestion pipeline performance.
+                            data ingestion pipelines for enhanced performance.
                         </li>
                         <li>
                             Developed infrastructure code using Go and Ansible
-                            for hybrid cloud environment management.
+                            to create and manage hybrid cloud environments.
                         </li>
                     </ul>
                 </div>
@@ -569,21 +671,23 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
-                            Developed GPS tracking system for public
-                            transportation with civil and computer engineering
-                            students.
+                            Collaborated with undergraduate and graduate
+                            students in civil and computer engineering to
+                            develop GPS tracking system for public
+                            transportation.
                         </li>
                         <li>
-                            Installed GPS devices on 10 buses and tracked routes
-                            throughout Puerto Rico metro area.
+                            Installed GPS devices on 10 buses and tracked their
+                            routes throughout the Puerto Rico metro area.
                         </li>
                         <li>
                             Built real-time bus tracking application using
-                            Node.js, RethinkDB, and Angular.
+                            Node.js, RethinkDB, and Angular to help people see
+                            where buses were located.
                         </li>
                         <li>
-                            Deployed and managed tracking system on Microsoft
-                            Azure cloud platform.
+                            Deployed and managed the tracking system on
+                            Microsoft Azure cloud platform.
                         </li>
                     </ul>
                 </div>
@@ -597,18 +701,19 @@
                     </div>
                     <ul class="bullet-points">
                         <li>
-                            Developed crime reporting and tracking mobile and
-                            web application for iOS and Android in team of 6
-                            engineers.
+                            Worked in team of 6 engineers to develop crime
+                            reporting and tracking mobile and web application
+                            for iOS and Android.
                         </li>
                         <li>
                             Focused on web application development and backend
-                            services on AWS Beanstalk using MongoDB and Node.js.
+                            services hosted on AWS Beanstalk using MongoDB and
+                            Node.js.
                         </li>
                         <li>
-                            Refactored application to use RESTful APIs instead
-                            of web sockets, simplifying codebase and improving
-                            maintainability.
+                            Helped refactor the application to use RESTful APIs
+                            instead of web sockets, simplifying the codebase and
+                            improving maintainability.
                         </li>
                     </ul>
                 </div>
