@@ -33,7 +33,6 @@
             .header {
                 text-align: center;
                 margin-bottom: 16px;
-                border-bottom: 1px solid #000;
                 padding-bottom: 8px;
             }
 
@@ -115,6 +114,11 @@
                     font-size: 10pt;
                 }
 
+                @page {
+                    margin: 0.5in;
+                    size: letter;
+                }
+
                 .header h1 {
                     font-size: 13pt;
                 }
@@ -135,62 +139,119 @@
                     font-size: 10pt;
                 }
 
+                * {
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
+                    break-after: auto !important;
+                    page-break-after: auto !important;
+                    -webkit-column-break-after: auto !important;
+                    -moz-column-break-after: auto !important;
+                    column-break-after: auto !important;
+                    break-before: auto !important;
+                    page-break-before: auto !important;
+                    -webkit-column-break-before: auto !important;
+                    -moz-column-break-before: auto !important;
+                    column-break-before: auto !important;
+                    orphans: 100 !important;
+                    widows: 100 !important;
+                }
+
+                html,
+                body {
+                    height: auto !important;
+                    overflow: visible !important;
+                }
+
+                .container {
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    height: auto !important;
+                    max-height: none !important;
+                }
+
                 .job-section {
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                    -webkit-column-break-inside: avoid;
-                    -moz-column-break-inside: avoid;
-                    column-break-inside: avoid;
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
+                    overflow: visible !important;
+                    height: auto !important;
                 }
 
                 .section {
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                    -webkit-column-break-inside: avoid;
-                    -moz-column-break-inside: avoid;
-                    column-break-inside: avoid;
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
+                    overflow: visible !important;
+                    height: auto !important;
                 }
 
                 .section-title {
-                    break-after: avoid;
-                    page-break-after: avoid;
-                    -webkit-column-break-after: avoid;
-                    -moz-column-break-after: avoid;
-                    column-break-after: avoid;
+                    break-after: avoid !important;
+                    page-break-after: avoid !important;
+                    -webkit-column-break-after: avoid !important;
+                    -moz-column-break-after: avoid !important;
+                    column-break-after: avoid !important;
                 }
 
                 .job-header {
-                    break-after: avoid;
-                    page-break-after: avoid;
-                    -webkit-column-break-after: avoid;
-                    -moz-column-break-after: avoid;
-                    column-break-after: avoid;
+                    break-after: avoid !important;
+                    page-break-after: avoid !important;
+                    -webkit-column-break-after: avoid !important;
+                    -moz-column-break-after: avoid !important;
+                    column-break-after: avoid !important;
                 }
 
                 .bullet-points li {
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                    -webkit-column-break-inside: avoid;
-                    -moz-column-break-inside: avoid;
-                    column-break-inside: avoid;
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
                 }
 
                 .education-item {
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                    -webkit-column-break-inside: avoid;
-                    -moz-column-break-inside: avoid;
-                    column-break-inside: avoid;
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                    -webkit-column-break-inside: avoid !important;
+                    -moz-column-break-inside: avoid !important;
+                    column-break-inside: avoid !important;
+                }
+
+                /* Reset any potential page breaks */
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p,
+                div,
+                li,
+                ul,
+                ol {
+                    break-before: auto !important;
+                    break-after: auto !important;
+                    break-inside: avoid !important;
+                    page-break-before: auto !important;
+                    page-break-after: auto !important;
+                    page-break-inside: avoid !important;
                 }
 
                 /* Firefox-specific fixes */
                 @-moz-document url-prefix() {
                     .job-section {
-                        overflow: hidden;
+                        overflow: visible !important;
                     }
 
                     .section {
-                        overflow: hidden;
+                        overflow: visible !important;
                     }
                 }
             }
