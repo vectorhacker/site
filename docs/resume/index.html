@@ -3,721 +3,478 @@
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Victor Martinez - Resume</title>
+        <title>Victor Martinez - Full Stack Engineer Resume</title>
         <style>
-            @page {
-                margin: 0.5in;
-                size: letter;
-            }
-
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
+            @media print {
+                body {
+                    margin: 0;
+                    -webkit-print-color-adjust: exact;
+                }
             }
 
             body {
-                font-family: "Times New Roman", serif;
-                font-size: 1em;
-                line-height: 1.2;
-                color: #000;
-                background: white;
-            }
-
-            .container {
+                font-family: Arial, sans-serif;
                 max-width: 8.5in;
                 margin: 0 auto;
-                padding: 0;
+                padding: 0.5in;
+                line-height: 1.2;
+                font-size: 10.5pt;
             }
 
             .header {
                 text-align: center;
-                margin-bottom: 16px;
-                padding-bottom: 8px;
+                margin-bottom: 1em;
             }
 
-            .header h1 {
-                font-size: 1.4em;
+            .name {
+                font-size: 14pt;
                 font-weight: bold;
-                margin-bottom: 4px;
+                margin-bottom: 0.2em;
             }
 
-            .contact-info {
-                font-size: 1.1em;
-                margin-bottom: 4px;
+            .contact {
+                font-size: 12pt;
+                margin-bottom: 0.2em;
             }
 
-            .section {
-                margin-bottom: 14px;
+            .location {
+                font-size: 12pt;
             }
 
             .section-title {
-                font-size: 1em;
+                font-size: 10.5pt;
                 font-weight: bold;
-                text-transform: uppercase;
-                border-bottom: 1px solid #000;
-                margin-bottom: 6px;
-                padding-bottom: 2px;
+                margin-top: 1em;
+                margin-bottom: 0.5em;
             }
 
             .job-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: baseline;
-                margin-bottom: 3px;
+                font-style: italic;
+                margin-bottom: 0.3em;
             }
 
             .job-title {
-                font-weight: bold;
-                font-size: 1em;
+                display: inline;
             }
 
             .job-dates {
+                float: right;
                 font-style: italic;
-                font-size: 1em;
             }
 
-            .job-section {
-                margin-bottom: 12px;
+            .job-company {
+                font-style: italic;
             }
 
-            .bullet-points {
-                margin-left: 18px;
+            ul {
+                margin: 0.3em 0;
+                padding-left: 1.2em;
             }
 
-            .bullet-points li {
-                margin-bottom: 2px;
-                text-align: justify;
+            li {
+                margin-bottom: 0.2em;
             }
 
             .education-item {
                 display: flex;
                 justify-content: space-between;
-                align-items: baseline;
-                margin-bottom: 2px;
-                width: 100%;
+                margin-bottom: 0.3em;
             }
 
-            .education-text {
-                flex: 1;
+            .job-section {
+                margin-bottom: 1em;
             }
 
-            .status {
-                text-align: right;
-                flex-shrink: 0;
-            }
-
-            @media print {
-                body {
-                    -webkit-print-color-adjust: exact;
-                    print-color-adjust: exact;
-                    font-size: 10pt;
-                }
-
-                @page {
-                    margin: 0.5in;
-                    size: letter;
-                }
-
-                .header h1 {
-                    font-size: 13pt;
-                }
-
-                .contact-info {
-                    font-size: 11pt;
-                }
-
-                .section-title {
-                    font-size: 10pt;
-                }
-
-                .job-title {
-                    font-size: 10pt;
-                }
-
-                .job-dates {
-                    font-size: 10pt;
-                }
-
-                * {
-                    break-inside: avoid !important;
-                    page-break-inside: avoid !important;
-                    -webkit-column-break-inside: avoid !important;
-                    -moz-column-break-inside: avoid !important;
-                    column-break-inside: avoid !important;
-                    break-after: auto !important;
-                    page-break-after: auto !important;
-                    -webkit-column-break-after: auto !important;
-                    -moz-column-break-after: auto !important;
-                    column-break-after: auto !important;
-                    break-before: auto !important;
-                    page-break-before: auto !important;
-                    -webkit-column-break-before: auto !important;
-                    -moz-column-break-before: auto !important;
-                    column-break-before: auto !important;
-                    orphans: 100 !important;
-                    widows: 100 !important;
-                }
-
-                html,
-                body {
-                    height: auto !important;
-                    overflow: visible !important;
-                }
-
-                .container {
-                    break-inside: avoid !important;
-                    page-break-inside: avoid !important;
-                    height: auto !important;
-                    max-height: none !important;
-                }
-
-                .job-section {
-                    break-inside: avoid !important;
-                    page-break-inside: avoid !important;
-                    -webkit-column-break-inside: avoid !important;
-                    -moz-column-break-inside: avoid !important;
-                    column-break-inside: avoid !important;
-                    overflow: visible !important;
-                    height: auto !important;
-                }
-
-                .section {
-                    break-inside: avoid !important;
-                    page-break-inside: avoid !important;
-                    -webkit-column-break-inside: avoid !important;
-                    -moz-column-break-inside: avoid !important;
-                    column-break-inside: avoid !important;
-                    overflow: visible !important;
-                    height: auto !important;
-                }
-
-                .section-title {
-                    break-after: avoid !important;
-                    page-break-after: avoid !important;
-                    -webkit-column-break-after: avoid !important;
-                    -moz-column-break-after: avoid !important;
-                    column-break-after: avoid !important;
-                }
-
-                .job-header {
-                    break-after: avoid !important;
-                    page-break-after: avoid !important;
-                    -webkit-column-break-after: avoid !important;
-                    -moz-column-break-after: avoid !important;
-                    column-break-after: avoid !important;
-                }
-
-                .bullet-points li {
-                    break-inside: avoid !important;
-                    page-break-inside: avoid !important;
-                    -webkit-column-break-inside: avoid !important;
-                    -moz-column-break-inside: avoid !important;
-                    column-break-inside: avoid !important;
-                }
-
-                .education-item {
-                    break-inside: avoid !important;
-                    page-break-inside: avoid !important;
-                    -webkit-column-break-inside: avoid !important;
-                    -moz-column-break-inside: avoid !important;
-                    column-break-inside: avoid !important;
-                }
-
-                 
-                h1,
-                h2,
-                h3,
-                h4,
-                h5,
-                h6,
-                p,
-                div,
-                li,
-                ul,
-                ol {
-                    break-before: auto !important;
-                    break-after: auto !important;
-                    break-inside: avoid !important;
-                    page-break-before: auto !important;
-                    page-break-after: auto !important;
-                    page-break-inside: avoid !important;
-                }
-
-                 
-                @-moz-document url-prefix() {
-                    .job-section {
-                        overflow: visible !important;
-                    }
-
-                    .section {
-                        overflow: visible !important;
-                    }
-                }
+            .clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
             }
         </style>
     </head>
     <body>
-        <div class="container">
-            <header class="header">
-                <h1>Victor Martinez</h1>
-                <div class="contact-info">
-                    787-619-9503 |
-                    <a href="mailto:hello@victoramartinez.com"
-                        >hello@victoramartinez.com
-                    </a>
-                    |
-                    <a href="https://linkedin.com/in/victorams"
-                        >https://linkedin.com/in/victorams</a
-                    ><br />
-                    Citizen of the United States, San Juan, Puerto Rico
-                </div>
-            </header>
+        <div class="header">
+            <div class="name">Victor Martinez</div>
+            <div class="contact">
+                787-619-9503 | hello@victoramartinez.com |
+                https://linkedin.com/in/victorams
+            </div>
+            <div class="location">
+                Citizen of the United States, San Juan, Puerto Rico
+            </div>
+        </div>
 
-            <section class="section">
-                <h2 class="section-title">Education</h2>
-                <div class="education-item">
-                    <div class="education-text">
-                        • M.S. in Computer Science, Artificial Intelligence from
-                        Georgia Institute of Technology
-                    </div>
-                    <div class="status">Status - Enrolled</div>
-                </div>
-                <div class="education-item">
-                    <div class="education-text">
-                        • B.S. in Computer Science from Western Governors
-                        University
-                    </div>
-                    <div class="status">Status - Graduated</div>
-                </div>
-            </section>
+        <div class="section-title">Education & Certificates</div>
+        <div class="education-item">
+            <span
+                >• M.S. in Computer Science, Artificial Intelligence from
+                Georgia Institute of Technology</span
+            >
+            <span>Status - Enrolled</span>
+        </div>
+        <div class="education-item">
+            <span
+                >• B.S. in Computer Science from Western Governors
+                University</span
+            >
+            <span>Status - Graduated</span>
+        </div>
+        <div class="education-item">
+            <span>• ITIL 4 Foundations Certification from PeopleCert</span>
+            <span>Status - Certified</span>
+        </div>
 
-            <section class="section">
-                <h2 class="section-title">Work History</h2>
+        <div class="section-title">Work History</div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Senior Software Engineer / AI Engineer, Zeteo
-                            Health, Bayamón, PR
-                        </div>
-                        <div class="job-dates">January 2025 - Present</div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Created and maintained HIPAA-compliant backend
-                            services on AWS to support AI and data analytics
-                            applications that advocates for patient's
-                            healthcare.
-                        </li>
-                        <li>
-                            Migrated infrastructure from manual deployments to
-                            Infrastructure as Code using SST and Pulumi,
-                            reducing deployment errors and improving system
-                            reliability.
-                        </li>
-                        <li>
-                            Optimized containerized applications using Docker to
-                            improve performance and reduce resource usage on
-                            cloud servers.
-                        </li>
-                        <li>
-                            Developed custom Slack workflow using Python and
-                            JavaScript to automatically import healthcare
-                            information sources into AI chatbot's knowledgebase.
-                        </li>
-                        <li>
-                            Collaborated with data scientists to build data
-                            ingestion and processing pipelines on AWS using
-                            Python and Langchain for analyzing healthcare
-                            conversations and data.
-                        </li>
-                        <li>
-                            Maintained and deployed application APIs using
-                            Node.js, tRPC, TypeScript, and PostgreSQL to handle
-                            user requests and store data.
-                        </li>
-                        <li>
-                            Enhanced chatbot capabilities by integrating
-                            Langchain tools that answer questions using
-                            Healthcare.gov API for finding doctors, insurance
-                            plans, and insurers.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Senior Software Engineer / AI Engineer at Zeteo Health,
+                        Remote</em
+                    ></span
+                >
+                <span class="job-dates"><em>January 2025 to Present</em></span>
+            </div>
+            <ul>
+                <li>
+                    Created and maintained HIPAA-compliant backend services on
+                    AWS to support AI and data analytics applications that
+                    advocates for patient's healthcare.
+                </li>
+                <li>
+                    Migrated infrastructure from manual deployments to
+                    Infrastructure as Code using SST and Pulumi, reducing
+                    deployment errors and improving system reliability.
+                </li>
+                <li>
+                    Optimized containerized applications using Docker to improve
+                    performance and reduce resource usage on cloud servers.
+                </li>
+                <li>
+                    Developed custom Slack workflow using Python and JavaScript
+                    to automatically import healthcare information sources into
+                    AI chatbot's knowledgebase, integrating AWS Bedrock models
+                    including Claude from Anthropic and ChatGPT from OpenAI.
+                </li>
+                <li>
+                    Maintained and deployed application APIs using Node.js,
+                    tRPC, TypeScript, and PostgreSQL to handle user requests and
+                    store data.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Senior Serverless Engineer, Rana LLC, San Juan, PR
-                        </div>
-                        <div class="job-dates">July 2024 - January 2025</div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Managed cloud team of three engineers to deliver
-                            cloud applications supporting the company's
-                            local-first application ecosystem.
-                        </li>
-                        <li>
-                            Architected serverless applications and APIs on
-                            Cloudflare using TypeScript, Hono, React, HTMX, D1
-                            SQL storage, and R2 blob storage.
-                        </li>
-                        <li>
-                            Built comprehensive authentication and subscription
-                            management system using Discord OAuth, Login with
-                            Apple, and Stripe integration.
-                        </li>
-                        <li>
-                            Created browser extension using WXT and Vue enabling
-                            users to remix web pages and save them as web clips
-                            to their local-first cluster through GunJS WebRTC
-                            protocol.
-                        </li>
-                        <li>
-                            Developed Discord application allowing users to call
-                            into their local-first compute cluster to generate
-                            images, text, and memes with collaboration features
-                            through GunJS WebRTC protocol.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Senior Serverless Engineer at Rana LLC, San Juan,
+                        PR</em
+                    ></span
+                >
+                <span class="job-dates"
+                    ><em>July 2024 to January 2025</em></span
+                >
+            </div>
+            <ul>
+                <li>
+                    Managed cloud team of three engineers to deliver cloud
+                    applications supporting the company's local-first
+                    application ecosystem.
+                </li>
+                <li>
+                    Architected serverless applications and APIs on Cloudflare
+                    using TypeScript, Hono, React, HTMX, D1 SQL storage, and R2
+                    blob storage.
+                </li>
+                <li>
+                    Built comprehensive authentication and subscription
+                    management system using Discord OAuth, Login with Apple, and
+                    Stripe integration.
+                </li>
+                <li>
+                    Created browser extension using WXT and Vue enabling users
+                    to remix web pages and save them as web clips to their
+                    local-first cluster through GunJS WebRTC protocol.
+                </li>
+                <li>
+                    Developed Discord application allowing users to call into
+                    their local-first compute cluster to generate images, text,
+                    and memes with collaboration features through GunJS WebRTC
+                    protocol, utilizing local models including Llama, Mistral,
+                    and others through WebLLM.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Senior Full-Stack Engineer, Coqui Health, San Juan,
-                            PR
-                        </div>
-                        <div class="job-dates">February 2022 - June 2024</div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Managed cross-functional team of 7 engineers and
-                            architected HIPAA-compliant lab test ordering
-                            platform for parent company Mako Medical.
-                        </li>
-                        <li>
-                            Architected serverless system on AWS using SST and
-                            AWS CDK for Infrastructure as Code to automatically
-                            manage cloud resources.
-                        </li>
-                        <li>
-                            Integrated platform with EHR systems through HL7
-                            message processing for seamless healthcare data
-                            exchange between hospitals and labs.
-                        </li>
-                        <li>
-                            Developed backend services using TypeScript, Go, and
-                            Python on AWS Lambda to handle orders, external
-                            system integration, HL7 messages, and notifications.
-                        </li>
-                        <li>
-                            Collaborated with data team to deliver business
-                            intelligence solutions for order processing,
-                            tracking, analytics, and infrastructure management.
-                        </li>
-                        <li>
-                            Built CI/CD pipeline in GitLab for automated
-                            integration, testing, and deployment that ran on
-                            each code change.
-                        </li>
-                        <li>
-                            Instituted Test-Driven Development practices,
-                            established documentation guidelines through
-                            internal wiki, and mentored team in these practices
-                            to improve code quality.
-                        </li>
-                        <li>
-                            Implemented data storage solutions using DynamoDB
-                            and S3 buckets for scalable, cost-effective data
-                            management.
-                        </li>
-                        <li>
-                            Created passwordless authentication system using AWS
-                            Cognito with secure one-time codes sent to verified
-                            email addresses.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Senior Full-Stack Engineer at Coqui Health, San Juan,
+                        PR</em
+                    ></span
+                >
+                <span class="job-dates"
+                    ><em>February 2022 to June 2024</em></span
+                >
+            </div>
+            <ul>
+                <li>
+                    Managed cross-functional team of 7 engineers and architected
+                    HIPAA-compliant lab test ordering platform for parent
+                    company Mako Medical.
+                </li>
+                <li>
+                    Architected serverless system on AWS using SST and AWS CDK
+                    for Infrastructure as Code to automatically manage cloud
+                    resources.
+                </li>
+                <li>
+                    Developed backend services using TypeScript, Go, and Python
+                    on AWS Lambda to handle orders, external system integration,
+                    HL7 messages, and notifications.
+                </li>
+                <li>
+                    Built CI/CD pipeline in GitLab for automated integration,
+                    testing, and deployment that ran on each code change.
+                </li>
+                <li>
+                    Implemented data storage solutions using DynamoDB and S3
+                    buckets for scalable, cost-effective data management.
+                </li>
+                <li>
+                    Created passwordless authentication system using AWS Cognito
+                    with secure one-time codes sent to verified email addresses.
+                </li>
+                <li>
+                    Built RESTful and GraphQL APIs to improve system integration
+                    and data exchange between different services.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Serverless Developer, Coqui Health, San Juan, PR
-                        </div>
-                        <div class="job-dates">August 2021 - February 2022</div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Developed HIPAA-compliant COVID testing app that
-                            allowed Navy personnel and school children to safely
-                            return to work and school.
-                        </li>
-                        <li>
-                            Built serverless application using React and AWS
-                            Amplify to order COVID tests and manage test results
-                            during the pandemic.
-                        </li>
-                        <li>
-                            Supported safe return of over 100,000 high school
-                            students, Navy personnel, and nursing home patients
-                            through reliable testing management.
-                        </li>
-                        <li>
-                            Worked as full-stack developer in team of 3
-                            engineers to ensure scalable, reliable testing
-                            system that handled varying demand.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Serverless Developer at Coqui Health, San Juan, PR</em
+                    ></span
+                >
+                <span class="job-dates"
+                    ><em>August 2021 to February 2022</em></span
+                >
+            </div>
+            <ul>
+                <li>
+                    Developed HIPAA-compliant COVID testing app that allowed
+                    Navy personnel and school children to safely return to work
+                    and school.
+                </li>
+                <li>
+                    Built serverless application using React and AWS Amplify to
+                    order COVID tests and manage test results during the
+                    pandemic.
+                </li>
+                <li>
+                    Worked as full-stack developer in team of 3 engineers to
+                    ensure scalable, reliable testing system that handled
+                    varying demand.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Software Developer II, Maxar Puerto Rico, San Juan,
-                            PR
-                        </div>
-                        <div class="job-dates">April 2021 - August 2021</div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Built system that automatically paid mileage
-                            reimbursements to people's debit cards, processing
-                            over $500,000 daily.
-                        </li>
-                        <li>
-                            Developed backend microservices using Java, Spring
-                            Boot, Docker, and MySQL to handle the payment
-                            processing.
-                        </li>
-                        <li>
-                            Designed and implemented RESTful APIs to improve
-                            system integration and data exchange between
-                            different services.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Software Developer II at Maxar Puerto Rico, San Juan,
+                        PR</em
+                    ></span
+                >
+                <span class="job-dates"
+                    ><em>April 2021 to August 2021</em></span
+                >
+            </div>
+            <ul>
+                <li>
+                    Built system that automatically paid mileage reimbursements
+                    to people's debit cards, processing over $500,000 daily.
+                </li>
+                <li>
+                    Developed backend microservices using Java, Spring Boot,
+                    Docker, and MySQL to handle the payment processing.
+                </li>
+                <li>
+                    Designed and implemented RESTful APIs to improve system
+                    integration and data exchange between different services.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Full Stack Developer, Strategic Mobile Services,
-                            Corp., San Juan, PR
-                        </div>
-                        <div class="job-dates">November 2020 - April 2021</div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Built cloud software that managed text messaging
-                            routing and delivery for mobile phone companies.
-                        </li>
-                        <li>
-                            Developed serverless applications using AWS Lambda,
-                            Node.js, Java, Go, and PostgreSQL for scalability
-                            and efficiency.
-                        </li>
-                        <li>
-                            Migrated 1TB AWS RDS database to AWS Aurora,
-                            achieving reduction in database costs and improving
-                            system performance.
-                        </li>
-                        <li>
-                            Implemented DevOps practices with Azure DevOps
-                            pipelines and continuous deployment to streamline
-                            infrastructure management and ensure system
-                            reliability.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Full Stack Developer at Strategic Mobile Services,
+                        Corp., San Juan, PR</em
+                    ></span
+                >
+                <span class="job-dates"
+                    ><em>November 2020 to April 2021</em></span
+                >
+            </div>
+            <ul>
+                <li>
+                    Built cloud software that managed text messaging routing and
+                    delivery for mobile phone companies.
+                </li>
+                <li>
+                    Developed serverless applications using AWS Lambda, Node.js,
+                    Java, Go, and PostgreSQL for scalability and efficiency.
+                </li>
+                <li>
+                    Migrated 1TB AWS RDS database to AWS Aurora, achieving
+                    reduction in database costs and improving system
+                    performance.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Programmer, Innovative Solutions Inc, San Juan, PR
-                        </div>
-                        <div class="job-dates">
-                            November 2018 - December 2020
-                        </div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Developed financial applications for Puerto Rico's
-                            Treasury Department, including work on SURI, the new
-                            unified tax filing system.
-                        </li>
-                        <li>
-                            Optimized digital check processing system using Java
-                            Streams and multithreading, reducing processing time
-                            from hours to minutes.
-                        </li>
-                        <li>
-                            Refactored and modernized legacy C# and SQL Server
-                            software for internal mail digitization service
-                            applying SOLID principles and Clean Architecture.
-                        </li>
-                        <li>
-                            Collaborated on SURI project to enable unified
-                            online portal for tax filing and treasury
-                            interactions, utilized by thousands of taxpayers.
-                        </li>
-                        <li>
-                            Designed and implemented new features in SURI using
-                            C#, VB.Net, and Microsoft SQL Server, improving user
-                            experience and system functionality.
-                        </li>
-                        <li>
-                            Developed and deployed data fixes to resolve
-                            critical issues, ensuring data integrity and
-                            seamless operations.
-                        </li>
-                        <li>
-                            Applied version control best practices using
-                            Subversion to manage software development changes
-                            across multiple developers.
-                        </li>
-                        <li>
-                            Contributed to transition to modern software
-                            practices, improving overall efficiency and agility
-                            within the Department of the Treasury.
-                        </li>
-                        <li>
-                            Worked on Microsoft Windows Server systems with SQL
-                            Server, Oracle, and IBM DB2 databases.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Programmer at Innovative Solutions Inc, San Juan,
+                        PR</em
+                    ></span
+                >
+                <span class="job-dates"
+                    ><em>November 2018 to December 2020</em></span
+                >
+            </div>
+            <ul>
+                <li>
+                    Developed financial applications for Puerto Rico's Treasury
+                    Department, including work on SURI, the new unified tax
+                    filing system.
+                </li>
+                <li>
+                    Refactored and modernized legacy C# and SQL Server software
+                    for internal mail digitization service applying SOLID
+                    principles and Clean Architecture.
+                </li>
+                <li>
+                    Designed and implemented new features in SURI using C#,
+                    VB.Net, and Microsoft SQL Server, improving user experience
+                    and system functionality.
+                </li>
+                <li>
+                    Applied version control best practices using Subversion to
+                    manage software development changes across multiple
+                    developers.
+                </li>
+                <li>
+                    Worked on Microsoft Windows Server systems with SQL Server,
+                    Oracle, and IBM DB2 databases.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Full Stack Developer, ALQMY, Bayamón, PR
-                        </div>
-                        <div class="job-dates">
-                            February 2018 - November 2018
-                        </div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Co-founded ALQMY, a consulting firm specializing in
-                            media solutions and software development for media
-                            companies.
-                        </li>
-                        <li>
-                            Partnered with Buena Vibra Group to design and
-                            develop mobile applications that enhanced user
-                            engagement and supported media campaigns.
-                        </li>
-                        <li>
-                            Optimized Google Analytics integrations to track
-                            campaign performance, improve user insights, and
-                            drive higher conversion rates.
-                        </li>
-                        <li>
-                            Developed and maintained full-stack applications
-                            using Go, Node.js, Angular, and Vue, ensuring
-                            scalable solutions tailored to client needs.
-                        </li>
-                        <li>
-                            Collaborated closely with clients to provide
-                            strategic technical consulting, helping them achieve
-                            business objectives through customized software
-                            solutions.
-                        </li>
-                        <li>
-                            Enhanced client media campaigns by leveraging cloud
-                            development and innovative software design
-                            principles.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em>Full Stack Developer at ALQMY, Bayamón, PR</em></span
+                >
+                <span class="job-dates"
+                    ><em>February 2018 to November 2018</em></span
+                >
+            </div>
+            <ul>
+                <li>
+                    Co-founded ALQMY, a consulting firm specializing in media
+                    solutions and software development for media companies.
+                </li>
+                <li>
+                    Developed and maintained full-stack applications using Go,
+                    Node.js, Angular, and Vue, ensuring scalable solutions
+                    tailored to client needs.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Software Engineer Intern, MITRE, McLean, VA
-                        </div>
-                        <div class="job-dates">May 2016 - July 2016</div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Researched hybrid cloud infrastructure for
-                            government applications and security requirements to
-                            help agencies adopt cloud technologies safely.
-                        </li>
-                        <li>
-                            Attended AWS cloud conferences to stay current with
-                            emerging cloud technologies and best practices.
-                        </li>
-                        <li>
-                            Collaborated with data engineering teams to improve
-                            data ingestion pipelines for enhanced performance.
-                        </li>
-                        <li>
-                            Developed infrastructure code using Go and Ansible
-                            to create and manage hybrid cloud environments.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Software Engineer Intern at MITRE, McLean, VA</em
+                    ></span
+                >
+                <span class="job-dates"><em>May 2016 to July 2016</em></span>
+            </div>
+            <ul>
+                <li>
+                    Researched hybrid cloud infrastructure for government
+                    applications and security requirements to help agencies
+                    adopt cloud technologies safely.
+                </li>
+                <li>
+                    Developed infrastructure code using Go and Ansible to create
+                    and manage hybrid cloud environments.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Undergraduate Research Assistant, University of
-                            Puerto Rico-Mayaguez
-                        </div>
-                        <div class="job-dates">May 2015 - May 2016</div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Collaborated with undergraduate and graduate
-                            students in civil and computer engineering to
-                            develop GPS tracking system for public
-                            transportation.
-                        </li>
-                        <li>
-                            Installed GPS devices on 10 buses and tracked their
-                            routes throughout the Puerto Rico metro area.
-                        </li>
-                        <li>
-                            Built real-time bus tracking application using
-                            Node.js, RethinkDB, and Angular to help people see
-                            where buses were located.
-                        </li>
-                        <li>
-                            Deployed and managed the tracking system on
-                            Microsoft Azure cloud platform.
-                        </li>
-                    </ul>
-                </div>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Undergraduate Research Assistant at University of
+                        Puerto Rico-Mayaguez</em
+                    ></span
+                >
+                <span class="job-dates"><em>May 2015 to May 2016</em></span>
+            </div>
+            <ul>
+                <li>
+                    Collaborated with undergraduate and graduate students in
+                    civil and computer engineering to develop GPS tracking
+                    system for public transportation.
+                </li>
+                <li>
+                    Built real-time bus tracking application using Node.js,
+                    RethinkDB, and Angular to help people see where buses were
+                    located.
+                </li>
+            </ul>
+        </div>
 
-                <div class="job-section">
-                    <div class="job-header">
-                        <div class="job-title">
-                            Software Engineer Intern, Optivon PR, Guaynabo, PR
-                        </div>
-                        <div class="job-dates">January 2015 - May 2015</div>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>
-                            Worked in team of 6 engineers to develop crime
-                            reporting and tracking mobile and web application
-                            for iOS and Android.
-                        </li>
-                        <li>
-                            Focused on web application development and backend
-                            services hosted on AWS Beanstalk using MongoDB and
-                            Node.js.
-                        </li>
-                        <li>
-                            Helped refactor the application to use RESTful APIs
-                            instead of web sockets, simplifying the codebase and
-                            improving maintainability.
-                        </li>
-                    </ul>
-                </div>
-            </section>
+        <div class="job-section">
+            <div class="job-header clearfix">
+                <span class="job-title"
+                    ><em
+                        >Software Engineer Intern at Optivon PR, Guaynabo,
+                        PR</em
+                    ></span
+                >
+                <span class="job-dates"><em>January 2015 to May 2015</em></span>
+            </div>
+            <ul>
+                <li>
+                    Worked in team of 6 engineers to develop crime reporting and
+                    tracking mobile and web application for iOS and Android.
+                </li>
+                <li>
+                    Focused on web application development and backend services
+                    hosted on AWS Beanstalk using MongoDB and Node.js.
+                </li>
+                <li>
+                    Helped refactor the application to use RESTful APIs instead
+                    of web sockets, simplifying the codebase and improving
+                    maintainability.
+                </li>
+            </ul>
         </div>
     </body>
 </html>
