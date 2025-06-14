@@ -6,9 +6,66 @@
         <title>Victor Martinez - Full Stack Engineer Resume</title>
         <style>
             @media print {
+                * {
+                    -webkit-print-color-adjust: exact !important;
+                    color-adjust: exact !important;
+                }
+
                 body {
-                    margin: 0;
-                    -webkit-print-color-adjust: exact;
+                    margin: 0.5in;
+                    padding: 0;
+                    font-size: 9pt;
+                    line-height: 1.1;
+                }
+
+                .header {
+                    margin-bottom: 0.8em;
+                }
+
+                .name {
+                    font-size: 12pt;
+                    margin-bottom: 0.1em;
+                }
+
+                .contact {
+                    font-size: 10pt;
+                    margin-bottom: 0.1em;
+                }
+
+                .location {
+                    font-size: 10pt;
+                }
+
+                .section-title {
+                    font-size: 9pt;
+                    margin-top: 0.8em;
+                    margin-bottom: 0.4em;
+                    page-break-after: avoid;
+                }
+
+                .job-section {
+                    margin-bottom: 0.8em;
+                    page-break-inside: avoid;
+                }
+
+                .job-header {
+                    margin-bottom: 0.2em;
+                    page-break-after: avoid;
+                }
+
+                ul {
+                    margin: 0.2em 0;
+                    padding-left: 1em;
+                }
+
+                li {
+                    margin-bottom: 0.1em;
+                    font-size: 9pt;
+                }
+
+                .education-item {
+                    margin-bottom: 0.2em;
+                    font-size: 9pt;
                 }
             }
 

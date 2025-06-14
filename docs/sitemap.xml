@@ -118,6 +118,8 @@
   </url><url>
     <loc>http://localhost:1313/resume/</loc>
   </url><url>
+    <loc>http://localhost:1313/resume_ai/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
