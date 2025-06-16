@@ -1,5 +1,5 @@
 ---
-title: "Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Systematic Reasoning Patterns"
+title: "Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Point"
 date: 2025-06-15T19:39:41-04:00
 draft: false
 toc: false
