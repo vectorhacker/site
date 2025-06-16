@@ -1,5 +1,5 @@
 ---
-title: "Why Claude's Comment Paper Is a Poor Rebuttal"
+title: "Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Systematic Reasoning Patterns"
 date: 2025-06-15T19:39:41-04:00
 draft: false
 toc: false
