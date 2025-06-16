@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -12,7 +12,7 @@ To begin with, I&rsquo;ve researched this topic thoroughly; I&rsquo;ve probably 
 <meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion, DDD, Domain-Driven Design, Go, Event Sourcing" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/posts/event-sourcing-in-go/" />
+<link rel="canonical" href="https://victoramartinez.com/posts/event-sourcing-in-go/" />
 
 
     <title>
@@ -47,11 +47,11 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
   <meta itemprop="datePublished" content="2020-03-23T21:13:59-04:00">
   <meta itemprop="dateModified" content="2020-03-23T21:13:59-04:00">
   <meta itemprop="wordCount" content="2341">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://victoramartinez.com/">
   <meta itemprop="keywords" content="DDD,Domain Driven Design,Go,Event Sourcing">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://victoramartinez.com/">
   <meta name="twitter:title" content="Event Sourcing in Go">
   <meta name="twitter:description" content="I’ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I’ve been doing it in Go and want to share how I do it.
 To begin with, I’ve researched this topic thoroughly; I’ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it. The first thing I want to put out there is that you don’t need a framework to do this. Ddd and cqrs/es are best done without a framework getting in the way and instead you should create a Clean Architecture where the framework you choose later on becomes a sort of plugin into your application.">
@@ -75,13 +75,32 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
     
 
 
-
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
+<script>
+    MathJax = {
+        tex: {
+            displayMath: [
+                ["\\[", "\\]"],
+                ["$$", "$$"],
+            ], 
+            inlineMath: [["\\(", "\\)"]], 
+        },
+        loader: {
+            load: ["ui/safe"],
+        },
+    };
+</script>
+ 
     </head>
 
     
-        <body>
-    
-    
+    <body>
+        
+
         <div class="container">
             <header class="header">
     <span class="header__inner">
@@ -119,7 +138,6 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 
 
             <div class="content">
-                
   <main class="post">
 
     <div class="post-info">
@@ -136,7 +154,7 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 
     <article>
       <h1 class="post-title">
-        <a href="http://localhost:1313/posts/event-sourcing-in-go/">Event Sourcing in Go</a>
+        <a href="https://victoramartinez.com/posts/event-sourcing-in-go/">Event Sourcing in Go</a>
       </h1>
 
       
@@ -542,10 +560,10 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="http://localhost:1313/tags/ddd/">DDD</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/domain-driven-design/">Domain-Driven Design</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/go/">Go</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/event-sourcing/">Event Sourcing</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/ddd/">DDD</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/domain-driven-design/">Domain-Driven Design</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/go/">Go</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/event-sourcing/">Event Sourcing</a></span>
         
     </p>
 
@@ -613,16 +631,13 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
     
 
   </main>
+</div>
 
-            </div>
-
-            
-                <footer class="footer">
+             <footer class="footer">
     
     
 </footer>
-
-            
+ 
         </div>
 
         

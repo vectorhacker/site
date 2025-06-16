@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Science on Victor&#39;s Blog</title>
-    <link>http://localhost:1313/tags/computer-science/</link>
+    <link>https://victoramartinez.com/tags/computer-science/</link>
     <description>Recent content in Computer Science on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Victor Martínez</copyright>
     <lastBuildDate>Sun, 25 May 2025 21:11:50 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://victoramartinez.com/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Limits of Current AI: A Skeptical Perspective on Autonomous Agents</title>
-      <link>http://localhost:1313/posts/limits-of-current-ai/</link>
+      <link>https://victoramartinez.com/posts/limits-of-current-ai/</link>
       <pubDate>Sun, 25 May 2025 21:11:50 -0400</pubDate>
-      <guid>http://localhost:1313/posts/limits-of-current-ai/</guid>
+      <guid>https://victoramartinez.com/posts/limits-of-current-ai/</guid>
       <description>&lt;p&gt;I align with Yann LeCun&amp;rsquo;s camp on this matter. I don&amp;rsquo;t believe that LLMs and machine learning alone will lead us to human-level intelligence. Current models have demonstrated only very limited reasoning capabilities within specific domains—essentially following and recombining similar patterns they&amp;rsquo;ve ingested during training.&lt;/p&gt;&#xA;&lt;p&gt;If you follow computer scientist and AI researcher Subbarao Kambhampati, a professor at the School of Computing and Augmented Intelligence at ASU, he proposes and demonstrates that language models and reasoning models cannot plan effectively even in domains as simple as organizing blocks in a virtual world, let alone in more complex domains.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software Engineers Are Safe... For Now</title>
-      <link>http://localhost:1313/posts/software-engineers-are-safe-for-now/</link>
+      <link>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</link>
       <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/software-engineers-are-safe-for-now/</guid>
+      <guid>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</guid>
       <description>&lt;p&gt;Take a look at this search of jobs postings at OpenAI for December 25th, 2024. As of the time of this writing, over 150 results in all, 87 results for the term &amp;ldquo;Software Engineer.&amp;rdquo; This is a few days after the release of their latest frontier model, o3. This tells me that for the foreseeable future, Software Engineering jobs are safe, if not going to continue to be safe from full automation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Most Important Topics for a Computer Science Undergrad</title>
-      <link>http://localhost:1313/posts/important-computer-science-concepts/</link>
+      <link>https://victoramartinez.com/posts/important-computer-science-concepts/</link>
       <pubDate>Sun, 22 Dec 2024 22:16:40 -0400</pubDate>
-      <guid>http://localhost:1313/posts/important-computer-science-concepts/</guid>
+      <guid>https://victoramartinez.com/posts/important-computer-science-concepts/</guid>
       <description>&lt;p&gt;As a computer science student, it&amp;rsquo;s essential to have a solid foundation in various topics to succeed in the field. In this post, we&amp;rsquo;ll cover the most critical topics for a computer science undergrad, in no particular order.&lt;/p&gt;&#xA;&lt;h2 id=&#34;maths&#34;&gt;&lt;strong&gt;Maths&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;calculus&#34;&gt;Calculus&lt;/h3&gt;&#xA;&lt;p&gt;Calculus is a fundamental subject that helps understand many computer science concepts, such as optimization, machine learning, and differential equations. It&amp;rsquo;s essential to have a good grasp of limits, derivatives, basic integrals, and multi-variable calculus.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Accepted to Georgia Tech</title>
-      <link>http://localhost:1313/posts/accepted-to-gt/</link>
+      <link>https://victoramartinez.com/posts/accepted-to-gt/</link>
       <pubDate>Fri, 29 Nov 2024 22:16:40 -0400</pubDate>
-      <guid>http://localhost:1313/posts/accepted-to-gt/</guid>
+      <guid>https://victoramartinez.com/posts/accepted-to-gt/</guid>
       <description>&lt;p&gt;Back on May 31st, 2024, right as I submitted my last assignment for my capstone course, my last class on my BSCS at WGU, I applied for Georgia Tech’s OMSCS program. In August, days before my graduation ceremony, I heard back that I got accepted into the Spring 2025 cohort of Georgia Tech’s Online Masters of Science in Computer Science and this week I just got my gatech.edu email address.&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Finishing My BSCS</title>
-      <link>http://localhost:1313/posts/on-finishing-my-bscs/</link>
+      <link>https://victoramartinez.com/posts/on-finishing-my-bscs/</link>
       <pubDate>Mon, 24 Jun 2024 03:42:30 -0400</pubDate>
-      <guid>http://localhost:1313/posts/on-finishing-my-bscs/</guid>
+      <guid>https://victoramartinez.com/posts/on-finishing-my-bscs/</guid>
       <description>&lt;p&gt;Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,25 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ai on Victor&#39;s Blog</title>
-    <link>http://localhost:1313/tags/ai/</link>
+    <link>https://victoramartinez.com/tags/ai/</link>
     <description>Recent content in Ai on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Victor Martínez</copyright>
-    <lastBuildDate>Sun, 25 May 2025 21:11:50 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Jun 2025 19:39:41 -0400</lastBuildDate>
+    <atom:link href="https://victoramartinez.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Claude&#39;s Comment Paper Is a Poor Rebuttal</title>
+      <link>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</link>
+      <pubDate>Sun, 15 Jun 2025 19:39:41 -0400</pubDate>
+      <guid>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</guid>
+      <description>&lt;p&gt;Recently Apple &lt;a href=&#34;https://machinelearning.apple.com/research/illusion-of-thinking&#34;&gt;published a paper&lt;/a&gt; on LRMs (Large Reasoning Models) and how they found that &amp;ldquo;that LRMs have limitations in exact computation&amp;rdquo; and that &amp;ldquo;they fail to use explicit algorithms and reason inconsistently across puzzles.&amp;rdquo; I would consider this a death blow paper to the current push for using LLMs and LRMs as the basis for AGI. Subbaro Kambhampati and Yann LeCun seem to agree. You could say that the paper &lt;a href=&#34;https://garymarcus.substack.com/p/a-knockout-blow-for-llms&#34;&gt;knocked out LLMs&lt;/a&gt;. More recently, a comment paper showed up on Arxiv and shared around twitter as a rebuttal to Apple&amp;rsquo;s paper. Putting aside the stunt of having Claude Opus as a co-author (yes, I&amp;rsquo;m not kidding), the paper in itself is a poor rebuttal for many reasons which we shall explore, but mainly for missing the entire point of the paper and prior research by AI researchers such as Professor &lt;a href=&#34;https://cotopaxi.eas.asu.edu/&#34;&gt;Kambhampati&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Limits of Current AI: A Skeptical Perspective on Autonomous Agents</title>
-      <link>http://localhost:1313/posts/limits-of-current-ai/</link>
+      <link>https://victoramartinez.com/posts/limits-of-current-ai/</link>
       <pubDate>Sun, 25 May 2025 21:11:50 -0400</pubDate>
-      <guid>http://localhost:1313/posts/limits-of-current-ai/</guid>
+      <guid>https://victoramartinez.com/posts/limits-of-current-ai/</guid>
       <description>&lt;p&gt;I align with Yann LeCun&amp;rsquo;s camp on this matter. I don&amp;rsquo;t believe that LLMs and machine learning alone will lead us to human-level intelligence. Current models have demonstrated only very limited reasoning capabilities within specific domains—essentially following and recombining similar patterns they&amp;rsquo;ve ingested during training.&lt;/p&gt;&#xA;&lt;p&gt;If you follow computer scientist and AI researcher Subbarao Kambhampati, a professor at the School of Computing and Augmented Intelligence at ASU, he proposes and demonstrates that language models and reasoning models cannot plan effectively even in domains as simple as organizing blocks in a virtual world, let alone in more complex domains.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software Engineers Are Safe... For Now</title>
-      <link>http://localhost:1313/posts/software-engineers-are-safe-for-now/</link>
+      <link>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</link>
       <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/software-engineers-are-safe-for-now/</guid>
+      <guid>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</guid>
       <description>&lt;p&gt;Take a look at this search of jobs postings at OpenAI for December 25th, 2024. As of the time of this writing, over 150 results in all, 87 results for the term &amp;ldquo;Software Engineer.&amp;rdquo; This is a few days after the release of their latest frontier model, o3. This tells me that for the foreseeable future, Software Engineering jobs are safe, if not going to continue to be safe from full automation.&lt;/p&gt;</description>
     </item>
   </channel>

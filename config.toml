@@ -15,6 +15,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 
 [params]
+math = true
 dateform = "Jan 2, 2006"
 dateformShort = "Jan 2"
 dateformNum = "2006-01-02"
@@ -57,3 +58,12 @@ url = "/about/"
 identifier = "posts"
 name = "Posts"
 url = "/posts"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]

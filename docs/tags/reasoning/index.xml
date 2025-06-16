@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reasoning on Victor&#39;s Blog</title>
+    <link>https://victoramartinez.com/tags/reasoning/</link>
+    <description>Recent content in Reasoning on Victor&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Victor Martínez</copyright>
+    <lastBuildDate>Sun, 15 Jun 2025 19:39:41 -0400</lastBuildDate>
+    <atom:link href="https://victoramartinez.com/tags/reasoning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Claude&#39;s Comment Paper Is a Poor Rebuttal</title>
+      <link>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</link>
+      <pubDate>Sun, 15 Jun 2025 19:39:41 -0400</pubDate>
+      <guid>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</guid>
+      <description>&lt;p&gt;Recently Apple &lt;a href=&#34;https://machinelearning.apple.com/research/illusion-of-thinking&#34;&gt;published a paper&lt;/a&gt; on LRMs (Large Reasoning Models) and how they found that &amp;ldquo;that LRMs have limitations in exact computation&amp;rdquo; and that &amp;ldquo;they fail to use explicit algorithms and reason inconsistently across puzzles.&amp;rdquo; I would consider this a death blow paper to the current push for using LLMs and LRMs as the basis for AGI. Subbaro Kambhampati and Yann LeCun seem to agree. You could say that the paper &lt;a href=&#34;https://garymarcus.substack.com/p/a-knockout-blow-for-llms&#34;&gt;knocked out LLMs&lt;/a&gt;. More recently, a comment paper showed up on Arxiv and shared around twitter as a rebuttal to Apple&amp;rsquo;s paper. Putting aside the stunt of having Claude Opus as a co-author (yes, I&amp;rsquo;m not kidding), the paper in itself is a poor rebuttal for many reasons which we shall explore, but mainly for missing the entire point of the paper and prior research by AI researchers such as Professor &lt;a href=&#34;https://cotopaxi.eas.asu.edu/&#34;&gt;Kambhampati&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
