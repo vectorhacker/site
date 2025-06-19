@@ -10,6 +10,10 @@ tags:
   - reasoning
 ---
 
+**Important Note**
+
+*So it turns out the comment paper was made as a [joke](https://lawsen.substack.com/p/when-your-joke-paper-goes-viral), but it did have one geunuine concern. The original author talks about how he didn't expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.*
+
 Recently Apple [published a paper](https://machinelearning.apple.com/research/illusion-of-thinking) on LRMs (Large Reasoning Models) and how they found that "that LRMs have limitations in exact computation" and that "they fail to use explicit algorithms and reason inconsistently across puzzles." I would consider this a death blow paper to the current push for using LLMs and LRMs as the basis for AGI. Subbaro Kambhampati and Yann LeCun seem to agree. You could say that the paper [knocked out LLMs](https://garymarcus.substack.com/p/a-knockout-blow-for-llms). More recently, a comment paper showed up on [Arxiv](https://arxiv.org/html/2506.09250v1) and shared around X as a rebuttal to Apple's paper. Putting aside the stunt of having Claude Opus as a co-author (yes, I'm not kidding), the paper in itself is a poor rebuttal for many reasons which we shall explore, but mainly for missing the entire point of the paper and prior research by AI researchers such as Professor [Kambhampati](https://cotopaxi.eas.asu.edu/).
 
 ## Mathematical Errors

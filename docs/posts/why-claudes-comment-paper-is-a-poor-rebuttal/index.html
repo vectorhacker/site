@@ -1,22 +1,23 @@
 <!doctype html>
 <html lang="en">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Recently Apple published a paper on LRMs (Large Reasoning Models) and how they found that &ldquo;that LRMs have limitations in exact computation&rdquo; and that &ldquo;they fail to use explicit algorithms and reason inconsistently across puzzles.&rdquo; I would consider this a death blow paper to the current push for using LLMs and LRMs as the basis for AGI. Subbaro Kambhampati and Yann LeCun seem to agree. You could say that the paper knocked out LLMs. More recently, a comment paper showed up on Arxiv and shared around twitter as a rebuttal to Apple&rsquo;s paper. Putting aside the stunt of having Claude Opus as a co-author (yes, I&rsquo;m not kidding), the paper in itself is a poor rebuttal for many reasons which we shall explore, but mainly for missing the entire point of the paper and prior research by AI researchers such as Professor Kambhampati.
+<meta name="description" content="Important Note
+So it turns out the comment paper was made as a joke, but it did have one geunuine concern. The original author talks about how he didn&rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.
 " />
 <meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion, ai, llm, reasoning" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/" />
+<link rel="canonical" href="http://localhost:1313/posts/why-claudes-comment-paper-is-a-poor-rebuttal/" />
 
 
     <title>
         
-            Why Claude&#39;s Comment Paper Is a Poor Rebuttal :: Victor&#39;s Blog 
+            Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Point :: Victor&#39;s Blog 
         
     </title>
 
@@ -40,18 +41,20 @@
 
 
 
-  <meta itemprop="name" content="Why Claude&#39;s Comment Paper Is a Poor Rebuttal">
-  <meta itemprop="description" content="Recently Apple published a paper on LRMs (Large Reasoning Models) and how they found that “that LRMs have limitations in exact computation” and that “they fail to use explicit algorithms and reason inconsistently across puzzles.” I would consider this a death blow paper to the current push for using LLMs and LRMs as the basis for AGI. Subbaro Kambhampati and Yann LeCun seem to agree. You could say that the paper knocked out LLMs. More recently, a comment paper showed up on Arxiv and shared around twitter as a rebuttal to Apple’s paper. Putting aside the stunt of having Claude Opus as a co-author (yes, I’m not kidding), the paper in itself is a poor rebuttal for many reasons which we shall explore, but mainly for missing the entire point of the paper and prior research by AI researchers such as Professor Kambhampati.">
+  <meta itemprop="name" content="Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Point">
+  <meta itemprop="description" content="Important Note
+So it turns out the comment paper was made as a joke, but it did have one geunuine concern. The original author talks about how he didn’t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.">
   <meta itemprop="datePublished" content="2025-06-15T19:39:41-04:00">
   <meta itemprop="dateModified" content="2025-06-15T19:39:41-04:00">
-  <meta itemprop="wordCount" content="860">
-  <meta itemprop="image" content="https://victoramartinez.com/">
+  <meta itemprop="wordCount" content="945">
+  <meta itemprop="image" content="http://localhost:1313/">
   <meta itemprop="keywords" content="Ai,Llm,Reasoning">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://victoramartinez.com/">
-  <meta name="twitter:title" content="Why Claude&#39;s Comment Paper Is a Poor Rebuttal">
-  <meta name="twitter:description" content="Recently Apple published a paper on LRMs (Large Reasoning Models) and how they found that “that LRMs have limitations in exact computation” and that “they fail to use explicit algorithms and reason inconsistently across puzzles.” I would consider this a death blow paper to the current push for using LLMs and LRMs as the basis for AGI. Subbaro Kambhampati and Yann LeCun seem to agree. You could say that the paper knocked out LLMs. More recently, a comment paper showed up on Arxiv and shared around twitter as a rebuttal to Apple’s paper. Putting aside the stunt of having Claude Opus as a co-author (yes, I’m not kidding), the paper in itself is a poor rebuttal for many reasons which we shall explore, but mainly for missing the entire point of the paper and prior research by AI researchers such as Professor Kambhampati.">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Point">
+  <meta name="twitter:description" content="Important Note
+So it turns out the comment paper was made as a joke, but it did have one geunuine concern. The original author talks about how he didn’t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.">
 
 
 
@@ -151,7 +154,7 @@
 
     <article>
       <h1 class="post-title">
-        <a href="https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/">Why Claude&rsquo;s Comment Paper Is a Poor Rebuttal</a>
+        <a href="http://localhost:1313/posts/why-claudes-comment-paper-is-a-poor-rebuttal/">Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Point</a>
       </h1>
 
       
@@ -161,7 +164,9 @@
       
 
       <div class="post-content">
-        <p>Recently Apple <a href="https://machinelearning.apple.com/research/illusion-of-thinking">published a paper</a> on LRMs (Large Reasoning Models) and how they found that &ldquo;that LRMs have limitations in exact computation&rdquo; and that &ldquo;they fail to use explicit algorithms and reason inconsistently across puzzles.&rdquo; I would consider this a death blow paper to the current push for using LLMs and LRMs as the basis for AGI. Subbaro Kambhampati and Yann LeCun seem to agree. You could say that the paper <a href="https://garymarcus.substack.com/p/a-knockout-blow-for-llms">knocked out LLMs</a>. More recently, a comment paper showed up on Arxiv and shared around twitter as a rebuttal to Apple&rsquo;s paper. Putting aside the stunt of having Claude Opus as a co-author (yes, I&rsquo;m not kidding), the paper in itself is a poor rebuttal for many reasons which we shall explore, but mainly for missing the entire point of the paper and prior research by AI researchers such as Professor <a href="https://cotopaxi.eas.asu.edu/">Kambhampati</a>.</p>
+        <p><strong>Important Note</strong></p>
+<p><em>So it turns out the comment paper was made as a <a href="https://lawsen.substack.com/p/when-your-joke-paper-goes-viral">joke</a>, but it did have one geunuine concern. The original author talks about how he didn&rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.</em></p>
+<p>Recently Apple <a href="https://machinelearning.apple.com/research/illusion-of-thinking">published a paper</a> on LRMs (Large Reasoning Models) and how they found that &ldquo;that LRMs have limitations in exact computation&rdquo; and that &ldquo;they fail to use explicit algorithms and reason inconsistently across puzzles.&rdquo; I would consider this a death blow paper to the current push for using LLMs and LRMs as the basis for AGI. Subbaro Kambhampati and Yann LeCun seem to agree. You could say that the paper <a href="https://garymarcus.substack.com/p/a-knockout-blow-for-llms">knocked out LLMs</a>. More recently, a comment paper showed up on <a href="https://arxiv.org/html/2506.09250v1">Arxiv</a> and shared around X as a rebuttal to Apple&rsquo;s paper. Putting aside the stunt of having Claude Opus as a co-author (yes, I&rsquo;m not kidding), the paper in itself is a poor rebuttal for many reasons which we shall explore, but mainly for missing the entire point of the paper and prior research by AI researchers such as Professor <a href="https://cotopaxi.eas.asu.edu/">Kambhampati</a>.</p>
 <h2 id="mathematical-errors">Mathematical Errors</h2>
 <p>Firstly the paper makes some <em>key</em> mathematical errors. As <a href="https://x.com/BlackHC">Andreas Kirsch</a> points out on X, it makes the claim that token growth is predicted by the following:</p>
 $$
@@ -203,9 +208,9 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="https://victoramartinez.com/tags/ai/">ai</a></span>
-        <span class="tag"><a href="https://victoramartinez.com/tags/llm/">llm</a></span>
-        <span class="tag"><a href="https://victoramartinez.com/tags/reasoning/">reasoning</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/ai/">ai</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/llm/">llm</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/reasoning/">reasoning</a></span>
         
     </p>
 
@@ -219,7 +224,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        860 Words
+        945 Words
       </p>
 
       <p>
