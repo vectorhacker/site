@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Continuous Delivery on Victor&#39;s Blog</title>
-    <link>http://localhost:1313/tags/continuous-delivery/</link>
+    <link>https://victoramartinez.com/tags/continuous-delivery/</link>
     <description>Recent content in Continuous Delivery on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>en-us</language>
     <copyright>Victor Martínez</copyright>
     <lastBuildDate>Sat, 22 Oct 2022 21:55:26 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/continuous-delivery/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://victoramartinez.com/tags/continuous-delivery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Defensive Commits</title>
-      <link>http://localhost:1313/posts/defensive-commits/</link>
+      <link>https://victoramartinez.com/posts/defensive-commits/</link>
       <pubDate>Sat, 22 Oct 2022 21:55:26 -0400</pubDate>
-      <guid>http://localhost:1313/posts/defensive-commits/</guid>
+      <guid>https://victoramartinez.com/posts/defensive-commits/</guid>
       <description>&lt;p&gt;Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with &lt;a href=&#34;https://trunkbaseddevelopment.com&#34;&gt;trunk-based development&lt;/a&gt; and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.&lt;/p&gt;&#xA;&lt;p&gt;At &lt;a href=&#34;https://coquihealth.com&#34;&gt;Coqui Health&lt;/a&gt;, we&amp;rsquo;ve implemented this strategy successfully and this is now the default way we work. We use a monorepo strategy coupled with ci/cd and trunk-based development, which means we work close to or in trunk and so having a robust ci/cd pipeline is paramount. Defensive commits allows us to catch bugs early and get feedback that our code will work or break things. It&amp;rsquo;s allowed us to move faster and not break things.&lt;/p&gt;</description>
     </item>
   </channel>

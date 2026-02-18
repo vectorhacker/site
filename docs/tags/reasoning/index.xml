@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reasoning on Victor&#39;s Blog</title>
-    <link>http://localhost:1313/tags/reasoning/</link>
+    <link>https://victoramartinez.com/tags/reasoning/</link>
     <description>Recent content in Reasoning on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>en-us</language>
     <copyright>Victor Martínez</copyright>
     <lastBuildDate>Sun, 15 Jun 2025 19:39:41 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/reasoning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://victoramartinez.com/tags/reasoning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Point</title>
-      <link>http://localhost:1313/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</link>
+      <link>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</link>
       <pubDate>Sun, 15 Jun 2025 19:39:41 -0400</pubDate>
-      <guid>http://localhost:1313/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Important Note&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;So it turns out the comment paper was made as a joke, but it did have one geunuine concern. The original author talks about how he didn&amp;rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Important Note&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;So it turns out the comment paper was made as a &lt;a href=&#34;https://lawsen.substack.com/p/when-your-joke-paper-goes-viral&#34;&gt;joke&lt;/a&gt;, but it did have one genuine concern. The original author talks about how he didn&amp;rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

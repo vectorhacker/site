@@ -1,6 +1,10 @@
 ---
 title: "Amazon Key"
 date: 2017-11-26T23:20:47-04:00
+tags:
+  - amazon
+  - ethics
+  - law
 ---
 
 ![Amazon Key](/images/amazon-key.jpeg)

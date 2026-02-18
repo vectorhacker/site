@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -11,7 +11,7 @@
 <meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion, DDD, Go, Domain Driven Design" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/" />
+<link rel="canonical" href="https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/" />
 
 
     <title>
@@ -24,7 +24,7 @@
 
 
 
-  <link rel="stylesheet" href="/main.min.07ea7ac7da67e2e153a7dfa2457bc6a19cca824288d175e223fadc579041bc51.css" integrity="sha256-B&#43;p6x9pn4uFTp9&#43;iRXvGoZzKgkKI0XXiI/rcV5BBvFE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.min.2729760c629597024c5de34b40ea9f372f2b5a2a192dcdca537b7ddfa483eab8.css" integrity="sha256-Jyl2DGKVlwJMXeNLQOqfNy8rWioZLc3KU3t936SD6rg=" crossorigin="anonymous">
 
 
 
@@ -45,11 +45,11 @@
   <meta itemprop="datePublished" content="2020-10-23T03:12:35-04:00">
   <meta itemprop="dateModified" content="2020-10-23T03:12:35-04:00">
   <meta itemprop="wordCount" content="771">
-  <meta itemprop="image" content="http://localhost:1313/">
-  <meta itemprop="keywords" content="DDD,Go,Domain Driven Design">
+  <meta itemprop="image" content="https://victoramartinez.com/">
+  <meta itemprop="keywords" content="DDD,Go,Domain-Driven Design">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://victoramartinez.com/">
   <meta name="twitter:title" content="Value Objects in Go">
   <meta name="twitter:description" content="Recently I’ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I’ve come accross a few patterns I’d like to share. Mainly we’ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.">
 
@@ -151,7 +151,7 @@
 
     <article>
       <h1 class="post-title">
-        <a href="http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/">Value Objects in Go</a>
+        <a href="https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/">Value Objects in Go</a>
       </h1>
 
       
@@ -170,12 +170,12 @@
 <p>In order to be always valid, the object must be immutable. To do that in Go we use encapsulation by using package level hiding of fields.</p>
 <h2 id="implementing-in-go">Implementing in Go</h2>
 <p>The first and and most common kind of value object I create in Go is the simple type alias.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ID</span> <span style="color:#66d9ef">string</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ID</span> <span style="color:#66d9ef">string</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">City</span> <span style="color:#66d9ef">string</span>
 </span></span></code></pre></div><p>If the object does not need complex validation and is just a simple field then it can be a type alias. Examples include things like ids, names that don&rsquo;t need to be checked if empty or not, and sometimes certain numbers. Some value objects are even simpler and come with the standard library, such as <code>time.Time</code> (tho admitidly internally internally it is more complex) and <code>bool</code>.</p>
 <p>The second kind is one that I also use often, if not more often considering that it represents complex concepts, is the immutable field value object.</p>
 <p>As an example, take a name field that need to be within a certain length of characters. We&rsquo;d implement them in Go like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Name</span> <span style="color:#66d9ef">struct</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// explicitly not public field</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
@@ -223,9 +223,9 @@
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="http://localhost:1313/tags/ddd/">DDD</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/go/">Go</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/domain-driven-design/">Domain Driven Design</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/ddd/">DDD</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/go/">Go</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/domain-driven-design/">Domain Driven Design</a></span>
         
     </p>
 

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -12,7 +12,7 @@ To begin with, I&rsquo;ve researched this topic thoroughly; I&rsquo;ve probably 
 <meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion, DDD, Domain-Driven Design, Go, Event Sourcing" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/posts/event-sourcing-in-go/" />
+<link rel="canonical" href="https://victoramartinez.com/posts/event-sourcing-in-go/" />
 
 
     <title>
@@ -25,7 +25,7 @@ To begin with, I&rsquo;ve researched this topic thoroughly; I&rsquo;ve probably 
 
 
 
-  <link rel="stylesheet" href="/main.min.07ea7ac7da67e2e153a7dfa2457bc6a19cca824288d175e223fadc579041bc51.css" integrity="sha256-B&#43;p6x9pn4uFTp9&#43;iRXvGoZzKgkKI0XXiI/rcV5BBvFE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.min.2729760c629597024c5de34b40ea9f372f2b5a2a192dcdca537b7ddfa483eab8.css" integrity="sha256-Jyl2DGKVlwJMXeNLQOqfNy8rWioZLc3KU3t936SD6rg=" crossorigin="anonymous">
 
 
 
@@ -47,11 +47,11 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
   <meta itemprop="datePublished" content="2020-03-23T21:13:59-04:00">
   <meta itemprop="dateModified" content="2020-03-23T21:13:59-04:00">
   <meta itemprop="wordCount" content="2341">
-  <meta itemprop="image" content="http://localhost:1313/">
-  <meta itemprop="keywords" content="DDD,Domain Driven Design,Go,Event Sourcing">
+  <meta itemprop="image" content="https://victoramartinez.com/">
+  <meta itemprop="keywords" content="DDD,Domain-Driven Design,Go,Event Sourcing">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://victoramartinez.com/">
   <meta name="twitter:title" content="Event Sourcing in Go">
   <meta name="twitter:description" content="I’ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I’ve been doing it in Go and want to share how I do it.
 To begin with, I’ve researched this topic thoroughly; I’ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it. The first thing I want to put out there is that you don’t need a framework to do this. Ddd and cqrs/es are best done without a framework getting in the way and instead you should create a Clean Architecture where the framework you choose later on becomes a sort of plugin into your application.">
@@ -154,7 +154,7 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 
     <article>
       <h1 class="post-title">
-        <a href="http://localhost:1313/posts/event-sourcing-in-go/">Event Sourcing in Go</a>
+        <a href="https://victoramartinez.com/posts/event-sourcing-in-go/">Event Sourcing in Go</a>
       </h1>
 
       
@@ -171,7 +171,7 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 <p>Where do these events come from? They come from the initial design of the system through various exercises such as event storming, a process by which the overall process or sub-process of an application is discovered and modeled as events that have happened. Keep in mind, these aren&rsquo;t fine-grained low-level events like you might be used to in GUI programming, such as a user clicked event, they&rsquo;re more coarse than that. Take the example of a system that deals with hospital admissions of a patient, let us model the interactions the patient has in the system with events. A patient might first be admitted into the hospital, we might say we have a &ldquo;Patient Admitted&rdquo; event; notice the past perfect tense. Later on, when a patient is transferred to another ward we say that we have a &ldquo;Patient Transferred&rdquo; event. Finally, when a patient gets discharged we have &ldquo;Patient Discharged&rdquo;. These events arose out of the need to describe what has happened to a patient.</p>
 <p>These events are created through the use of commands in the command query responsibility segregation pattern. Commands signify intent that an action should be taken, but with no guarantee that they will. A command handler can reject commands and produce no events. There are many ways to model commands in a system. They can be as simple as imperative methods that tell an object what to do or as DTOs that have the data in them needed to carry out the command. In my case, I chose to make it as simple as a method on an object.</p>
 <p>So with all this, what does it all look like in Go? To begin let&rsquo;s look at what an event might look like in Go. Let&rsquo;s use our patient example.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">patient</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">patient</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Event is a domain event marker.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Event</span> <span style="color:#66d9ef">interface</span> {
@@ -202,7 +202,7 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Notice how the events are simply going structs which reference the id of the aggregate they&rsquo;re related to. There is also a marker interface that is implemented by them by way of a single un-exported method; this is to prevent outside structs from being flagged as possible events from this package and also to limit the scope of what counts as an event for this application.</p>
 <p>Next, we turn to our aggregate, which looks like this.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">patient</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">patient</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Patient aggregate.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Patient</span> <span style="color:#66d9ef">struct</span> {
@@ -330,7 +330,7 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">On</span>(<span style="color:#a6e22e">event</span>, <span style="color:#66d9ef">true</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>You&rsquo;ll notice a few things. First, the use of private fields in the aggregate is to protect our invariants. Then you&rsquo;ll notice that each method that raises an event does not change state directly, but instead raises an event first and that gets handled by the aggregate&rsquo;s <code>On</code> method. The <code>On</code> method is in charge of rebuilding the state from an event. It does a type switch on the event and caries out the behavior accordingly. Let&rsquo;s look at a single method closely.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Transfer transfers a patient to a new ward.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Transfer transfers a patient to a new ward.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">p</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Patient</span>) <span style="color:#a6e22e">Transfer</span>(<span style="color:#a6e22e">newWard</span> <span style="color:#a6e22e">WardNumber</span>) <span style="color:#66d9ef">error</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">discharged</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">ErrPatientDischarged</span>
@@ -345,7 +345,7 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Notice how the <code>Transfer</code> method first checks if the patient has already been discharged before emitting the event. We first have to check the business rules are satisfied before emitting the appropriate event, otherwise, we reject the command and return an error. If all is well, we simply raise the event which gets handled by the <code>On</code> method and we return nil. We do not change state unless all of the conditions are satisfied.</p>
 <p>Let&rsquo;s look at the <code>On</code> and <code>raise</code> methods more closely.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// On handles patient events on the patient aggregate.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// On handles patient events on the patient aggregate.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">p</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Patient</span>) <span style="color:#a6e22e">On</span>(<span style="color:#a6e22e">event</span> <span style="color:#a6e22e">Event</span>, <span style="color:#a6e22e">new</span> <span style="color:#66d9ef">bool</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">e</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">event</span>.(<span style="color:#66d9ef">type</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">PatientAdmitted</span>:
@@ -373,7 +373,7 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 </span></span></code></pre></div><p>Notice, the On method first does a type switch on the event and selects the case for each event type. This is where state change happens. Once an event is emitted and saved we do not throw an error, we simply process the event and carry on. We can change here if we decide that an event is no longer relevant or if it means something different, but we can&rsquo;t return an error and say an event is invalid. Then we check if this is a new event if it isn&rsquo;t we increment the version number of our aggregate. The <code>raise</code> method does two things, it appends the event into our changes slice and calls the event handler <code>On</code> saying that this is a new event and we should not increment the version number. Wait, what&rsquo;s this about the version? The version is an optimistic concurrency pattern used to help us avoid database locks to change our aggregate.</p>
 <p>So let&rsquo;s look at how we might use this aggregate. First, we have a repository that saves and retrieves the aggregate from the event store and we also have a service that represents a particular use case.</p>
 <p>One method on the service might look like this. We first load up the aggregate by replaying the events, we execute the command and save it to the repository. Simple, no?</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">s</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">service</span>) <span style="color:#a6e22e">TransferPatient</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">s</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">service</span>) <span style="color:#a6e22e">TransferPatient</span>(
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ctx</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Context</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">ID</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">newWard</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">WardNumber</span>,
@@ -393,7 +393,7 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Well, things aren&rsquo;t so simple for our repository implementation. Here, I&rsquo;ve come up with a way to save them to dynamodb using some helper libraries from a project called <a href="https://github.com/altairsix/eventsource">eventsource</a> by using embedded structs to serialize and deserialize the event objects to and from JSON. (The LINQ like syntax comes from a library called <a href="https://github.com/ahmetb/go-linq">go-linq</a>)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">repository</span>) <span style="color:#a6e22e">Load</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">repository</span>) <span style="color:#a6e22e">Load</span>(
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ctx</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Context</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">ID</span>,
 </span></span><span style="display:flex;"><span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">Patient</span>, <span style="color:#66d9ef">error</span>) {
@@ -508,12 +508,12 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Name</span>()
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In the <code>Save</code> method, you&rsquo;ll notice we extract the events from the aggregate, convert them to JSON and give them a version number, starting from the last version the aggregate was at. The version number is important for optimistic concurrency as we check before we save that there are no events with those versions before we save. If there are, we&rsquo;ve been beaten by another command handler and need to reject, because we are stale.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">records</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">records</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">expectedVersion</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">Version</span>()
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">records</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">Version</span> = <span style="color:#a6e22e">expectedVersion</span>
 </span></span><span style="display:flex;"><span>	}
 </span></span></code></pre></div><p>When we load up the aggregate, we first load up all events in order and replay them back into the aggregate.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">repository</span>) <span style="color:#a6e22e">Load</span>(<span style="color:#a6e22e">ctx</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Context</span>, <span style="color:#a6e22e">id</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">ID</span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">Patient</span>, <span style="color:#66d9ef">error</span>) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">repository</span>) <span style="color:#a6e22e">Load</span>(<span style="color:#a6e22e">ctx</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Context</span>, <span style="color:#a6e22e">id</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">ID</span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">Patient</span>, <span style="color:#66d9ef">error</span>) {
 </span></span><span style="display:flex;"><span>     <span style="color:#75715e">// load up all events</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">records</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">Load</span>(<span style="color:#a6e22e">ctx</span>, <span style="color:#a6e22e">id</span>.<span style="color:#a6e22e">String</span>(), <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
@@ -534,7 +534,7 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">NewFromEvents</span>(<span style="color:#a6e22e">events</span>), <span style="color:#66d9ef">nil</span> 
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In the aggregate&rsquo;s package, I&rsquo;ve chosen to have a helper method that replays all events for us.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// NewFromEvents is a helper method that creates a new patient</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// NewFromEvents is a helper method that creates a new patient</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// from a series of events.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewFromEvents</span>(<span style="color:#a6e22e">events</span> []<span style="color:#a6e22e">Event</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Patient</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">p</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Patient</span>{}
@@ -560,10 +560,10 @@ To begin with, I’ve researched this topic thoroughly; I’ve probably watched 
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="http://localhost:1313/tags/ddd/">DDD</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/domain-driven-design/">Domain-Driven Design</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/go/">Go</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/event-sourcing/">Event Sourcing</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/ddd/">DDD</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/domain-driven-design/">Domain-Driven Design</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/go/">Go</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/event-sourcing/">Event Sourcing</a></span>
         
     </p>
 

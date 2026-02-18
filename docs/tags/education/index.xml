@@ -2,32 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Education on Victor&#39;s Blog</title>
-    <link>http://localhost:1313/tags/education/</link>
+    <link>https://victoramartinez.com/tags/education/</link>
     <description>Recent content in Education on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>en-us</language>
     <copyright>Victor Martínez</copyright>
-    <lastBuildDate>Sun, 22 Dec 2024 22:16:40 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Feb 2026 20:20:57 -0400</lastBuildDate>
+    <atom:link href="https://victoramartinez.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI at the Intersection of Ethics and Politics</title>
+      <link>https://victoramartinez.com/posts/ai-at-the-intersection-of-ethics-and-politics/</link>
+      <pubDate>Tue, 17 Feb 2026 20:20:57 -0400</pubDate>
+      <guid>https://victoramartinez.com/posts/ai-at-the-intersection-of-ethics-and-politics/</guid>
+      <description>&lt;p&gt;Preface: I work in AI, I use AI at work a lot, I think it&amp;rsquo;s a tool with tremendous promise, but we must be mindful of how it can be misused. With that in mind, here&amp;rsquo;s what I wrote before writing this preface.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://victoramartinez.com/images/ai-ethics.webp&#34; alt=&#34;Image of people discussing ethics and justice around a table&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I recently came across &lt;a href=&#34;https://www.404media.co/students-are-being-treated-like-guinea-pigs-inside-an-ai-powered-private-school/&#34;&gt;this article&lt;/a&gt; on how a private school in the US is essentially using students as test subjects for an AI education experiment. The school in question, Alpha School, has been praised by the current administration is now known to scrape the internet for course content without the consent of the content owners and are known to cause &amp;ldquo;more harm than good.&amp;rdquo; I find the ethical and political implications both appalling and interesting.  On the one hand, they&amp;rsquo;re completely ignoring the ethics of using students as test subjects and failing them as educators and on the other it seems to serve certain political group&amp;rsquo;s goals in that they want to create a populace they can control, in my opinion. I bring this up, because we&amp;rsquo;re learning and talking about the ethics of our human-computer interaction designs and experiments and of the politics involved in design, and I think this is not just a great a example, but the quintessential example of things we should be looking out for in the near future with regards to how AI can amplify the values of certain people over others.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Most Important Topics for a Computer Science Undergrad</title>
-      <link>http://localhost:1313/posts/important-computer-science-concepts/</link>
+      <link>https://victoramartinez.com/posts/important-computer-science-concepts/</link>
       <pubDate>Sun, 22 Dec 2024 22:16:40 -0400</pubDate>
-      <guid>http://localhost:1313/posts/important-computer-science-concepts/</guid>
+      <guid>https://victoramartinez.com/posts/important-computer-science-concepts/</guid>
       <description>&lt;p&gt;As a computer science student, it&amp;rsquo;s essential to have a solid foundation in various topics to succeed in the field. In this post, we&amp;rsquo;ll cover the most critical topics for a computer science undergrad, in no particular order.&lt;/p&gt;&#xA;&lt;h2 id=&#34;maths&#34;&gt;&lt;strong&gt;Maths&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;calculus&#34;&gt;Calculus&lt;/h3&gt;&#xA;&lt;p&gt;Calculus is a fundamental subject that helps understand many computer science concepts, such as optimization, machine learning, and differential equations. It&amp;rsquo;s essential to have a good grasp of limits, derivatives, basic integrals, and multi-variable calculus.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Get a Computer Science Degree Fast and Cheaply</title>
-      <link>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</link>
+      <link>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</guid>
+      <guid>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</guid>
       <description>&lt;p&gt;You read the title, you&amp;rsquo;re probably thinking &amp;ldquo;that sounds like it&amp;rsquo;ll be a crappy idea&amp;rdquo; or &amp;ldquo;that sounds exactly like what I want!&amp;rdquo; For the first person, I hope to convince you that a computer science degree need not take 4 years nor be expensive. For the second, I hope to give you a roadmap to earn an accredited CS degree. But, before I start I want to preface this by saying that I am not advocating you go out to a degree mill and just buy a Diploma from a fake school, I&amp;rsquo;ll only be talking about legal, accredited, and reputable ways to get your degree in under 2 years, even less. I also know that it&amp;rsquo;s possible, because I essentially did it last year. So, without further ado, here&amp;rsquo;s how to get a bachelors degree in computer science fast and cheaply.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Accepted to Georgia Tech</title>
-      <link>http://localhost:1313/posts/accepted-to-gt/</link>
+      <link>https://victoramartinez.com/posts/accepted-to-gt/</link>
       <pubDate>Fri, 29 Nov 2024 22:16:40 -0400</pubDate>
-      <guid>http://localhost:1313/posts/accepted-to-gt/</guid>
+      <guid>https://victoramartinez.com/posts/accepted-to-gt/</guid>
       <description>&lt;p&gt;Back on May 31st, 2024, right as I submitted my last assignment for my capstone course, my last class on my BSCS at WGU, I applied for Georgia Tech’s OMSCS program. In August, days before my graduation ceremony, I heard back that I got accepted into the Spring 2025 cohort of Georgia Tech’s Online Masters of Science in Computer Science and this week I just got my gatech.edu email address.&lt;/p&gt;</description>
     </item>
   </channel>

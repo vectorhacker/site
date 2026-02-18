@@ -1,24 +1,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Victor&#39;s Blog</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>https://victoramartinez.com/posts/</link>
         <description>Recent content in Posts on Victor&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
+        <language>en-us</language>
         <copyright>Victor Martínez</copyright>
-        <lastBuildDate>Sun, 15 Jun 2025 19:39:41 -0400</lastBuildDate>
-        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Tue, 17 Feb 2026 20:20:57 -0400</lastBuildDate>
+        <atom:link href="https://victoramartinez.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>AI at the Intersection of Ethics and Politics</title>
+            <link>https://victoramartinez.com/posts/ai-at-the-intersection-of-ethics-and-politics/</link>
+            <pubDate>Tue, 17 Feb 2026 20:20:57 -0400</pubDate>
+            
+            <guid>https://victoramartinez.com/posts/ai-at-the-intersection-of-ethics-and-politics/</guid>
+            <description>&lt;p&gt;Preface: I work in AI, I use AI at work a lot, I think it&amp;rsquo;s a tool with tremendous promise, but we must be mindful of how it can be misused. With that in mind, here&amp;rsquo;s what I wrote before writing this preface.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://victoramartinez.com/images/ai-ethics.webp&#34; alt=&#34;Image of people discussing ethics and justice around a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I recently came across &lt;a href=&#34;https://www.404media.co/students-are-being-treated-like-guinea-pigs-inside-an-ai-powered-private-school/&#34;&gt;this article&lt;/a&gt; on how a private school in the US is essentially using students as test subjects for an AI education experiment. The school in question, Alpha School, has been praised by the current administration is now known to scrape the internet for course content without the consent of the content owners and are known to cause &amp;ldquo;more harm than good.&amp;rdquo; I find the ethical and political implications both appalling and interesting.  On the one hand, they&amp;rsquo;re completely ignoring the ethics of using students as test subjects and failing them as educators and on the other it seems to serve certain political group&amp;rsquo;s goals in that they want to create a populace they can control, in my opinion. I bring this up, because we&amp;rsquo;re learning and talking about the ethics of our human-computer interaction designs and experiments and of the politics involved in design, and I think this is not just a great a example, but the quintessential example of things we should be looking out for in the near future with regards to how AI can amplify the values of certain people over others.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Preface: I work in AI, I use AI at work a lot, I think it&rsquo;s a tool with tremendous promise, but we must be mindful of how it can be misused. With that in mind, here&rsquo;s what I wrote before writing this preface.</p>
+<p><img src="/images/ai-ethics.webp" alt="Image of people discussing ethics and justice around a table"></p>
+<p>I recently came across <a href="https://www.404media.co/students-are-being-treated-like-guinea-pigs-inside-an-ai-powered-private-school/">this article</a> on how a private school in the US is essentially using students as test subjects for an AI education experiment. The school in question, Alpha School, has been praised by the current administration is now known to scrape the internet for course content without the consent of the content owners and are known to cause &ldquo;more harm than good.&rdquo; I find the ethical and political implications both appalling and interesting.  On the one hand, they&rsquo;re completely ignoring the ethics of using students as test subjects and failing them as educators and on the other it seems to serve certain political group&rsquo;s goals in that they want to create a populace they can control, in my opinion. I bring this up, because we&rsquo;re learning and talking about the ethics of our human-computer interaction designs and experiments and of the politics involved in design, and I think this is not just a great a example, but the quintessential example of things we should be looking out for in the near future with regards to how AI can amplify the values of certain people over others.</p>
+<p>The school is deeply rooted in the homeschooling movement and it&rsquo;s using AI in it&rsquo;s pitch to convince parents that it can cram SAT and AP test prep into 2 hours. But the assessments it uses to gauge the student&rsquo;s understanding of the material make no sense. But seems like the owners don&rsquo;t care, because it serves their political interest of not having to hire teachers in order to take more of the profit from parents paying tuition. Which brings me to the parallels with AI in other industries, namely programming and software engineering. They&rsquo;re being pushed as replacements, in some circles, to traditional software engineering hires, but often the code they write is average at best, often times worse and full of bugs and a nightmare to maintain, but it seems like certain people don&rsquo;t care because it aids their short term profits.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">AI is not ready. <a href="https://t.co/HffDM1jE6e">https://t.co/HffDM1jE6e</a> <a href="https://t.co/WfplNpalB9">pic.twitter.com/WfplNpalB9</a></p>&mdash; Mo (@atmoio) <a href="https://twitter.com/atmoio/status/2023451260477665589?ref_src=twsrc%5Etfw">February 16, 2026</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>And that&rsquo;s not even to mention how the AI industry hype is affecting other aspects of society, not in any small way with the shortages of computer parts its causing.</p>
+<p>Now I don&rsquo;t want to make this a rant about how AI is bad or anything like that, I&rsquo;m actually a big proponent of the benefits of AI, but we must keep in mind the kinds of things we&rsquo;re going to amplify, the values we instill in these systems might not be the values we want in a society and we need to reckon with that. But what I&rsquo;m seeing is a lot of misuse and outright disregards for the ethics and certain, in my opinion evil, values being pushed and amplified extremely.</p>
+<h3 id="edit-1">Edit 1:</h3>
+<p>As this was being written, this popped up on my socials:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Meta has patented AI that can run a dead person&#39;s account, continuing to post and chat on their behalf<br><br>It can message and video call by replicating a user&#39;s online behavior using their past data <a href="https://t.co/2FiExpQmMl">pic.twitter.com/2FiExpQmMl</a></p>&mdash; Dexerto (@Dexerto) <a href="https://twitter.com/Dexerto/status/2023521144968560681?ref_src=twsrc%5Etfw">February 16, 2026</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I think it illustrates my point very clearly, we need to consider the ethical implications of our choices now more than ever and just go head long into the future making tech for tech&rsquo;s sake.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Point</title>
-            <link>http://localhost:1313/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</link>
+            <link>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</link>
             <pubDate>Sun, 15 Jun 2025 19:39:41 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</guid>
+            <guid>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</guid>
             <description>&lt;p&gt;&lt;strong&gt;Important Note&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;So it turns out the comment paper was made as a &lt;a href=&#34;https://lawsen.substack.com/p/when-your-joke-paper-goes-viral&#34;&gt;joke&lt;/a&gt;, but it did have one geunuine concern. The original author talks about how he didn&amp;rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.&lt;/em&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;em&gt;So it turns out the comment paper was made as a &lt;a href=&#34;https://lawsen.substack.com/p/when-your-joke-paper-goes-viral&#34;&gt;joke&lt;/a&gt;, but it did have one genuine concern. The original author talks about how he didn&amp;rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.&lt;/em&gt;&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p><strong>Important Note</strong></p>
-<p><em>So it turns out the comment paper was made as a <a href="https://lawsen.substack.com/p/when-your-joke-paper-goes-viral">joke</a>, but it did have one geunuine concern. The original author talks about how he didn&rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.</em></p>
+<p><em>So it turns out the comment paper was made as a <a href="https://lawsen.substack.com/p/when-your-joke-paper-goes-viral">joke</a>, but it did have one genuine concern. The original author talks about how he didn&rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.</em></p>
 <p>Recently Apple <a href="https://machinelearning.apple.com/research/illusion-of-thinking">published a paper</a> on LRMs (Large Reasoning Models) and how they found that &ldquo;that LRMs have limitations in exact computation&rdquo; and that &ldquo;they fail to use explicit algorithms and reason inconsistently across puzzles.&rdquo; I would consider this a death blow paper to the current push for using LLMs and LRMs as the basis for AGI. Subbaro Kambhampati and Yann LeCun seem to agree. You could say that the paper <a href="https://garymarcus.substack.com/p/a-knockout-blow-for-llms">knocked out LLMs</a>. More recently, a comment paper showed up on <a href="https://arxiv.org/html/2506.09250v1">Arxiv</a> and shared around X as a rebuttal to Apple&rsquo;s paper. Putting aside the stunt of having Claude Opus as a co-author (yes, I&rsquo;m not kidding), the paper in itself is a poor rebuttal for many reasons which we shall explore, but mainly for missing the entire point of the paper and prior research by AI researchers such as Professor <a href="https://cotopaxi.eas.asu.edu/">Kambhampati</a>.</p>
 <h2 id="mathematical-errors">Mathematical Errors</h2>
 <p>Firstly the paper makes some <em>key</em> mathematical errors. As <a href="https://x.com/BlackHC">Andreas Kirsch</a> points out on X, it makes the claim that token growth is predicted by the following:</p>
@@ -44,7 +73,8 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 <h2 id="completely-missing-the-point-and-narrow-focus">Completely Missing the Point and Narrow Focus</h2>
 <p>The main point of Apple&rsquo;s paper was to identify systematic reasoning patterns, not evaluate accuracy. Indeed, they point out that reasoning benchmarks thus far have inherent limitations because of their leakiness and narrow focus on final solutions, rather than on the general process of reasoning.</p>
 <blockquote>
-<p>Reasoning models initially increase their thinking tokens proportionally with problem complexity. However, upon approaching a critical threshold—which closely corresponds to their accuracy collapse point—models counterintuitively begin to reduce their reasoning effort despite increasing problem difficulty&quot; (Shojaee et al., p.8)</p></blockquote>
+<p>Reasoning models initially increase their thinking tokens proportionally with problem complexity. However, upon approaching a critical threshold—which closely corresponds to their accuracy collapse point—models counterintuitively begin to reduce their reasoning effort despite increasing problem difficulty&quot; (Shojaee et al., p.8)</p>
+</blockquote>
 <p>It instead completely ignores this finding and offers no explanation as to why models would systematically reduce computational effort when faced with harder problems. This suggests fundamental scaling limitations with current LRM architectures.</p>
 <p>Further, the rebuttal does not address the Apple paper&rsquo;s complexity regime patterns that it identified consistently across models or even how token limits explain these.</p>
 <h2 id="conclusions-and-further-reading">Conclusions and Further Reading</h2>
@@ -55,10 +85,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>The Limits of Current AI: A Skeptical Perspective on Autonomous Agents</title>
-            <link>http://localhost:1313/posts/limits-of-current-ai/</link>
+            <link>https://victoramartinez.com/posts/limits-of-current-ai/</link>
             <pubDate>Sun, 25 May 2025 21:11:50 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/limits-of-current-ai/</guid>
+            <guid>https://victoramartinez.com/posts/limits-of-current-ai/</guid>
             <description>&lt;p&gt;I align with Yann LeCun&amp;rsquo;s camp on this matter. I don&amp;rsquo;t believe that LLMs and machine learning alone will lead us to human-level intelligence. Current models have demonstrated only very limited reasoning capabilities within specific domains—essentially following and recombining similar patterns they&amp;rsquo;ve ingested during training.&lt;/p&gt;
 &lt;p&gt;If you follow computer scientist and AI researcher Subbarao Kambhampati, a professor at the School of Computing and Augmented Intelligence at ASU, he proposes and demonstrates that language models and reasoning models cannot plan effectively even in domains as simple as organizing blocks in a virtual world, let alone in more complex domains.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I align with Yann LeCun&rsquo;s camp on this matter. I don&rsquo;t believe that LLMs and machine learning alone will lead us to human-level intelligence. Current models have demonstrated only very limited reasoning capabilities within specific domains—essentially following and recombining similar patterns they&rsquo;ve ingested during training.</p>
@@ -71,10 +101,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>Software Engineers Are Safe... For Now</title>
-            <link>http://localhost:1313/posts/software-engineers-are-safe-for-now/</link>
+            <link>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</link>
             <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/software-engineers-are-safe-for-now/</guid>
+            <guid>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</guid>
             <description>&lt;p&gt;Take a look at this search of jobs postings at OpenAI for December 25th, 2024. As of the time of this writing, over 150 results in all, 87 results for the term &amp;ldquo;Software Engineer.&amp;rdquo; This is a few days after the release of their latest frontier model, o3. This tells me that for the foreseeable future, Software Engineering jobs are safe, if not going to continue to be safe from full automation.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Take a look at this search of jobs postings at OpenAI for December 25th, 2024. As of the time of this writing, over 150 results in all, 87 results for the term &ldquo;Software Engineer.&rdquo; This is a few days after the release of their latest frontier model, o3. This tells me that for the foreseeable future, Software Engineering jobs are safe, if not going to continue to be safe from full automation.</p>
 <p><img src="/images/linkedin-job-posts-openai.png" alt="LinkedIn Job Postings for OpenAI Dec 25, 2024"></p>
@@ -94,10 +124,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>The Most Important Topics for a Computer Science Undergrad</title>
-            <link>http://localhost:1313/posts/important-computer-science-concepts/</link>
+            <link>https://victoramartinez.com/posts/important-computer-science-concepts/</link>
             <pubDate>Sun, 22 Dec 2024 22:16:40 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/important-computer-science-concepts/</guid>
+            <guid>https://victoramartinez.com/posts/important-computer-science-concepts/</guid>
             <description>&lt;p&gt;As a computer science student, it&amp;rsquo;s essential to have a solid foundation in various topics to succeed in the field. In this post, we&amp;rsquo;ll cover the most critical topics for a computer science undergrad, in no particular order.&lt;/p&gt;
 &lt;h2 id=&#34;maths&#34;&gt;&lt;strong&gt;Maths&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;calculus&#34;&gt;Calculus&lt;/h3&gt;
@@ -147,10 +177,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>How to Get a Computer Science Degree Fast and Cheaply</title>
-            <link>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</link>
+            <link>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</link>
             <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
             
-            <guid>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</guid>
+            <guid>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</guid>
             <description>&lt;p&gt;You read the title, you&amp;rsquo;re probably thinking &amp;ldquo;that sounds like it&amp;rsquo;ll be a crappy idea&amp;rdquo; or &amp;ldquo;that sounds exactly like what I want!&amp;rdquo; For the first person, I hope to convince you that a computer science degree need not take 4 years nor be expensive. For the second, I hope to give you a roadmap to earn an accredited CS degree. But, before I start I want to preface this by saying that I am not advocating you go out to a degree mill and just buy a Diploma from a fake school, I&amp;rsquo;ll only be talking about legal, accredited, and reputable ways to get your degree in under 2 years, even less. I also know that it&amp;rsquo;s possible, because I essentially did it last year. So, without further ado, here&amp;rsquo;s how to get a bachelors degree in computer science fast and cheaply.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>You read the title, you&rsquo;re probably thinking &ldquo;that sounds like it&rsquo;ll be a crappy idea&rdquo; or &ldquo;that sounds exactly like what I want!&rdquo; For the first person, I hope to convince you that a computer science degree need not take 4 years nor be expensive. For the second, I hope to give you a roadmap to earn an accredited CS degree. But, before I start I want to preface this by saying that I am not advocating you go out to a degree mill and just buy a Diploma from a fake school, I&rsquo;ll only be talking about legal, accredited, and reputable ways to get your degree in under 2 years, even less. I also know that it&rsquo;s possible, because I essentially did it last year. So, without further ado, here&rsquo;s how to get a bachelors degree in computer science fast and cheaply.</p>
 <h1 id="step-1-choose-the-right-school">Step 1. Choose the Right School</h1>
@@ -242,10 +272,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>Accepted to Georgia Tech</title>
-            <link>http://localhost:1313/posts/accepted-to-gt/</link>
+            <link>https://victoramartinez.com/posts/accepted-to-gt/</link>
             <pubDate>Fri, 29 Nov 2024 22:16:40 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/accepted-to-gt/</guid>
+            <guid>https://victoramartinez.com/posts/accepted-to-gt/</guid>
             <description>&lt;p&gt;Back on May 31st, 2024, right as I submitted my last assignment for my capstone course, my last class on my BSCS at WGU, I applied for Georgia Tech’s OMSCS program. In August, days before my graduation ceremony, I heard back that I got accepted into the Spring 2025 cohort of Georgia Tech’s Online Masters of Science in Computer Science and this week I just got my gatech.edu email address.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Back on May 31st, 2024, right as I submitted my last assignment for my capstone course, my last class on my BSCS at WGU, I applied for Georgia Tech’s OMSCS program. In August, days before my graduation ceremony, I heard back that I got accepted into the Spring 2025 cohort of Georgia Tech’s Online Masters of Science in Computer Science and this week I just got my gatech.edu email address.</p>
 <p>I’m excited to be taking part in this amazing program, it’s really a dream come true. This will give me an opportunity to really focus in on areas of computer science I find most interesting. I plan on doing the Interactive Intelligence specialization. Now I know what you’re probably thinking (or not, I don’t personally know you and it’s rude to assume, but I can make a pretty good guess) “oh boy, just another one looking to get in on the AI hyper train.” Well, no… You see, for me AI and ML have always been an are of intrigue for me since my first freshman year back in 2013, during my first degree attempt and I want to learn about AI as a field in general because of a personal curiosity of not just AI itself, but computer science as a whole.</p>
@@ -264,10 +294,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>On Finishing My BSCS</title>
-            <link>http://localhost:1313/posts/on-finishing-my-bscs/</link>
+            <link>https://victoramartinez.com/posts/on-finishing-my-bscs/</link>
             <pubDate>Mon, 24 Jun 2024 03:42:30 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/on-finishing-my-bscs/</guid>
+            <guid>https://victoramartinez.com/posts/on-finishing-my-bscs/</guid>
             <description>&lt;p&gt;Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Over the past four plus months, upon writing this on June 24, 2024 at 3:05 am AST, I had been working on my finishing my Bachelor of Science, Computer Science from Western Governors University. I am proud to say that I am now a proud graduate of WGU and will be attending commencement in September; I already bought the airline tickets plus the cap and gown. In this post I will outline my experience going through the curriculum at WGU, how many credits I transferred from where, and total up how long it took me to finish my degree and outline my plans for the future.</p>
 <p>But first, let me outline why I did this. I&rsquo;ve been working for close to 9 years as a software engineer, including 2 years of internships and 7+ years of non-internship work experience. I had been thrusted onto the roll of senior software engineer in my last job over the course of two years and had lead a team of 6 other developers. I felt like I was at the top of my game, but something was missing, but what? I was noticing that I was starting to lack in certain areas of theoretical knowledge and lacked the structure and accountability to master them. I had attempted a degree before, once in 2013 through 2017 as a computer engineering student at the University of Puerto Rico, and then transferred over to Computer Science at the Polytechnic University of Puerto Rico when I found hardware too uninteresting and difficult. During the transfer, nearly nothing had transferred over so I had to start all over again, I was the equivalent of a Junior or Sophomore, it was rough. Over the course of three years, I was passing classes left and right, keeping an above 3.0 GPA while also holding down a full-time 9 to 5 job.</p>
@@ -281,10 +311,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>Defensive Commits</title>
-            <link>http://localhost:1313/posts/defensive-commits/</link>
+            <link>https://victoramartinez.com/posts/defensive-commits/</link>
             <pubDate>Sat, 22 Oct 2022 21:55:26 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/defensive-commits/</guid>
+            <guid>https://victoramartinez.com/posts/defensive-commits/</guid>
             <description>&lt;p&gt;Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with &lt;a href=&#34;https://trunkbaseddevelopment.com&#34;&gt;trunk-based development&lt;/a&gt; and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.&lt;/p&gt;
 &lt;p&gt;At &lt;a href=&#34;https://coquihealth.com&#34;&gt;Coqui Health&lt;/a&gt;, we&amp;rsquo;ve implemented this strategy successfully and this is now the default way we work. We use a monorepo strategy coupled with ci/cd and trunk-based development, which means we work close to or in trunk and so having a robust ci/cd pipeline is paramount. Defensive commits allows us to catch bugs early and get feedback that our code will work or break things. It&amp;rsquo;s allowed us to move faster and not break things.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with <a href="https://trunkbaseddevelopment.com">trunk-based development</a> and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.</p>
@@ -292,9 +322,9 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 <h2 id="how-to-implement">How to Implement</h2>
 <p>The easiest way to implement Defensive Commits (TM) is to use git hooks, particularly on push or after a commit, literally. We used <a href="https://typicode.github.io/husky/#/">husky</a> to help us do this.</p>
 <p>First install and configure husky</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky-init <span style="color:#f92672">&amp;&amp;</span> npm install       <span style="color:#75715e"># npm</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky-init <span style="color:#f92672">&amp;&amp;</span> npm install       <span style="color:#75715e"># npm</span>
 </span></span></code></pre></div><p>Then configure the git hooks, like this for pre-push</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky add .husky/pre-push <span style="color:#e6db74">&#34;npm test&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky add .husky/pre-push <span style="color:#e6db74">&#34;npm test&#34;</span>
 </span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
 <p>Using this strategy you can save a lot of time and effort from having to wait for ci/cd pipelines and potentially braking the build over stupid little things. I can&rsquo;t guarantee your build will never break, but the probability it will fail is a lot less.</p>
 ]]></content>
@@ -302,10 +332,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>Getting Back to Blogging</title>
-            <link>http://localhost:1313/posts/getting-back-to-blogging/</link>
+            <link>https://victoramartinez.com/posts/getting-back-to-blogging/</link>
             <pubDate>Sun, 19 Dec 2021 17:22:45 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/getting-back-to-blogging/</guid>
+            <guid>https://victoramartinez.com/posts/getting-back-to-blogging/</guid>
             <description>&lt;p&gt;It&amp;rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&amp;rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&amp;rsquo;ve been so full of ideas.&lt;/p&gt;
 &lt;p&gt;Recently I&amp;rsquo;ve been thinking a lot about finance, economics, and of course programming. I want to share my findings with you in hopes that this will help someone. So with that declaration out of the way, let&amp;rsquo;s get back to it!&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>It&rsquo;s been a long time since I last made a post. More than a year, actually. Since then, I&rsquo;ve been really busy finding new work, finishing school, and getting my life in order. I want to get back into blogging and I&rsquo;ve been so full of ideas.</p>
@@ -315,10 +345,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>Value Objects in Go</title>
-            <link>http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</link>
+            <link>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</link>
             <pubDate>Fri, 23 Oct 2020 03:12:35 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</guid>
+            <guid>https://victoramartinez.com/posts/value-objects-in-go-and-other-domain-driven-design-stuff/</guid>
             <description>&lt;p&gt;Recently I&amp;rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&amp;rsquo;ve come accross a few patterns I&amp;rsquo;d like to share. Mainly we&amp;rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Recently I&rsquo;ve been thinking a lot about how to apply some DDD principles in Go in idiomatic and simple ways, and I&rsquo;ve come accross a few patterns I&rsquo;d like to share. Mainly we&rsquo;ll be talking about how to apply the concept of Value Objects in Go in two ways. These are examples of how I apply them in my projects and actually use them so these are not just toy examples.</p>
 <h2 id="description">Description</h2>
@@ -329,12 +359,12 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 <p>In order to be always valid, the object must be immutable. To do that in Go we use encapsulation by using package level hiding of fields.</p>
 <h2 id="implementing-in-go">Implementing in Go</h2>
 <p>The first and and most common kind of value object I create in Go is the simple type alias.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ID</span> <span style="color:#66d9ef">string</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ID</span> <span style="color:#66d9ef">string</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">City</span> <span style="color:#66d9ef">string</span>
 </span></span></code></pre></div><p>If the object does not need complex validation and is just a simple field then it can be a type alias. Examples include things like ids, names that don&rsquo;t need to be checked if empty or not, and sometimes certain numbers. Some value objects are even simpler and come with the standard library, such as <code>time.Time</code> (tho admitidly internally internally it is more complex) and <code>bool</code>.</p>
 <p>The second kind is one that I also use often, if not more often considering that it represents complex concepts, is the immutable field value object.</p>
 <p>As an example, take a name field that need to be within a certain length of characters. We&rsquo;d implement them in Go like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Name</span> <span style="color:#66d9ef">struct</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// explicitly not public field</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
@@ -376,20 +406,22 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>Stop The EARN IT Act</title>
-            <link>http://localhost:1313/posts/stop-earn-it-act/</link>
+            <link>https://victoramartinez.com/posts/stop-earn-it-act/</link>
             <pubDate>Wed, 25 Mar 2020 19:51:27 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/stop-earn-it-act/</guid>
+            <guid>https://victoramartinez.com/posts/stop-earn-it-act/</guid>
             <description>&lt;p&gt;A new threat to your freedom of speech and privacy has appeared. Senators Lindsey Graham (R-SC) and Richard Blumenthal (D-CT) have joined in introducing the &lt;a href=&#34;https://www.congress.gov/bill/116th-congress/senate-bill/3398&#34;&gt;EARN IT Act (S. 3398)&lt;/a&gt; bill in Congress. This act&amp;rsquo;s intention is hidden behind the guise of protecting children, but in reality seeks to potentially undermine the end-to-end encryption and security that exists for almost all internet communications, especially social messaging platforms like WhatsApp and other U.S. based messaging platforms. This would give dangerous men like Attorney General William Barr, who has expressed his opinions about encryption in the past, the legal authority to demand platforms decrypt communications. Don&amp;rsquo;t be fooled, if this bill passes it will do little to actually protect children and instead put your data and private conversations at risk to online criminals and foreign governments. It is not just your private messages, but other means of communications that are at risk.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>A new threat to your freedom of speech and privacy has appeared. Senators Lindsey Graham (R-SC) and Richard Blumenthal (D-CT) have joined in introducing the <a href="https://www.congress.gov/bill/116th-congress/senate-bill/3398">EARN IT Act (S. 3398)</a> bill in Congress. This act&rsquo;s intention is hidden behind the guise of protecting children, but in reality seeks to potentially undermine the end-to-end encryption and security that exists for almost all internet communications, especially social messaging platforms like WhatsApp and other U.S. based messaging platforms. This would give dangerous men like Attorney General William Barr, who has expressed his opinions about encryption in the past, the legal authority to demand platforms decrypt communications. Don&rsquo;t be fooled, if this bill passes it will do little to actually protect children and instead put your data and private conversations at risk to online criminals and foreign governments. It is not just your private messages, but other means of communications that are at risk.</p>
 <p>Various rights watch organizations have already denounced the bill, including the <a href="https://www.aclu.org/press-releases/aclu-afp-comment-earn-it-act">ACLU</a>.</p>
 <blockquote>
 <p>Tech companies have an extraordinary special safeguard against legal liability, but that unique protection comes with a responsibility. Companies that fail to comport with basic standards that protect children from exploitation have betrayed the public trust granted them by this special exemption. Online platforms&rsquo; near-complete immunity from legal responsibility is a privilege – they have to earn it – and that&rsquo;s what our bipartisan bill requires.</p>
-<p>&ndash; <!-- raw HTML omitted -->Blumenthal<!-- raw HTML omitted --></p></blockquote>
+<p>&ndash; <!-- raw HTML omitted -->Blumenthal<!-- raw HTML omitted --></p>
+</blockquote>
 <p>Don&rsquo;t be fooled. Companies do not have to &ldquo;earn&rdquo; this immunity from what their users say and do on their platforms. What&rsquo;s more, it&rsquo;s a false premise. Online criminals will use other means to conduct their operations and believe me, they will. This only hurts the everyday citizen, who has done nothing wrong and has everything to lose.</p>
 <blockquote>
 <p>I’ve got to say that putting our children at risk for what I believe are marginal privacy gains is something I really struggle to believe any of us want.</p>
-<p>&ndash; <!-- raw HTML omitted -->James Brokenshire<!-- raw HTML omitted --></p></blockquote>
+<p>&ndash; <!-- raw HTML omitted -->James Brokenshire<!-- raw HTML omitted --></p>
+</blockquote>
 <p>Many security and privacy experts, as expected, disagree with that assessment. And, In my opinion, is a red flag to what the <a href="https://wired.com/story/earn-it-act-sneak-attack-on-encryption/">true intentions</a> of these politicians are. Either that or they are so completely ignorant of how all of this works that it is borderline irresponsible. We are not dealing with tech-savvy or even privacy-savvy individuals.</p>
 <p>What&rsquo;s more, there are serious concerns that this act is <a href="https://cyberlaw.stanford.edu/blog/2020/03/earn-it-act-unconstitutional-fourth-amendment">unconstitutional</a> or at least it should be. Some say that it violates the first and fourth amendments of freedom of speech and the press, and the right to protect against unreasonable searches and seizures. How? By giving courts unprecedented access to previously encrypted information such as emails, private messages, and other documents.</p>
 <p>The EARN It Act is a terrible idea. Not just because it won&rsquo;t do what it sets out to do, but because it undermines some of our basic freedoms and puts us all at risk for tyrannical government and cybercrime.</p>
@@ -399,16 +431,16 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>Don&#39;t Use Frameworks</title>
-            <link>http://localhost:1313/posts/dont-use-frameworks/</link>
+            <link>https://victoramartinez.com/posts/dont-use-frameworks/</link>
             <pubDate>Tue, 24 Mar 2020 04:32:51 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/dont-use-frameworks/</guid>
+            <guid>https://victoramartinez.com/posts/dont-use-frameworks/</guid>
             <description>&lt;p&gt;Stop using frameworks for everything. Just stop. You don&amp;rsquo;t need a framework to write good code and deliver products. Don&amp;rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&amp;rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application. The patterns I suggest you use are &lt;a href=&#34;https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html&#34;&gt;Clean Architecture&lt;/a&gt;, &lt;a href=&#34;https://www.infoq.com/minibooks/domain-driven-design-quickly/&#34;&gt;Domain Driven Design&lt;/a&gt;, and the &lt;a href=&#34;https://www.youtube.com/watch?v=t86v3N4OshQ&#34;&gt;SOLID&lt;/a&gt; principles. Having a maintainable application is a matter of applying certain design principles and professionalism. In particular, applying &lt;a href=&#34;https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html&#34;&gt;TDD&lt;/a&gt; or BDD and Domain Driven Design principles. Think about your application before you write a single line of code, design it, and test before you implement it.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Stop using frameworks for everything. Just stop. You don&rsquo;t need a framework to write good code and deliver products. Don&rsquo;t get me wrong, frameworks are useful, but they are all-consuming and hide the application. So if you shouldn&rsquo;t depend on frameworks what should you do instead? Clean architecture. More specifically, there are some patterns you can follow to better architect your application and think about the structure of your application and remove the need for frameworks to express your application. The patterns I suggest you use are <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">Clean Architecture</a>, <a href="https://www.infoq.com/minibooks/domain-driven-design-quickly/">Domain Driven Design</a>, and the <a href="https://www.youtube.com/watch?v=t86v3N4OshQ">SOLID</a> principles. Having a maintainable application is a matter of applying certain design principles and professionalism. In particular, applying <a href="https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html">TDD</a> or BDD and Domain Driven Design principles. Think about your application before you write a single line of code, design it, and test before you implement it.</p>
 <p>What should you do about frameworks then? You can still use them, but only as plugins to your application. The use of a framework should be done by implementing internal interfaces for your applications&rsquo; inner layers. Let me ask you this, how many times have you answered the question &ldquo;what is your architecture?&rdquo; with a phrase like &ldquo;We have a ruby on rails back-end persisted by postgres using an angular front-end?&rdquo; If you have, what you have just described is not an architecture, it is an application stack. And what is the application stack? The stack is a detail! No one cares what your application stack is, well no one who wants to get the work done cares what it is, and you shouldn&rsquo;t either. To be fair, I&rsquo;m not saying your technology stack isn&rsquo;t important at some level, I&rsquo;m saying that it&rsquo;s a detail. So what is an application&rsquo;s architecture then? It is the system of patterns that we use to carry out our application&rsquo;s functionality. Your architecture could be a simple CRUD system, or it might be a complex trading application that receives trade orders as incoming messages and delivers them by reserving credits and emitting order events depending on what state you&rsquo;re in. One thing is clear, your application&rsquo;s architecture is driven by the domain you&rsquo;re in and the complexity of the problem you are solving, a framework is not architecture.</p>
 <p>So what does a frameworkless application look like? Here&rsquo;s an example in Go. Let us start by the business rules and implement entities. In this example we&rsquo;re using a Cargo shipping application. Notice that our entities are free of any database dependencies and external concerns.</p>
 <h3 id="entities">Entities</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// TrackingID uniquely identifies a particular cargo.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// TrackingID uniquely identifies a particular cargo.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">TrackingID</span> <span style="color:#66d9ef">string</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Cargo is the central class in the domain model.</span>
@@ -451,7 +483,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The cargo object is an entity that is concerned with the carrying out of business rules related to shipping cargo, such as route assignments and delivery progress. We abstract the saving and retrieving of the cargo using the repository pattern and creating an interface for the repository.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// CargoRepository provides access a cargo store.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// CargoRepository provides access a cargo store.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">CargoRepository</span> <span style="color:#66d9ef">interface</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Store</span>(<span style="color:#a6e22e">cargo</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>) <span style="color:#66d9ef">error</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Find</span>(<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">TrackingID</span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">Cargo</span>, <span style="color:#66d9ef">error</span>)
@@ -460,7 +492,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span></code></pre></div><p>This interface is not given a concrete implementation at this step, instead, it is used in our use case through dependency injection in which the specific implementation will be chosen later. This is where our persistence technology will plug into. Notice how our application needs to know nothing about how cargo is persisted to use it, it is a detail we&rsquo;ll sort out later.</p>
 <h3 id="use-cases">Use cases</h3>
 <p>Our use cases are implemented by exposing a common use case interface for that particular use case and a hidden implementation that gets chosen using the factory pattern. That is to say, our use cases are expressed as interfaces with methods (actions) we can take. Use cases import only the inner layers of our application, such as the entities, and get injected with the concrete implementation of other interfaces like repositories and other uses cases.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Service is the interface that provides booking methods.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Service is the interface that provides booking methods.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Service</span> <span style="color:#66d9ef">interface</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// BookNewCargo registers a new cargo in the tracking system, not yet</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// routed.</span>
@@ -572,7 +604,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In this example, we have a booking use case that handles the booking of new cargo. Notice how in the constructor we are expressing the repository dependencies as arguments and do no instantiate our implementations. Instead, concrete implementations of these interfaces are passed on to us, injected, in the main package. We also don&rsquo;t pass entities in and out of this layer to the outside, instead, we receive and output DTOs that are specific to this use case. These DTOS are just simple structs with no logic which we transform into and from our internal entities and value objects. We do not cheat and pass out our entities because that would couple them to the needs of the outside world, and we want to shield our innermost layers from change.</p>
 <p>Now, where do we put in the framework if we use one? We put them on the outside and include our use cases as dependencies. For example, in our booking cargo use case, we will have HTTP handlers for each method in the service interface.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">bookingHandler</span> <span style="color:#66d9ef">struct</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">bookingHandler</span> <span style="color:#66d9ef">struct</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">booking</span>.<span style="color:#a6e22e">Service</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">logger</span> <span style="color:#a6e22e">kitlog</span>.<span style="color:#a6e22e">Logger</span>
@@ -634,7 +666,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In this example, we are using the chi package to implement routing and include our booking service as a dependency. This layer has no application logic and only calls the appropriate methods on our use case, converting the raw data into and from dtos for our use case. When we instantiate our server implementation we pass in the use case implementations as arguments to the constructor.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Server holds the dependencies for a HTTP server.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Server holds the dependencies for a HTTP server.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Server</span> <span style="color:#66d9ef">struct</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Booking</span>  <span style="color:#a6e22e">booking</span>.<span style="color:#a6e22e">Service</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Tracking</span> <span style="color:#a6e22e">tracking</span>.<span style="color:#a6e22e">Service</span>
@@ -679,7 +711,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Notice, no logic relating to our use case is here, only logic to satisfy our framework an be a bridge between our use case and the framework. In this way, the core of our application knows nothing about what frameworks we use. It doesn&rsquo;t care at all. The framework could be changed two weeks from now and you wouldn&rsquo;t have to change a thing about the use case because of it. The only time use cases or entities might change is when business requirements change, never for technical reasons.</p>
 <p>What about the repositories? Those are an outside-in thing that gets implemented elsewhere. When we choose a persistence technology we simply implement that interface and it gets passed into our use cases upon application startup. Here&rsquo;s a trivial, but important illustration, of an in-memory repository for our Cargo example.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Package inmem provides in-memory implementations of all the domain repositories.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Package inmem provides in-memory implementations of all the domain repositories.</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">inmem</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
@@ -742,10 +774,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>Event Sourcing in Go</title>
-            <link>http://localhost:1313/posts/event-sourcing-in-go/</link>
+            <link>https://victoramartinez.com/posts/event-sourcing-in-go/</link>
             <pubDate>Mon, 23 Mar 2020 21:13:59 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/event-sourcing-in-go/</guid>
+            <guid>https://victoramartinez.com/posts/event-sourcing-in-go/</guid>
             <description>&lt;p&gt;I&amp;rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&amp;rsquo;ve been doing it in Go and want to share how I do it.&lt;/p&gt;
 &lt;p&gt;To begin with, I&amp;rsquo;ve researched this topic thoroughly; I&amp;rsquo;ve probably watched and re-watched hundreds of videos and read many posts, articles, and books on it. I am by no means a cqrs/es expert, but I have gained some insight into how to do it. The first thing I want to put out there is that you don&amp;rsquo;t need a framework to do this. Ddd and cqrs/es are best done without a framework getting in the way and instead you should create a &lt;a href=&#34;https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html&#34;&gt;Clean Architecture&lt;/a&gt; where the framework you choose later on becomes a sort of plugin into your application.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I&rsquo;ve recently gone into doing CQRS with event sourcing along with DDD (Domain Driven Design) principles. I&rsquo;ve been doing it in Go and want to share how I do it.</p>
@@ -755,7 +787,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 <p>Where do these events come from? They come from the initial design of the system through various exercises such as event storming, a process by which the overall process or sub-process of an application is discovered and modeled as events that have happened. Keep in mind, these aren&rsquo;t fine-grained low-level events like you might be used to in GUI programming, such as a user clicked event, they&rsquo;re more coarse than that. Take the example of a system that deals with hospital admissions of a patient, let us model the interactions the patient has in the system with events. A patient might first be admitted into the hospital, we might say we have a &ldquo;Patient Admitted&rdquo; event; notice the past perfect tense. Later on, when a patient is transferred to another ward we say that we have a &ldquo;Patient Transferred&rdquo; event. Finally, when a patient gets discharged we have &ldquo;Patient Discharged&rdquo;. These events arose out of the need to describe what has happened to a patient.</p>
 <p>These events are created through the use of commands in the command query responsibility segregation pattern. Commands signify intent that an action should be taken, but with no guarantee that they will. A command handler can reject commands and produce no events. There are many ways to model commands in a system. They can be as simple as imperative methods that tell an object what to do or as DTOs that have the data in them needed to carry out the command. In my case, I chose to make it as simple as a method on an object.</p>
 <p>So with all this, what does it all look like in Go? To begin let&rsquo;s look at what an event might look like in Go. Let&rsquo;s use our patient example.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">patient</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">patient</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Event is a domain event marker.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Event</span> <span style="color:#66d9ef">interface</span> {
@@ -786,7 +818,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Notice how the events are simply going structs which reference the id of the aggregate they&rsquo;re related to. There is also a marker interface that is implemented by them by way of a single un-exported method; this is to prevent outside structs from being flagged as possible events from this package and also to limit the scope of what counts as an event for this application.</p>
 <p>Next, we turn to our aggregate, which looks like this.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">patient</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">patient</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Patient aggregate.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Patient</span> <span style="color:#66d9ef">struct</span> {
@@ -914,7 +946,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">On</span>(<span style="color:#a6e22e">event</span>, <span style="color:#66d9ef">true</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>You&rsquo;ll notice a few things. First, the use of private fields in the aggregate is to protect our invariants. Then you&rsquo;ll notice that each method that raises an event does not change state directly, but instead raises an event first and that gets handled by the aggregate&rsquo;s <code>On</code> method. The <code>On</code> method is in charge of rebuilding the state from an event. It does a type switch on the event and caries out the behavior accordingly. Let&rsquo;s look at a single method closely.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Transfer transfers a patient to a new ward.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Transfer transfers a patient to a new ward.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">p</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Patient</span>) <span style="color:#a6e22e">Transfer</span>(<span style="color:#a6e22e">newWard</span> <span style="color:#a6e22e">WardNumber</span>) <span style="color:#66d9ef">error</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">discharged</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">ErrPatientDischarged</span>
@@ -929,7 +961,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Notice how the <code>Transfer</code> method first checks if the patient has already been discharged before emitting the event. We first have to check the business rules are satisfied before emitting the appropriate event, otherwise, we reject the command and return an error. If all is well, we simply raise the event which gets handled by the <code>On</code> method and we return nil. We do not change state unless all of the conditions are satisfied.</p>
 <p>Let&rsquo;s look at the <code>On</code> and <code>raise</code> methods more closely.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// On handles patient events on the patient aggregate.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// On handles patient events on the patient aggregate.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">p</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Patient</span>) <span style="color:#a6e22e">On</span>(<span style="color:#a6e22e">event</span> <span style="color:#a6e22e">Event</span>, <span style="color:#a6e22e">new</span> <span style="color:#66d9ef">bool</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">e</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">event</span>.(<span style="color:#66d9ef">type</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">PatientAdmitted</span>:
@@ -957,7 +989,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span></code></pre></div><p>Notice, the On method first does a type switch on the event and selects the case for each event type. This is where state change happens. Once an event is emitted and saved we do not throw an error, we simply process the event and carry on. We can change here if we decide that an event is no longer relevant or if it means something different, but we can&rsquo;t return an error and say an event is invalid. Then we check if this is a new event if it isn&rsquo;t we increment the version number of our aggregate. The <code>raise</code> method does two things, it appends the event into our changes slice and calls the event handler <code>On</code> saying that this is a new event and we should not increment the version number. Wait, what&rsquo;s this about the version? The version is an optimistic concurrency pattern used to help us avoid database locks to change our aggregate.</p>
 <p>So let&rsquo;s look at how we might use this aggregate. First, we have a repository that saves and retrieves the aggregate from the event store and we also have a service that represents a particular use case.</p>
 <p>One method on the service might look like this. We first load up the aggregate by replaying the events, we execute the command and save it to the repository. Simple, no?</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">s</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">service</span>) <span style="color:#a6e22e">TransferPatient</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">s</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">service</span>) <span style="color:#a6e22e">TransferPatient</span>(
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ctx</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Context</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">ID</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">newWard</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">WardNumber</span>,
@@ -977,7 +1009,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Well, things aren&rsquo;t so simple for our repository implementation. Here, I&rsquo;ve come up with a way to save them to dynamodb using some helper libraries from a project called <a href="https://github.com/altairsix/eventsource">eventsource</a> by using embedded structs to serialize and deserialize the event objects to and from JSON. (The LINQ like syntax comes from a library called <a href="https://github.com/ahmetb/go-linq">go-linq</a>)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">repository</span>) <span style="color:#a6e22e">Load</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">repository</span>) <span style="color:#a6e22e">Load</span>(
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ctx</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Context</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">id</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">ID</span>,
 </span></span><span style="display:flex;"><span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">Patient</span>, <span style="color:#66d9ef">error</span>) {
@@ -1092,12 +1124,12 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Name</span>()
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In the <code>Save</code> method, you&rsquo;ll notice we extract the events from the aggregate, convert them to JSON and give them a version number, starting from the last version the aggregate was at. The version number is important for optimistic concurrency as we check before we save that there are no events with those versions before we save. If there are, we&rsquo;ve been beaten by another command handler and need to reject, because we are stale.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">records</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">records</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">expectedVersion</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">Version</span>()
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">records</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">Version</span> = <span style="color:#a6e22e">expectedVersion</span>
 </span></span><span style="display:flex;"><span>	}
 </span></span></code></pre></div><p>When we load up the aggregate, we first load up all events in order and replay them back into the aggregate.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">repository</span>) <span style="color:#a6e22e">Load</span>(<span style="color:#a6e22e">ctx</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Context</span>, <span style="color:#a6e22e">id</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">ID</span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">Patient</span>, <span style="color:#66d9ef">error</span>) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">repository</span>) <span style="color:#a6e22e">Load</span>(<span style="color:#a6e22e">ctx</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Context</span>, <span style="color:#a6e22e">id</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">ID</span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">Patient</span>, <span style="color:#66d9ef">error</span>) {
 </span></span><span style="display:flex;"><span>     <span style="color:#75715e">// load up all events</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">records</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">Load</span>(<span style="color:#a6e22e">ctx</span>, <span style="color:#a6e22e">id</span>.<span style="color:#a6e22e">String</span>(), <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
@@ -1118,7 +1150,7 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">patient</span>.<span style="color:#a6e22e">NewFromEvents</span>(<span style="color:#a6e22e">events</span>), <span style="color:#66d9ef">nil</span> 
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In the aggregate&rsquo;s package, I&rsquo;ve chosen to have a helper method that replays all events for us.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// NewFromEvents is a helper method that creates a new patient</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// NewFromEvents is a helper method that creates a new patient</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// from a series of events.</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewFromEvents</span>(<span style="color:#a6e22e">events</span> []<span style="color:#a6e22e">Event</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Patient</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">p</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Patient</span>{}
@@ -1138,10 +1170,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>What I&#39;ve Learned Working in a Large Software Project</title>
-            <link>http://localhost:1313/posts/learnings-working-large-software-project/</link>
+            <link>https://victoramartinez.com/posts/learnings-working-large-software-project/</link>
             <pubDate>Thu, 28 Nov 2019 20:46:11 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/learnings-working-large-software-project/</guid>
+            <guid>https://victoramartinez.com/posts/learnings-working-large-software-project/</guid>
             <description>&lt;p&gt;I&amp;rsquo;ve been working my first large software project for almost a year now and I&amp;rsquo;d like to share my learnings from this project. The things I&amp;rsquo;ve learned, discovered, and realized during this time might be interesting to some, might be old news to others, and might even shed some light on how certain things are done in certain types of projects, but all in all I hope this proves to be an interesting read.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I&rsquo;ve been working my first large software project for almost a year now and I&rsquo;d like to share my learnings from this project. The things I&rsquo;ve learned, discovered, and realized during this time might be interesting to some, might be old news to others, and might even shed some light on how certain things are done in certain types of projects, but all in all I hope this proves to be an interesting read.</p>
 <p>First things first, where have I been working? I&rsquo;m currently a software developer at the <a href="https://suri.hacienda.pr.gov">SURI</a> project, the current largest government software project for the Puerto Rico government under the arm of the Treasury Department, also known as Hacienda. This is the software that is going to handle all the new tax related activities for the treasury and is already being used for corporate tax returns, import declarations, and other tax activities. Next year the plan is to rollout the individual tax returns. We already handle individuals in the system, but only show informative and W2s and not their tax returns yet. I&rsquo;m here as a contractor on behalf of my employer.</p>
@@ -1169,10 +1201,10 @@ $$<p>namely, it predicts a quadratic token growth for solutions of <a href="http
         
         <item>
             <title>WTF is Blockchain?</title>
-            <link>http://localhost:1313/posts/wtf-is-blockchain/</link>
+            <link>https://victoramartinez.com/posts/wtf-is-blockchain/</link>
             <pubDate>Tue, 07 Aug 2018 19:44:17 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/wtf-is-blockchain/</guid>
+            <guid>https://victoramartinez.com/posts/wtf-is-blockchain/</guid>
             <description>&lt;p&gt;This post was inspired by a talk given by Jared Haight from Microsoft at &lt;a href=&#34;http://bsidespr.org/2017/&#34;&gt;BSidesPR&lt;/a&gt;. Jared talked about giving back to the InfoSec community at a large, and he mentioned things to write about, including Blockchain. Specifically, he asked &amp;ldquo;WTF is Blockchain?&amp;rdquo; and said it that if you actually title it like that, he&amp;rsquo;d read it. So, this is my attempt at writing that description.&lt;/p&gt;
 &lt;h4 id=&#34;tldr-blockchain-is-an-unchangeable-series-of-blocks-that-each-reference-the-previous-blocks-contents-via-a-hash-of-that-content-blocks-are-a-collection-of-transactions-that-have-been-grouped-together-by-miners&#34;&gt;TLDR: Blockchain is an unchangeable series of blocks that each reference the previous&amp;rsquo; block&amp;rsquo;s contents via a hash of that content. Blocks are a collection of transactions that have been grouped together by miners.&lt;/h4&gt;
 &lt;h1 id=&#34;basic-computer-science&#34;&gt;Basic Computer Science&lt;/h1&gt;
@@ -1200,23 +1232,23 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
         
         <item>
             <title>Goro</title>
-            <link>http://localhost:1313/posts/goro/</link>
+            <link>https://victoramartinez.com/posts/goro/</link>
             <pubDate>Mon, 21 May 2018 13:36:22 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/goro/</guid>
+            <guid>https://victoramartinez.com/posts/goro/</guid>
             <description>&lt;p&gt;I know I haven&amp;rsquo;t posted in a long time, but I finally felt I needed an update in my blog. I&amp;rsquo;ve recently updated some work on my own Go library for &lt;a href=&#34;https://eventstore.org&#34;&gt;EventStore&lt;/a&gt; called &lt;a href=&#34;https://github.com/vectorhacker/goro&#34;&gt;goro&lt;/a&gt;. I made this for my own personal work and my job at &lt;a href=&#34;http://alqmy.io&#34;&gt;ALQMY&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I used to use &lt;a href=&#34;https://github.com/jetbasrawi/go.geteventstore&#34;&gt;Go.GetEventStore&lt;/a&gt; as my prefered library for working with EventStore. It was nice, but I felt it was lacking in many features and was ultimitely very cumbersome to work with, especially when it comes to reading events in a streaming fashion. I modeled my libary much like the sarama library for Kafka which has a similar api for streaming. On top of that I&amp;rsquo;ve added native support for reading streams, not only forwards, but backwards as well. This to me was a very important feature to have, as sometimes things like inlined snapshots in &lt;a href=&#34;https://martinfowler.com/eaaDev/EventSourcing.html&#34;&gt;Event Sourcing&lt;/a&gt; &lt;a href=&#34;https://martinfowler.com/eaaDev/EventSourcing.html&#34;&gt;[1]&lt;/a&gt;&lt;a href=&#34;http://microservices.io/patterns/data/event-sourcing.html&#34;&gt;[2]&lt;/a&gt;&lt;a href=&#34;https://eventstore.org/docs/event-sourcing-basics/index.html&#34;&gt;[3]&lt;/a&gt; require that you read a stream backwards.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I know I haven&rsquo;t posted in a long time, but I finally felt I needed an update in my blog. I&rsquo;ve recently updated some work on my own Go library for <a href="https://eventstore.org">EventStore</a> called <a href="https://github.com/vectorhacker/goro">goro</a>. I made this for my own personal work and my job at <a href="http://alqmy.io">ALQMY</a>.</p>
 <p>I used to use <a href="https://github.com/jetbasrawi/go.geteventstore">Go.GetEventStore</a> as my prefered library for working with EventStore. It was nice, but I felt it was lacking in many features and was ultimitely very cumbersome to work with, especially when it comes to reading events in a streaming fashion. I modeled my libary much like the sarama library for Kafka which has a similar api for streaming. On top of that I&rsquo;ve added native support for reading streams, not only forwards, but backwards as well. This to me was a very important feature to have, as sometimes things like inlined snapshots in <a href="https://martinfowler.com/eaaDev/EventSourcing.html">Event Sourcing</a> <a href="https://martinfowler.com/eaaDev/EventSourcing.html">[1]</a><a href="http://microservices.io/patterns/data/event-sourcing.html">[2]</a><a href="https://eventstore.org/docs/event-sourcing-basics/index.html">[3]</a> require that you read a stream backwards.</p>
 <p>So I think I should show you how the library actually works. First things first connecting to EventStore is as simple as:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">client</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">Connect</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">client</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">Connect</span>(
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;http://localhost:2113&#34;</span>, 
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">WithBasicAuth</span>(<span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;changeit&#34;</span>),
 </span></span><span style="display:flex;"><span>    )
 </span></span></code></pre></div><p>Now here is the first major difference between my library and that of Go.GetEventStore. When you connect, you initially give it the connection options such as authentication. In the future I&rsquo;ll add more options, but each option is implemented via a simple interface:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ClientOption</span> <span style="color:#66d9ef">func</span>(<span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ClientOption</span> <span style="color:#66d9ef">func</span>(<span style="color:#f92672">*</span><span style="color:#a6e22e">Client</span>)
 </span></span></code></pre></div><p>This enables me to add options to it arbitrarily. This is very similar to how the <a href="https://github.com/grpc/grpc-go">gRPC-Go</a> libraries add options to connections. In contrast Go.GetEventStore does this for authentication for example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">client</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">goes</span>.<span style="color:#a6e22e">NewClient</span>(<span style="color:#66d9ef">nil</span>, <span style="color:#e6db74">&#34;http://youreventstore:2113&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">client</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">goes</span>.<span style="color:#a6e22e">NewClient</span>(<span style="color:#66d9ef">nil</span>, <span style="color:#e6db74">&#34;http://youreventstore:2113&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
 </span></span><span style="display:flex;"><span>}
@@ -1224,7 +1256,7 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">SetBasicAuth</span>(<span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;changeit&#34;</span>)
 </span></span></code></pre></div><p>I find this partial builder pattern kind of confusing and very fragile. Besdies, I&rsquo;m usually very averse to the whole getter/setter pattern in general, but that&rsquo;s a topic for another blog post.</p>
 <p>Another big thing I wanted was better streaming. I&rsquo;m a big fan of using Go&rsquo;s channel feature to manage concurrency and to iterate through streaming data. It is very easy to iterate over a channel as if it where an array:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">stream</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">string</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>(){
@@ -1238,7 +1270,7 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>close(<span style="color:#a6e22e">stream</span>)
 </span></span></code></pre></div><p>I think this is very nice, simple, clean, and elegant way of handling concurrency. There&rsquo;s also no risk of the channel giving an error when getting messages in this model because the go for loop automatically breaks when the channel is closed. So in that fashion, I modeled my subscriptions for EventStore in this manner:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">client</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">Connect</span>(<span style="color:#e6db74">&#34;http://localhost:2113&#34;</span>, <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">WithBasicAuth</span>(<span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;changeit&#34;</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">client</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">Connect</span>(<span style="color:#e6db74">&#34;http://localhost:2113&#34;</span>, <span style="color:#a6e22e">goro</span>.<span style="color:#a6e22e">WithBasicAuth</span>(<span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;changeit&#34;</span>))
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">ctx</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Background</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">events</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">catchupSubscription</span>.<span style="color:#a6e22e">Subscribe</span>(<span style="color:#a6e22e">ctx</span>)
@@ -1248,7 +1280,7 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Each stream message has a few things inside it that help you manage the stream. This includes the event, an error, and some acknowledger for when you have persistent subscriptions.</p>
 <p>Streaming style subscriptions isn&rsquo;t the only way to read events, you can also read arbitrarily using a reader:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">reader</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">FowardsReader</span>(<span style="color:#e6db74">&#34;messages&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">reader</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">FowardsReader</span>(<span style="color:#e6db74">&#34;messages&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">events</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">reader</span>.<span style="color:#a6e22e">Read</span>(<span style="color:#a6e22e">ctx</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
 </span></span><span style="display:flex;"><span>    panic(<span style="color:#a6e22e">err</span>)
@@ -1266,11 +1298,11 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
         
         <item>
             <title>Amazon Key</title>
-            <link>http://localhost:1313/posts/amazon-key/</link>
+            <link>https://victoramartinez.com/posts/amazon-key/</link>
             <pubDate>Sun, 26 Nov 2017 23:20:47 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/amazon-key/</guid>
-            <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/amazon-key.jpeg&#34; alt=&#34;Amazon Key&#34;&gt;&lt;/p&gt;
+            <guid>https://victoramartinez.com/posts/amazon-key/</guid>
+            <description>&lt;p&gt;&lt;img src=&#34;https://victoramartinez.com/images/amazon-key.jpeg&#34; alt=&#34;Amazon Key&#34;&gt;&lt;/p&gt;
 &lt;p&gt;So Amazon &lt;a href=&#34;https://www.recode.net/2017/10/25/16538828/amazon-key-in-home-delivery-prime-camera-lock&#34;&gt;recently announced&lt;/a&gt; a new program called &lt;a href=&#34;https://en.wikipedia.org/wiki/Amazon_Key&#34;&gt;Amazon Key&lt;/a&gt;. This program would let deliverymen enter the house of people who have purchased the program. I&amp;rsquo;m really uncomfortable with this idea. For one thing, I don&amp;rsquo;t want Amazon, much less any other giant company, controlling entrance to my home. Second, this just feels like a whole new invasion of privacy.&lt;/p&gt;
 &lt;p&gt;This is just part of a much bigger problem. Silicon Valley companies are becoming so arrogant and negligent, and they&amp;rsquo;re giving me more and more reason to stop trusting them. Why would Amazon think that I would trust them with the security of my home? I say no.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p><img src="/images/amazon-key.jpeg" alt="Amazon Key"></p>
@@ -1281,10 +1313,10 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
         
         <item>
             <title>Github Pages</title>
-            <link>http://localhost:1313/posts/github-pages/</link>
+            <link>https://victoramartinez.com/posts/github-pages/</link>
             <pubDate>Sun, 26 Nov 2017 01:06:20 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/github-pages/</guid>
+            <guid>https://victoramartinez.com/posts/github-pages/</guid>
             <description>&lt;p&gt;I&amp;rsquo;m hosting this blog using Github pages (because I&amp;rsquo;m cheap.) You can browser through the source code &lt;a href=&#34;https://github.com/vectorhacker/victoramartinez.com&#34;&gt;here&lt;/a&gt;. I&amp;rsquo;m using &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; to generate the static site. Overall it&amp;rsquo;s pretty great.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I&rsquo;m hosting this blog using Github pages (because I&rsquo;m cheap.) You can browser through the source code <a href="https://github.com/vectorhacker/victoramartinez.com">here</a>. I&rsquo;m using <a href="https://gohugo.io">Hugo</a> to generate the static site. Overall it&rsquo;s pretty great.</p>
 ]]></content>
@@ -1292,11 +1324,11 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
         
         <item>
             <title>Net Neutrality Opinion</title>
-            <link>http://localhost:1313/posts/net-neutrality-opinion/</link>
+            <link>https://victoramartinez.com/posts/net-neutrality-opinion/</link>
             <pubDate>Sun, 26 Nov 2017 00:44:22 -0400</pubDate>
             
-            <guid>http://localhost:1313/posts/net-neutrality-opinion/</guid>
-            <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fight-net.jpg&#34; alt=&#34;Fight For Net Neutrality!&#34;&gt;&lt;/p&gt;
+            <guid>https://victoramartinez.com/posts/net-neutrality-opinion/</guid>
+            <description>&lt;p&gt;&lt;img src=&#34;https://victoramartinez.com/images/fight-net.jpg&#34; alt=&#34;Fight For Net Neutrality!&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
 &lt;p&gt;This December, the FCC will vote on wether to keep or reverse &lt;a href=&#34;http://transition.fcc.gov/Reports/1934new.pdf&#34;&gt;Title II of the Communications Act&lt;/a&gt; of 1934 in regards to ISPs. This decision will affect the way the internet works in the United States and if reversed, would give ISPs incentive to give preferential treatment of some data packets over others, among many other things that they could do. These rules are with the intent of creating a level playing field within the internet and keeping the internet free and open.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p><img src="/images/fight-net.jpg" alt="Fight For Net Neutrality!"></p>
@@ -1309,14 +1341,16 @@ The basic building block of blockchain (no pun intended) is a Block. A Block is 
 <h3 id="argument-against-title-ii-and-why-theyre-probably-wrong">Argument against Title II and why they’re probably wrong</h3>
 <p>The main argument against Title II is that the regulation hurts ISPs ability to innovate and curbs investment. Wether or not that is true, it’s really up for debate. The current FCC Chairman Ajit Pai, who voted against the 2015 Open Internet Order said:</p>
 <blockquote>
-<p><em>“This burdensome regulation has failed consumers and businesses alike. In the two years after the FCC’s decision, broadband network investment dropped more than 5.6 percent—the first time a decline has happened outside of a recession. If the current rules are left in place, millions of Americans who are on the wrong side of the digital divide would have to wait years to get more broadband.”</em></p></blockquote>
+<p><em>“This burdensome regulation has failed consumers and businesses alike. In the two years after the FCC’s decision, broadband network investment dropped more than 5.6 percent—the first time a decline has happened outside of a recession. If the current rules are left in place, millions of Americans who are on the wrong side of the digital divide would have to wait years to get more broadband.”</em></p>
+</blockquote>
 <p>There is reason to believe, however, that the net neutrality rules will not hurt ISPs investment. “We found that not a single publicly traded US ISP ever told its investors (or the SEC) that Title II negatively impacted its own investments specifically” as said in a <a href="https://www.freepress.net/sites/default/files/resources/internet-access-and-online-video-markets-are-thriving-in-title-II-era.pdf">report issued by the Free Press</a>. Many ISPs have told their investors that <a href="http://www.dslreports.com/shownews/ISPs-Tell-Investors-Title-II-Wont-Hurt-Them-In-The-Slightest-131865">Title II won’t hurt them in the slightest</a>.  More over, there have been many disputes over the claims made by Pai, and some analysis shows that ISP investment has <a href="https://arstechnica.com/information-technology/2017/05/title-ii-hasnt-hurt-network-investment-according-to-the-isps-themselves/">actually</a> <a href="http://www.cmcsa.com/releasedetail.cfm?ReleaseID=1023210">increased</a> and that it continues. You can read the full report, <a href="https://www.freepress.net/sites/default/files/resources/internet-access-and-online-video-markets-are-thriving-in-title-II-era.pdf">here</a>.</p>
 <p>So really it seams that the internet is thriving under Title II.</p>
 <h3 id="data-caps">Data caps</h3>
 <p>Many ISPs in the United States put in place what are called <a href="https://en.wikipedia.org/wiki/Bandwidth_cap">Data Caps or Bandwidth Caps</a>. These are artificial restrictions on transfer of data over a network. This mechanism is in place to limit customer usage of their services. ISPs assert that these are necessary to provide “fair” service to their users.</p>
 <p>According to StopTheCap.com.</p>
 <blockquote>
-<p>…former FCC chairman Julius Genachowski defended the practice, claiming it would bring lower prices to light users, spur “innovation”, and enable consumer choice.</p></blockquote>
+<p>…former FCC chairman Julius Genachowski defended the practice, claiming it would bring lower prices to light users, spur “innovation”, and enable consumer choice.</p>
+</blockquote>
 <p>This measure is often criticized as it is becoming increasingly unneeded, mostly because infrastructure is becoming cheaper to buy and maintain in order to increase capacity. There have also been assertions that ISPs who own pay television services keep these caps in order to protect this service.</p>
 <p>It is more likely that data caps are in place to maximize ISP profit and not because of the limits of their systems. Comcast, for example, can more than pay for not having <a href="https://www.cio.com/article/3075975/internet-service-providers/what-big-isps-dont-want-you-to-know-about-data-caps.html">limits on data</a>. A <a href="http://www.theverge.com/smart-home/2015/11/7/9687976/comcast-data-caps-are-not-about-fixing-network-congestion">leaked memo</a> from Comcast even went so far as to state that the data caps are not in place because of network performance. Many ISP CEOs have even said that as their costs decrease for maintaining broadband there is really no reason to have them as the days of keeping up with users data usage is basically over. As a St. Louis broadband says companies don’t have to spend a lot to keep up with customers’ data demands. “Those days are basically over.” <a href="http://time.com/money/4360431/internet-data-caps-bogus-ploys/">CEOs: Data Caps Are Bogus Ploys to Make Internet Seem Scarce | Money</a></p>
 <p>But there’s hope, some internet companies in the United States are either raising data caps or removing them entirely. And Netflix is <a href="https://www.bloomberg.com/news/articles/2012-06-27/netflix-wants-help-from-u-s-against-cable-data-caps">asking</a> lawmakers to prevent ISPs from putting these caps in place. But it is still an uphill battle, as Comcast and many others keep <a href="https://www.consumerreports.org/telecom-services/how-easy-to-burn-through-1TB-data-cap/">putting these in place</a>.</p>

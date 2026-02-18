@@ -2,32 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ai on Victor&#39;s Blog</title>
-    <link>http://localhost:1313/tags/ai/</link>
+    <link>https://victoramartinez.com/tags/ai/</link>
     <description>Recent content in Ai on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>en-us</language>
     <copyright>Victor Martínez</copyright>
-    <lastBuildDate>Sun, 15 Jun 2025 19:39:41 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Feb 2026 20:20:57 -0400</lastBuildDate>
+    <atom:link href="https://victoramartinez.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI at the Intersection of Ethics and Politics</title>
+      <link>https://victoramartinez.com/posts/ai-at-the-intersection-of-ethics-and-politics/</link>
+      <pubDate>Tue, 17 Feb 2026 20:20:57 -0400</pubDate>
+      <guid>https://victoramartinez.com/posts/ai-at-the-intersection-of-ethics-and-politics/</guid>
+      <description>&lt;p&gt;Preface: I work in AI, I use AI at work a lot, I think it&amp;rsquo;s a tool with tremendous promise, but we must be mindful of how it can be misused. With that in mind, here&amp;rsquo;s what I wrote before writing this preface.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://victoramartinez.com/images/ai-ethics.webp&#34; alt=&#34;Image of people discussing ethics and justice around a table&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I recently came across &lt;a href=&#34;https://www.404media.co/students-are-being-treated-like-guinea-pigs-inside-an-ai-powered-private-school/&#34;&gt;this article&lt;/a&gt; on how a private school in the US is essentially using students as test subjects for an AI education experiment. The school in question, Alpha School, has been praised by the current administration is now known to scrape the internet for course content without the consent of the content owners and are known to cause &amp;ldquo;more harm than good.&amp;rdquo; I find the ethical and political implications both appalling and interesting.  On the one hand, they&amp;rsquo;re completely ignoring the ethics of using students as test subjects and failing them as educators and on the other it seems to serve certain political group&amp;rsquo;s goals in that they want to create a populace they can control, in my opinion. I bring this up, because we&amp;rsquo;re learning and talking about the ethics of our human-computer interaction designs and experiments and of the politics involved in design, and I think this is not just a great a example, but the quintessential example of things we should be looking out for in the near future with regards to how AI can amplify the values of certain people over others.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Point</title>
-      <link>http://localhost:1313/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</link>
+      <link>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</link>
       <pubDate>Sun, 15 Jun 2025 19:39:41 -0400</pubDate>
-      <guid>http://localhost:1313/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Important Note&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;So it turns out the comment paper was made as a joke, but it did have one geunuine concern. The original author talks about how he didn&amp;rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Important Note&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;So it turns out the comment paper was made as a &lt;a href=&#34;https://lawsen.substack.com/p/when-your-joke-paper-goes-viral&#34;&gt;joke&lt;/a&gt;, but it did have one genuine concern. The original author talks about how he didn&amp;rsquo;t expect the paper to go viral, but it did. So since the paper was circled around X and other social media outlets and shared among AI enthusiast circles, this original article will remain here, with this note to encourage anyone to dismiss the claims of the comment paper outright on the basis of it being satirical.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Limits of Current AI: A Skeptical Perspective on Autonomous Agents</title>
-      <link>http://localhost:1313/posts/limits-of-current-ai/</link>
+      <link>https://victoramartinez.com/posts/limits-of-current-ai/</link>
       <pubDate>Sun, 25 May 2025 21:11:50 -0400</pubDate>
-      <guid>http://localhost:1313/posts/limits-of-current-ai/</guid>
+      <guid>https://victoramartinez.com/posts/limits-of-current-ai/</guid>
       <description>&lt;p&gt;I align with Yann LeCun&amp;rsquo;s camp on this matter. I don&amp;rsquo;t believe that LLMs and machine learning alone will lead us to human-level intelligence. Current models have demonstrated only very limited reasoning capabilities within specific domains—essentially following and recombining similar patterns they&amp;rsquo;ve ingested during training.&lt;/p&gt;&#xA;&lt;p&gt;If you follow computer scientist and AI researcher Subbarao Kambhampati, a professor at the School of Computing and Augmented Intelligence at ASU, he proposes and demonstrates that language models and reasoning models cannot plan effectively even in domains as simple as organizing blocks in a virtual world, let alone in more complex domains.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software Engineers Are Safe... For Now</title>
-      <link>http://localhost:1313/posts/software-engineers-are-safe-for-now/</link>
+      <link>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</link>
       <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/software-engineers-are-safe-for-now/</guid>
+      <guid>https://victoramartinez.com/posts/software-engineers-are-safe-for-now/</guid>
       <description>&lt;p&gt;Take a look at this search of jobs postings at OpenAI for December 25th, 2024. As of the time of this writing, over 150 results in all, 87 results for the term &amp;ldquo;Software Engineer.&amp;rdquo; This is a few days after the release of their latest frontier model, o3. This tells me that for the foreseeable future, Software Engineering jobs are safe, if not going to continue to be safe from full automation.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -12,7 +12,7 @@ At Coqui Health, we&rsquo;ve implemented this strategy successfully and this is 
 <meta name="keywords" content="blog, homepage, technology, go, tech, golang, opinion, git, ci, continuous delivery" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/posts/defensive-commits/" />
+<link rel="canonical" href="https://victoramartinez.com/posts/defensive-commits/" />
 
 
     <title>
@@ -25,7 +25,7 @@ At Coqui Health, we&rsquo;ve implemented this strategy successfully and this is 
 
 
 
-  <link rel="stylesheet" href="/main.min.07ea7ac7da67e2e153a7dfa2457bc6a19cca824288d175e223fadc579041bc51.css" integrity="sha256-B&#43;p6x9pn4uFTp9&#43;iRXvGoZzKgkKI0XXiI/rcV5BBvFE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.min.2729760c629597024c5de34b40ea9f372f2b5a2a192dcdca537b7ddfa483eab8.css" integrity="sha256-Jyl2DGKVlwJMXeNLQOqfNy8rWioZLc3KU3t936SD6rg=" crossorigin="anonymous">
 
 
 
@@ -47,11 +47,11 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
   <meta itemprop="datePublished" content="2022-10-22T21:55:26-04:00">
   <meta itemprop="dateModified" content="2022-10-22T21:55:26-04:00">
   <meta itemprop="wordCount" content="247">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://victoramartinez.com/">
   <meta itemprop="keywords" content="Git,Ci,Continuous Delivery">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://victoramartinez.com/">
   <meta name="twitter:title" content="Defensive Commits">
   <meta name="twitter:description" content="Defensive Commits are a strategy for pushing commit to upstream repos that runs part of the ci/cd pipeline locally using git hooks. It fails the hook fails. This allows you to catch integration errors and get feedback quickly. This strategy works best with trunk-based development and ci/cd teams, because it helps avoid breaking the build and reduces dumb mistakes from even being pushed up to main.
 At Coqui Health, we’ve implemented this strategy successfully and this is now the default way we work. We use a monorepo strategy coupled with ci/cd and trunk-based development, which means we work close to or in trunk and so having a robust ci/cd pipeline is paramount. Defensive commits allows us to catch bugs early and get feedback that our code will work or break things. It’s allowed us to move faster and not break things.">
@@ -154,7 +154,7 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
 
     <article>
       <h1 class="post-title">
-        <a href="http://localhost:1313/posts/defensive-commits/">Defensive Commits</a>
+        <a href="https://victoramartinez.com/posts/defensive-commits/">Defensive Commits</a>
       </h1>
 
       
@@ -169,9 +169,9 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
 <h2 id="how-to-implement">How to Implement</h2>
 <p>The easiest way to implement Defensive Commits (TM) is to use git hooks, particularly on push or after a commit, literally. We used <a href="https://typicode.github.io/husky/#/">husky</a> to help us do this.</p>
 <p>First install and configure husky</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky-init <span style="color:#f92672">&amp;&amp;</span> npm install       <span style="color:#75715e"># npm</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky-init <span style="color:#f92672">&amp;&amp;</span> npm install       <span style="color:#75715e"># npm</span>
 </span></span></code></pre></div><p>Then configure the git hooks, like this for pre-push</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky add .husky/pre-push <span style="color:#e6db74">&#34;npm test&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx husky add .husky/pre-push <span style="color:#e6db74">&#34;npm test&#34;</span>
 </span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
 <p>Using this strategy you can save a lot of time and effort from having to wait for ci/cd pipelines and potentially braking the build over stupid little things. I can&rsquo;t guarantee your build will never break, but the probability it will fail is a lot less.</p>
 
@@ -185,9 +185,9 @@ At Coqui Health, we’ve implemented this strategy successfully and this is now 
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="http://localhost:1313/tags/git/">git</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/ci/">ci</a></span>
-        <span class="tag"><a href="http://localhost:1313/tags/continuous-delivery/">continuous delivery</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/git/">git</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/ci/">ci</a></span>
+        <span class="tag"><a href="https://victoramartinez.com/tags/continuous-delivery/">continuous delivery</a></span>
         
     </p>
 

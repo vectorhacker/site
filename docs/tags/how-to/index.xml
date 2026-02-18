@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How To on Victor&#39;s Blog</title>
-    <link>http://localhost:1313/tags/how-to/</link>
+    <link>https://victoramartinez.com/tags/how-to/</link>
     <description>Recent content in How To on Victor&#39;s Blog</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>en-us</language>
     <copyright>Victor Martínez</copyright>
     <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://victoramartinez.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Get a Computer Science Degree Fast and Cheaply</title>
-      <link>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</link>
+      <link>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-to-get-a-bscs-efficiently/</guid>
+      <guid>https://victoramartinez.com/posts/how-to-get-a-bscs-efficiently/</guid>
       <description>&lt;p&gt;You read the title, you&amp;rsquo;re probably thinking &amp;ldquo;that sounds like it&amp;rsquo;ll be a crappy idea&amp;rdquo; or &amp;ldquo;that sounds exactly like what I want!&amp;rdquo; For the first person, I hope to convince you that a computer science degree need not take 4 years nor be expensive. For the second, I hope to give you a roadmap to earn an accredited CS degree. But, before I start I want to preface this by saying that I am not advocating you go out to a degree mill and just buy a Diploma from a fake school, I&amp;rsquo;ll only be talking about legal, accredited, and reputable ways to get your degree in under 2 years, even less. I also know that it&amp;rsquo;s possible, because I essentially did it last year. So, without further ado, here&amp;rsquo;s how to get a bachelors degree in computer science fast and cheaply.&lt;/p&gt;</description>
     </item>
   </channel>
